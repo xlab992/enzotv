@@ -177,7 +177,7 @@ def eventi_m3u8_generator():
     from datetime import datetime, timedelta
     from dateutil import parser
     
-    proxy = "https://nzo66-piccolotest.hf.space/proxy/m3u?url="  # Proxy HLS
+    PROXY = "https://nzo66-piccolotest.hf.space/proxy/m3u?url="  # Proxy HLS
     JSON_FILE = "daddyliveSchedule.json"
     OUTPUT_FILE = "eventi.m3u8"
     BASE_URL = "https://thedaddy.to/embed/"
@@ -242,7 +242,7 @@ def eventi_m3u8_generator():
             if server_key == "top1/cdn":
                 return f"https://top1.newkso.ru/top1/cdn/{channel_key}/mono.m3u8"
     
-            stream_url = (f"{proxy}https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8"
+            stream_url = (f"{PROXY}https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8"
                           f"?h_user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                           f"(KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36&h_referer=https://forcedtoplay.xyz/"
                           f"&h_origin=https://forcedtoplay.xyz")
