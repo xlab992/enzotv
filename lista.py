@@ -320,7 +320,7 @@ def eventi_m3u8_generator():
     
                         words = set(re.findall(r'\b\w+\b', channel_name.lower()))
                         if keywords.intersection(words):
-                            tvg_name = f"{event_title} ({date_str} {time_formatted})"
+                            tvg_name = f"{event_title} ({time_formatted})"
                             categorized_channels[category].append({
                                 "tvg_name": tvg_name,
                                 "channel_name": channel_name,
