@@ -340,7 +340,7 @@ def eventi_m3u8_generator():
                     continue
     
                 # Spacer con nome categoria pulito e group-title "Eventi Live"
-                f.write(f'#EXTINF:-1 group-title="Eventi Live" tvg-name="{category}",--- {category} ---\n\n')
+                f.write(f'#EXTINF:-1 group-title="Eventi Live" tvg-name="{category}",--- {category} ---\nhttps://exemple.m3u8\n\n')
     
                 for ch in channels:
                     tvg_name = ch["tvg_name"]
