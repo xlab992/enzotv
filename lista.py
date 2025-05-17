@@ -242,7 +242,7 @@ def eventi_m3u8_generator():
             if server_key == "top1/cdn":
                 return f"https://top1.newkso.ru/top1/cdn/{channel_key}/mono.m3u8"
     
-            stream_url = (f"{PROXY}https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8"
+            stream_url = (f"{PROXY}https://{server_key}new.newkso.ru/{server_key}/{channel_key}/mono.m3u8")
             return stream_url
     
         except requests.RequestException as e:
