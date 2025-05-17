@@ -627,7 +627,7 @@ def vavoo_italy_channels():
     import os
     import xml.etree.ElementTree as ET
     
-    PROXY = "https://nzo66-piccolotest.hf.space/proxy/m3u?url="
+    PROXY = "https://nzo66-testina.hf.space/proxy/hls/manifest.m3u8?api_password=test123&d="
     EPG_FILE = "epg.xml"
     LOGOS_FILE = "logos.txt"
     OUTPUT_FILE = "channels_italy.m3u8"
