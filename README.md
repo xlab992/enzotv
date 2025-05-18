@@ -76,7 +76,7 @@ con il tuo URL personalizzato (es. `https://tuonome.hf.space`, Render o self-hos
 https://nzo66-mfpproxy.hf.space
 ```
 
-> E ricorda di aggiornare anche il file `.github/workflows/main.yml` con `listaMFP.py`.
+> E ricorda di aggiornare anche il file `.github/workflows/main.yml` con `listaMFP.py` nella riga 27.
 
 ---
 
