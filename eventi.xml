@@ -218,17 +218,4 @@
     <desc lang="it">World Cup | Women Curitiba | Bouldering | Final trasmesso in diretta.</desc>
     <category lang="it">Climbing</category>
   </programme>
-  <channel id="879">
-    <display-name>Global Champions Tour Jumping | Madrid</display-name>
-  </channel>
-  <programme start="20250518000000 +0000" stop="20250518144500 +0200" channel="879">
-    <title lang="it">inizierà alle 16:45.</title>
-    <desc lang="it">Global Champions Tour Jumping | Madrid.</desc>
-    <category lang="it">Annuncio</category>
-  </programme>
-  <programme start="20250518144500 +0200" stop="20250518164500 +0200" channel="879">
-    <title lang="it">Global Champions Tour Jumping | Madrid</title>
-    <desc lang="it">Global Champions Tour Jumping | Madrid trasmesso in diretta.</desc>
-    <category lang="it">Equestrian</category>
-  </programme>
 </tv>
