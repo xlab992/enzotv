@@ -1,0 +1,82 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Soccer" group-title="Eventi Live",--- Soccer ---
+https://example.m3u8
+
+#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : West Ham United vs Nottingham Forest (15:15)" group-title="Eventi Live",England - Premier League : West Ham United vs Nottingham Forest (15:15)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-870.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="28" tvg-name="England - Premier League : Leicester City vs Ipswich Town (16:00)" group-title="Eventi Live",England - Premier League : Leicester City vs Ipswich Town (16:00)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-28.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="6" tvg-name="Italy - Serie C : Crotone vs Vicenza (16:00)" group-title="Eventi Live",Italy - Serie C : Crotone vs Vicenza (16:00)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-6.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="870" tvg-name="England - Premier League : Arsenal vs Newcastle United (17:30)" group-title="Eventi Live",England - Premier League : Arsenal vs Newcastle United (17:30)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-870.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="460" tvg-name="England - Premier League : Arsenal vs Newcastle United (17:30)" group-title="Eventi Live",England - Premier League : Arsenal vs Newcastle United (17:30)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-460.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="28" tvg-name="Italy - Serie C : Atalanta II vs Audace Cerignola (18:15)" group-title="Eventi Live",Italy - Serie C : Atalanta II vs Audace Cerignola (18:15)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-28.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="882" tvg-name="Italy - Serie C : Atalanta II vs Audace Cerignola (18:15)" group-title="Eventi Live",Italy - Serie C : Atalanta II vs Audace Cerignola (18:15)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-882.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="26" tvg-name="Italy - Serie C : Vis Pesaro vs Pescara (18:15)" group-title="Eventi Live",Italy - Serie C : Vis Pesaro vs Pescara (18:15)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-26.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="27" tvg-name="Italy - Serie C : Giana Erminio vs Ternana (18:15)" group-title="Eventi Live",Italy - Serie C : Giana Erminio vs Ternana (18:15)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-27.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="105" tvg-name="Italy - Serie A : Cagliari vs Venezia (20:45)" group-title="Eventi Live",Italy - Serie A : Cagliari vs Venezia (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-105.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="107" tvg-name="Italy - Serie A : Fiorentina vs Bologna (20:45)" group-title="Eventi Live",Italy - Serie A : Fiorentina vs Bologna (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-107.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="108" tvg-name="Italy - Serie A : Hellas Verona vs Como (20:45)" group-title="Eventi Live",Italy - Serie A : Hellas Verona vs Como (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-108.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="109" tvg-name="Italy - Serie A : Internazionale vs Lazio (20:45)" group-title="Eventi Live",Italy - Serie A : Internazionale vs Lazio (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-109.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="110" tvg-name="Italy - Serie A : Juventus vs Udinese (20:45)" group-title="Eventi Live",Italy - Serie A : Juventus vs Udinese (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-110.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="152" tvg-name="Italy - Serie A : Lecce vs Torino (20:45)" group-title="Eventi Live",Italy - Serie A : Lecce vs Torino (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-152.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="153" tvg-name="Italy - Serie A : Monza vs Empoli (20:45)" group-title="Eventi Live",Italy - Serie A : Monza vs Empoli (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-153.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="877" tvg-name="Italy - Serie A : Parma vs Napoli (20:45)" group-title="Eventi Live",Italy - Serie A : Parma vs Napoli (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-877.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-id="154" tvg-name="Italy - Serie A : Roma vs Milan (20:45)" group-title="Eventi Live",Italy - Serie A : Roma vs Milan (20:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-154.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-name="Motorsport" group-title="Eventi Live",--- Motorsport ---
+https://example.m3u8
+
+#EXTINF:-1 tvg-id="577" tvg-name="Formula 1 : AWS Emilia Romagna GP - Race (15:00)" group-title="Eventi Live",Formula 1 : AWS Emilia Romagna GP - Race (15:00)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-577.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-name="Basketball" group-title="Eventi Live",--- Basketball ---
+https://example.m3u8
+
+#EXTINF:-1 tvg-id="882" tvg-name="Serie A1 Men Final : Virtus Segafredo Bologna vs Umana Reyer Venezia (18:00)" group-title="Eventi Live",Serie A1 Men Final : Virtus Segafredo Bologna vs Umana Reyer Venezia (18:00)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-882.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-name="Climbing" group-title="Eventi Live",--- Climbing ---
+https://example.m3u8
+
+#EXTINF:-1 tvg-id="878" tvg-name="World Cup | Women Curitiba | Bouldering | Final (22:00)" group-title="Eventi Live",World Cup | Women Curitiba | Bouldering | Final (22:00)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-878.php&redirect_stream=true&api_password=test123
+
+#EXTINF:-1 tvg-name="Equestrian" group-title="Eventi Live",--- Equestrian ---
+https://example.m3u8
+
+#EXTINF:-1 tvg-id="879" tvg-name="Global Champions Tour Jumping | Madrid (16:45)" group-title="Eventi Live",Global Champions Tour Jumping | Madrid (16:45)
+https://nzo66-mfpproxy.hf.space/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-879.php&redirect_stream=true&api_password=test123
+
