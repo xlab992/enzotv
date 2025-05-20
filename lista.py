@@ -677,7 +677,7 @@ def vavoo_italy_channels():
     import os
     import xml.etree.ElementTree as ET
     
-    PROXY = "https://nzo66-tvproxy.hf.space/proxy/m3u?url="
+    PROXY = "https://nzo66-tvproxy.hf.space"
     EPG_FILE = "epg.xml"
     LOGOS_FILE = "logos.txt"
     OUTPUT_FILE = "channels_italy.m3u8"
@@ -788,7 +788,7 @@ def vavoo_italy_channels():
                     tvg_id = channel_id_map.get(normalized_name, "")
                     tvg_logo = logos_dict.get(tvg_name_cleaned.lower(), DEFAULT_TVG_ICON)
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_logo}" group-title="{category}", {name}\n')
-                    f.write(f"{PROXY}{url}\n\n")
+                    f.write(f"{PROXY}/proxy/m3u?url={url}\n\n")
     
     def main():
         epg_root = fetch_epg(EPG_FILE)
