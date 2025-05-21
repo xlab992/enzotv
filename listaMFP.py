@@ -20,8 +20,8 @@ def merger_playlist():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    NOMEREPO = os.getenv("NOMEREPO, "").strip()
-    NOMEGITHUB = os.getenv("NOMEGITHUB, "").strip()
+    NOMEREPO = os.getenv("NOMEREPO", "").strip()
+    NOMEGITHUB = os.getenv("NOMEGITHUB", "").strip()
     
     # Percorsi o URL delle playlist M3U8
     url1 = "channels_italy.m3u8"  # File locale
@@ -189,8 +189,8 @@ def eventi_m3u8_generator():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    MFP_IP = os.getenv("IPMFP, "").strip()  # Inserisci il tuo IP/porta MFP 
-    MFP_PASSWORD = os.getenv("PASSMFP, "").strip()  # Inserisci la tua password API MFP 
+    MFP_IP = os.getenv("IPMFP", "").strip()  # Inserisci il tuo IP/porta MFP 
+    MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  # Inserisci la tua password API MFP 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
      
@@ -697,8 +697,8 @@ def vavoo_italy_channels():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    MFP_IP = os.getenv("IPMFP, "").strip()  # Inserisci il tuo IP/porta MFP 
-    MFP_PASSWORD = os.getenv("PASSMFP, "").strip()  # Inserisci la tua password API MFP 
+    MFP_IP = os.getenv("IPMFP", "").strip()  # Inserisci il tuo IP/porta MFP 
+    MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  # Inserisci la tua password API MFP 
     EPG_FILE = "epg.xml"
     LOGOS_FILE = "logos.txt"
     OUTPUT_FILE = "channels_italy.m3u8"
