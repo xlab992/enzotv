@@ -53,7 +53,6 @@ Se il proxy fornito non dovesse funzionare o preferisci crearne uno tuo, puoi fa
 Avvia creando un fork della repository proxy.
 
 ### 2. Modifica il file `.env` ed inserisci i tuoi dati.
-Per includere **canali esteri**, utilizza il branch `world`.
 
 ---
 
