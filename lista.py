@@ -321,9 +321,9 @@ def eventi_m3u8_generator_world():
                                 if file_age > three_hours_in_seconds:
                                     try:
                                         os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_file}")
+                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
                                     except Exception as e:
-                                        print(f"[!] Errore nella rimozione del logo {logo_file}: {e}")
+                                        print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
                         
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
@@ -834,9 +834,9 @@ def eventi_m3u8_generator():
                                 if file_age > three_hours_in_seconds:
                                     try:
                                         os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_file}")
+                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
                                     except Exception as e:
-                                        print(f"[!] Errore nella rimozione del logo {logo_file}: {e}")
+                                        print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
                         
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
