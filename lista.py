@@ -253,7 +253,7 @@ def eventi_m3u8_generator_world():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    PROXY = os.getenv("PROXY", "").strip()  
+    PROXY = os.getenv("PROXYIP", "").strip()  
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
@@ -680,7 +680,7 @@ def eventi_m3u8_generator():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    PROXY = os.getenv("PROXY", "").strip()  
+    PROXY = os.getenv("PROXYIP", "").strip()  
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
