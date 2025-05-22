@@ -248,6 +248,9 @@ def eventi_m3u8_generator():
     import urllib.parse 
     import os
     from dotenv import load_dotenv
+    from PIL import Image, ImageDraw, ImageFont
+    import io
+    import time
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
@@ -719,6 +722,9 @@ def eventi_m3u8_generator_world():
     import urllib.parse 
     import os
     from dotenv import load_dotenv
+    from PIL import Image, ImageDraw, ImageFont
+    import io
+    import time
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
