@@ -1177,7 +1177,7 @@ def schedule_extractor():
         print(f"File JSON modificato e salvato in {json_file_path}")
     
     def extract_schedule_container():
-        url = "{LINK_DADDY}/"
+        url = f"{LINK_DADDY}/"
     
         script_dir = os.path.dirname(os.path.abspath(__file__))
         json_output = os.path.join(script_dir, "daddyliveSchedule.json")
