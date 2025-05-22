@@ -684,6 +684,11 @@ def eventi_m3u8_generator():
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
+
+    # Funzione per pulire il nome della categoria
+    def clean_category_name(name): 
+        # Rimuove tag html come </span> o simili 
+        return re.sub(r'<[^>]+>', '', name).strip()
      
     def search_logo_for_event(event_name): 
         """ 
