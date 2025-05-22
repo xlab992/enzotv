@@ -27,7 +27,13 @@ jobs:
         run: |
           if [ -d "logos" ]; then
             echo "Eliminazione dei file più vecchi di 3 ore dalla cartella logos..."
-            find logos -type f -mmin +180 -exec rm -f {} \;
+            # Usa il timestamp corrente e calcola 3 ore fa in secondi
+            CURRENT_TIME=$(date +%s)
+            THREE_HOURS_AGO=$((CURRENT_TIME - 10800))  # 3 ore = 10800 secondi
+            
+            # Trova e elimina i file più vecchi di 3 ore
+            find logos -type f -exec bash -c 'file_time=$(stat -c %Y "$1"); current_time=$(date +%s); if [ $file_time -lt $((current_time - 10800)) ]; then echo "Eliminando $1"; rm -f "$1"; fi' bash {} \;
+            
             echo "Eliminazione completata."
           else
             echo "La cartella logos non esiste. Nessun file da eliminare."
