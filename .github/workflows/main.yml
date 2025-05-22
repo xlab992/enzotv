@@ -22,6 +22,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml playwright bs4 rapidfuzz fuzzywuzzy python-Levenshtein python-dateutil python-dotenv selenium webdriver-manager pillow
           playwright install 
+
+      - name: Pulisci cartella logos (file più vecchi di 3 ore)
+        run: |
+          find logos/ -type f -mmin +180 -exec rm -f {} \;
       
       - name: Run Script
         run: |
