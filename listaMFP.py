@@ -257,8 +257,51 @@ def eventi_m3u8_generator():
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
      
-    def clean_category_name(name): 
-        return re.sub(r'<[^>]+>', '', name).strip() 
+    def search_team_logo(team_name):
+        """
+        Cerca un logo per una squadra specifica
+        Restituisce l'URL dell'immagine trovata o None se non trovata
+        """
+        try:
+            # Prepara la query di ricerca specifica per la squadra
+            search_query = urllib.parse.quote(f"{team_name} logo team")
+            
+            # Utilizziamo l'API di Bing Image Search con parametri migliorati
+            search_url = f""
+            
+            headers = { 
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+                "Cache-Control": "max-age=0",
+                "Connection": "keep-alive"
+            } 
+            
+            response = requests.get(search_url, headers=headers, timeout=10)
+            
+            if response.status_code == 200:
+                # Cerca pattern per murl (URL dell'immagine media)
+                pattern = r'murl&quot;:&quot;(https?://[^&]+)&quot;'
+                matches = re.findall(pattern, response.text)
+                
+                if matches:
+                    # Restituisci il primo URL trovato
+                    return matches[0]
+                    
+                # Metodo alternativo: cerca pattern per src in tag img
+                pattern = r'<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*>'
+                matches = re.findall(pattern, response.text)
+                
+                # Filtra solo URL che sembrano immagini
+                image_matches = [url for url in matches if re.search(r'\.(png|jpg|jpeg|gif|webp)', url, re.IGNORECASE)]
+                
+                if image_matches:
+                    return image_matches[0]
+            
+            return None
+        except Exception as e:
+            print(f"[!] Errore nella ricerca del logo per '{team_name}': {e}")
+            return None
      
     def search_logo_for_event(event_name): 
         """ 
@@ -685,8 +728,51 @@ def eventi_m3u8_generator_world():
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
      
-    def clean_category_name(name): 
-        return re.sub(r'<[^>]+>', '', name).strip() 
+    def search_team_logo(team_name):
+        """
+        Cerca un logo per una squadra specifica
+        Restituisce l'URL dell'immagine trovata o None se non trovata
+        """
+        try:
+            # Prepara la query di ricerca specifica per la squadra
+            search_query = urllib.parse.quote(f"{team_name} logo team")
+            
+            # Utilizziamo l'API di Bing Image Search con parametri migliorati
+            search_url = f""
+            
+            headers = { 
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+                "Cache-Control": "max-age=0",
+                "Connection": "keep-alive"
+            } 
+            
+            response = requests.get(search_url, headers=headers, timeout=10)
+            
+            if response.status_code == 200:
+                # Cerca pattern per murl (URL dell'immagine media)
+                pattern = r'murl&quot;:&quot;(https?://[^&]+)&quot;'
+                matches = re.findall(pattern, response.text)
+                
+                if matches:
+                    # Restituisci il primo URL trovato
+                    return matches[0]
+                    
+                # Metodo alternativo: cerca pattern per src in tag img
+                pattern = r'<img[^>]+src=[\'"]([^\'"]+)[\'"][^>]*>'
+                matches = re.findall(pattern, response.text)
+                
+                # Filtra solo URL che sembrano immagini
+                image_matches = [url for url in matches if re.search(r'\.(png|jpg|jpeg|gif|webp)', url, re.IGNORECASE)]
+                
+                if image_matches:
+                    return image_matches[0]
+            
+            return None
+        except Exception as e:
+            print(f"[!] Errore nella ricerca del logo per '{team_name}': {e}")
+            return None
      
     def search_logo_for_event(event_name): 
         """ 
