@@ -259,6 +259,7 @@ def eventi_m3u8_generator():
     MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  # Inserisci la tua password API MFP 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
+    LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
      
     def search_logo_for_event(event_name): 
         """ 
@@ -643,7 +644,7 @@ def eventi_m3u8_generator():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-{channel_id}.php" 
+                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d=https://{LINK_DADDY}/embed/stream-{channel_id}.php" 
                                   f"&redirect_stream=true&api_password={MFP_PASSWORD}") 
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
@@ -682,6 +683,7 @@ def eventi_m3u8_generator_world():
     MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  # Inserisci la tua password API MFP 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
+    LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
      
     def search_logo_for_event(event_name): 
         """ 
@@ -1066,7 +1068,7 @@ def eventi_m3u8_generator_world():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d=https://thedaddy.to/embed/stream-{channel_id}.php" 
+                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d=https://{LINK_DADDY}/embed/stream-{channel_id}.php" 
                                   f"&redirect_stream=true&api_password={MFP_PASSWORD}") 
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
@@ -1093,6 +1095,12 @@ def schedule_extractor():
     from datetime import datetime
     import re
     from bs4 import BeautifulSoup
+    from dotenv import load_dotenv
+
+    # Carica le variabili d'ambiente dal file .env
+    load_dotenv()
+
+    LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
     
     def html_to_json(html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -1175,7 +1183,7 @@ def schedule_extractor():
         print(f"File JSON modificato e salvato in {json_file_path}")
     
     def extract_schedule_container():
-        url = "https://daddylive.dad/"
+        url = "{LINK_DADDY}/"
     
         script_dir = os.path.dirname(os.path.abspath(__file__))
         json_output = os.path.join(script_dir, "daddyliveSchedule.json")
