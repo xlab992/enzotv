@@ -254,10 +254,10 @@ def eventi_m3u8_generator_world():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
+    LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
     PROXY = os.getenv("PROXYIP", "").strip()  # Proxy HLS 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
-    BASE_URL = "https://thedaddy.to/embed/" 
      
     HEADERS = { 
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" 
@@ -631,7 +631,7 @@ def eventi_m3u8_generator_world():
             return None 
      
     def get_stream_from_channel_id(channel_id): 
-        embed_url = f"{BASE_URL}stream-{channel_id}.php" 
+        embed_url = f"{LINK_DADDY}stream-{channel_id}.php" 
         iframe = get_iframe_url(embed_url) 
         if iframe: 
             return get_final_m3u8(iframe) 
@@ -764,11 +764,11 @@ def eventi_m3u8_generator():
 
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
-
+    
+    LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
     PROXY = os.getenv("PROXYIP", "").strip()  # Proxy HLS 
     JSON_FILE = "daddyliveSchedule.json" 
     OUTPUT_FILE = "eventi.m3u8" 
-    BASE_URL = "https://thedaddy.to/embed/" 
      
     HEADERS = { 
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" 
@@ -1142,7 +1142,7 @@ def eventi_m3u8_generator():
             return None 
      
     def get_stream_from_channel_id(channel_id): 
-        embed_url = f"{BASE_URL}stream-{channel_id}.php" 
+        embed_url = f"{LINK_DADDY}stream-{channel_id}.php" 
         iframe = get_iframe_url(embed_url) 
         if iframe: 
             return get_final_m3u8(iframe) 
@@ -1266,6 +1266,12 @@ def schedule_extractor():
     from datetime import datetime
     import re
     from bs4 import BeautifulSoup
+    from dotenv import load_dotenv
+
+    # Carica le variabili d'ambiente dal file .env
+    load_dotenv()
+
+    LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
     
     def html_to_json(html_content):
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -1348,7 +1354,7 @@ def schedule_extractor():
         print(f"File JSON modificato e salvato in {json_file_path}")
     
     def extract_schedule_container():
-        url = "https://daddylive.dad/"
+        url = "{LINK_DADDY}/"
     
         script_dir = os.path.dirname(os.path.abspath(__file__))
         json_output = os.path.join(script_dir, "daddyliveSchedule.json")
