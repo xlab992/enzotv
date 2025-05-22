@@ -26,12 +26,44 @@ jobs:
       - name: Elimina file più vecchi di 4 ore dalla cartella logos/
         run: |
           mkdir -p logos
-          echo "File presenti prima della pulizia:"
-          ls -la logos/ || echo "Cartella logos vuota"
-          echo "Eliminazione file più vecchi di 4 ore..."
-          find logos/ -type f -mmin +240 -print -exec rm -v {} \; || echo "Nessun file da eliminare"
-          echo "File rimasti dopo la pulizia:"
-          ls -la logos/ || echo "Cartella logos vuota"
+          python3 -c "
+import os
+import time
+import glob
+
+logo_dir = 'logos/'
+current_time = time.time()
+four_hours = 4 * 60 * 60  # 4 ore in secondi
+
+print('File presenti prima della pulizia:')
+files = glob.glob(os.path.join(logo_dir, '*'))
+for file_path in files:
+    if os.path.isfile(file_path):
+        file_age = current_time - os.path.getmtime(file_path)
+        print(f'{file_path}: {file_age/3600:.1f} ore')
+
+print('\nEliminazione file più vecchi di 4 ore...')
+deleted_count = 0
+for file_path in files:
+    if os.path.isfile(file_path):
+        file_age = current_time - os.path.getmtime(file_path)
+        if file_age > four_hours:
+            try:
+                os.remove(file_path)
+                print(f'Eliminato: {file_path} (età: {file_age/3600:.1f} ore)')
+                deleted_count += 1
+            except Exception as e:
+                print(f'Errore eliminando {file_path}: {e}')
+
+print(f'\nTotale file eliminati: {deleted_count}')
+
+print('\nFile rimasti:')  
+remaining_files = glob.glob(os.path.join(logo_dir, '*'))
+for file_path in remaining_files:
+    if os.path.isfile(file_path):
+        file_age = current_time - os.path.getmtime(file_path)
+        print(f'{file_path}: {file_age/3600:.1f} ore')
+"
 
       - name: Run Script
         run: |
