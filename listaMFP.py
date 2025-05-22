@@ -312,22 +312,7 @@ def eventi_m3u8_generator():
                         # Crea la cartella logos se non esiste
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
-                        
-                        # Controlla e rimuovi i loghi più vecchi di 3 ore
-                        current_time = time.time()
-                        three_hours_in_seconds = 3 * 60 * 60
-                        
-                        for logo_file in os.listdir(logos_dir):
-                            logo_path = os.path.join(logos_dir, logo_file)
-                            if os.path.isfile(logo_path):
-                                file_age = current_time - os.path.getmtime(logo_path)
-                                if file_age > three_hours_in_seconds:
-                                    try:
-                                        os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
-                                    except Exception as e:
-                                        print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
-                        
+
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
                         if exists(output_filename):
