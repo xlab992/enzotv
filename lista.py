@@ -646,7 +646,7 @@ def eventi_m3u8_generator_world():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{PROXY}/proxy/m3u?url=https://{LINK_DADDY}/embed/stream-{channel_id}.php")                    
+                    stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
@@ -1073,7 +1073,7 @@ def eventi_m3u8_generator():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{PROXY}/proxy/m3u?url=https://{LINK_DADDY}/embed/stream-{channel_id}.php")                    
+                    stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
