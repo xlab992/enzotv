@@ -23,6 +23,11 @@ jobs:
           pip install requests beautifulsoup4 lxml playwright bs4 rapidfuzz fuzzywuzzy python-Levenshtein python-dateutil python-dotenv selenium webdriver-manager pillow
           playwright install 
 
+      - name: Elimina file più vecchi di 4 ore dalla cartella logos/
+        run: |
+          mkdir -p logos
+          find logos/ -type f -mmin +240 -print -delete
+
       - name: Run Script
         run: |
           if [ -f .env ]; then
