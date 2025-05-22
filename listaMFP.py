@@ -985,7 +985,7 @@ def eventi_m3u8_generator_world():
         return None
      
     def extract_channels_from_json(path): 
-        keywords = {"italy", "rai", "italia", "it", "UK", "TNT", "USA", "Tennis Channel", "Tennis Stream"} 
+        keywords = {"italy", "rai", "italia", "it", "uk", "tnt", "usa", "tennis channel", "tennis stream"} 
         now = datetime.now() 
       
         with open(path, "r", encoding="utf-8") as f: 
