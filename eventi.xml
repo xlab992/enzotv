@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="870">
+    <display-name>Sky Sport Calcio IT</display-name>
+  </channel>
+  <programme start="20250522000000 +0200" stop="20250522203000 +0200" channel="870">
+    <title lang="it">Inizierà alle 20:30.</title>
+    <desc lang="it">Bundesliga : Heidenheim vs Elversberg.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522203000 +0200" stop="20250522223000 +0200" channel="870">
+    <title lang="it">Bundesliga : Heidenheim vs Elversberg</title>
+    <desc lang="it">Bundesliga : Heidenheim vs Elversberg trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="879">
+    <display-name>Eurosport 2 IT</display-name>
+  </channel>
+  <programme start="20250522000000 +0200" stop="20250522200000 +0200" channel="879">
+    <title lang="it">Inizierà alle 20:00.</title>
+    <desc lang="it">Lega A : Pallacanestro Reggiana vs. Trapani Shark.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250522200000 +0200" stop="20250522220000 +0200" channel="879">
+    <title lang="it">Lega A : Pallacanestro Reggiana vs. Trapani Shark</title>
+    <desc lang="it">Lega A : Pallacanestro Reggiana vs. Trapani Shark trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+</tv>
