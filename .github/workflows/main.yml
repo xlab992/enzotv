@@ -26,7 +26,12 @@ jobs:
       - name: Elimina file più vecchi di 4 ore dalla cartella logos/
         run: |
           mkdir -p logos
-          find logos/ -type f -mmin +240 -delete || echo "Nessun file da eliminare o errore nell'eliminazione"
+          echo "File presenti prima della pulizia:"
+          ls -la logos/ || echo "Cartella logos vuota"
+          echo "Eliminazione file più vecchi di 4 ore..."
+          find logos/ -type f -mmin +240 -print -exec rm -v {} \; || echo "Nessun file da eliminare"
+          echo "File rimasti dopo la pulizia:"
+          ls -la logos/ || echo "Cartella logos vuota"
 
       - name: Run Script
         run: |
