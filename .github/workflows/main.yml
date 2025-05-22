@@ -22,7 +22,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml playwright bs4 rapidfuzz fuzzywuzzy python-Levenshtein python-dateutil python-dotenv selenium webdriver-manager pillow
           playwright install 
-          
+
+      - name: Elimina file vecchi dalla cartella logos
+        run: |
+          if [ -d "logos" ]; then
+            echo "Eliminazione dei file più vecchi di 3 ore dalla cartella logos..."
+            find logos -type f -mmin +180 -exec rm -f {} \;
+            echo "Eliminazione completata."
+          else
+            echo "La cartella logos non esiste. Nessun file da eliminare."
+          fi
+      
       - name: Run Script
         run: |
           if [ -f .env ]; then
