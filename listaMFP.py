@@ -295,12 +295,7 @@ def eventi_m3u8_generator():
                 if logo1_url and logo2_url:
                     # Scarica i loghi e l'immagine VS
                     try:
-                        import io
-                        from PIL import Image
-                        import requests
                         from os.path import exists, getmtime
-                        import os
-                        import time
                         
                         # Crea la cartella logos se non esiste
                         logos_dir = "logos"
@@ -723,12 +718,7 @@ def eventi_m3u8_generator_world():
                 if logo1_url and logo2_url:
                     # Scarica i loghi e l'immagine VS
                     try:
-                        import io
-                        from PIL import Image
-                        import requests
                         from os.path import exists, getmtime
-                        import os
-                        import time
                         
                         # Crea la cartella logos se non esiste
                         logos_dir = "logos"
