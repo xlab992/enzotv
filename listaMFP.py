@@ -415,10 +415,56 @@ def eventi_m3u8_generator():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
+
+            if ':' in event_name:
+                # Usa la parte prima dei ":" per la ricerca
+                prefix_name = event_name.split(':', 1)[0].strip()
+                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
+                
+                # Prepara la query di ricerca con il prefisso
+                search_query = urllib.parse.quote(f"{prefix_name} logo")
+                
+                # Utilizziamo l'API di Bing Image Search con parametri migliorati
+                search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
+                
+                headers = { 
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                    "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cache-Control": "max-age=0",
+                    "Connection": "keep-alive"
+                } 
+                
+                response = requests.get(search_url, headers=headers, timeout=10)
+                
+                if response.status_code == 200: 
+                    # Metodo 1: Cerca pattern per murl (URL dell'immagine media)
+                    patterns = [
+                        r'murl&quot;:&quot;(https?://[^&]+)&quot;',
+                        r'"murl":"(https?://[^"]+)"',
+                        r'"contentUrl":"(https?://[^"]+\.(?:png|jpg|jpeg|svg))"',
+                        r'<img[^>]+src="(https?://[^"]+\.(?:png|jpg|jpeg|svg))[^>]+class="mimg"',
+                        r'<a[^>]+class="iusc"[^>]+m=\'{"[^"]*":"[^"]*","[^"]*":"(https?://[^"]+)"'
+                    ]
+                    
+                    for pattern in patterns:
+                        matches = re.findall(pattern, response.text)
+                        if matches and len(matches) > 0:
+                            # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
+                            for match in matches:
+                                if '.png' in match.lower() or '.svg' in match.lower():
+                                    print(f"[✓] Logo trovato con prefisso: {match}")
+                                    return match
+                            # Se non troviamo PNG o SVG, prendi il primo risultato
+                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
+                            return matches[0]
+            
+            # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
+            print(f"[🔍] Ricerca standard per: {clean_event_name}")
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
-            search_query = urllib.parse.quote(f"{clean_event_name} logo epg")
+            search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -490,7 +536,7 @@ def eventi_m3u8_generator():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -832,10 +878,56 @@ def eventi_m3u8_generator_world():
                 
                 # Se non abbiamo trovato entrambi i loghi, restituisci quello che abbiamo
                 return logo1_url or logo2_url
+
+            if ':' in event_name:
+                # Usa la parte prima dei ":" per la ricerca
+                prefix_name = event_name.split(':', 1)[0].strip()
+                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
+                
+                # Prepara la query di ricerca con il prefisso
+                search_query = urllib.parse.quote(f"{prefix_name} logo")
+                
+                # Utilizziamo l'API di Bing Image Search con parametri migliorati
+                search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
+                
+                headers = { 
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+                    "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cache-Control": "max-age=0",
+                    "Connection": "keep-alive"
+                } 
+                
+                response = requests.get(search_url, headers=headers, timeout=10)
+                
+                if response.status_code == 200: 
+                    # Metodo 1: Cerca pattern per murl (URL dell'immagine media)
+                    patterns = [
+                        r'murl&quot;:&quot;(https?://[^&]+)&quot;',
+                        r'"murl":"(https?://[^"]+)"',
+                        r'"contentUrl":"(https?://[^"]+\.(?:png|jpg|jpeg|svg))"',
+                        r'<img[^>]+src="(https?://[^"]+\.(?:png|jpg|jpeg|svg))[^>]+class="mimg"',
+                        r'<a[^>]+class="iusc"[^>]+m=\'{"[^"]*":"[^"]*","[^"]*":"(https?://[^"]+)"'
+                    ]
+                    
+                    for pattern in patterns:
+                        matches = re.findall(pattern, response.text)
+                        if matches and len(matches) > 0:
+                            # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
+                            for match in matches:
+                                if '.png' in match.lower() or '.svg' in match.lower():
+                                    print(f"[✓] Logo trovato con prefisso: {match}")
+                                    return match
+                            # Se non troviamo PNG o SVG, prendi il primo risultato
+                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
+                            return matches[0]
+            
+            # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
+            print(f"[🔍] Ricerca standard per: {clean_event_name}")
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
-            search_query = urllib.parse.quote(f"{clean_event_name} logo epg")
+            search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -907,7 +999,7 @@ def eventi_m3u8_generator_world():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
