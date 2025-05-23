@@ -675,13 +675,12 @@ def eventi_m3u8_generator_world():
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
 
-    MFP_IP = os.getenv("IPMFP", "").strip()  # Inserisci il tuo IP/porta MFP 
-    MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  # Inserisci la tua password API MFP 
-    JSON_FILE = "daddyliveSchedule.json" 
+    MFP_IP = os.getenv("IPMFP", "").strip()  
+    MFP_PASSWORD = os.getenv("PASSMFP", "").strip()  
     OUTPUT_FILE = "eventi.m3u8" 
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
 
-    # Funzione per pulire il nome della categoria
+        # Funzione per pulire il nome della categoria
     def clean_category_name(name): 
         # Rimuove tag html come </span> o simili 
         return re.sub(r'<[^>]+>', '', name).strip()
@@ -732,21 +731,6 @@ def eventi_m3u8_generator_world():
                         # Crea la cartella logos se non esiste
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
-                        
-                        # Controlla e rimuovi i loghi più vecchi di 3 ore
-                        current_time = time.time()
-                        three_hours_in_seconds = 3 * 60 * 60
-                        
-                        for logo_file in os.listdir(logos_dir):
-                            logo_path = os.path.join(logos_dir, logo_file)
-                            if os.path.isfile(logo_path):
-                                file_age = current_time - os.path.getmtime(logo_path)
-                                if file_age > three_hours_in_seconds:
-                                    try:
-                                        os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
-                                    except Exception as e:
-                                        print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
                         
                         # Verifica se l'immagine combinata esiste già e non è obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
@@ -996,6 +980,7 @@ def eventi_m3u8_generator_world():
     def extract_channels_from_json(path): 
         keywords = {"italy", "rai", "italia", "it", "uk", "tnt", "usa", "tennis channel", "tennis stream", "la"} 
         now = datetime.now() 
+        yesterday = now.date() - timedelta(days=1)
       
         with open(path, "r", encoding="utf-8") as f: 
             data = json.load(f) 
@@ -1010,7 +995,8 @@ def eventi_m3u8_generator_world():
                 print(f"[!] Errore parsing data '{date_part}': {e}") 
                 continue 
       
-            if date_obj != now.date(): 
+            # Includi sia la data odierna che quella di ieri
+            if date_obj != now.date() and date_obj != yesterday:
                 continue 
       
             date_str = date_obj.strftime("%Y-%m-%d") 
@@ -1023,10 +1009,20 @@ def eventi_m3u8_generator_world():
                 for item in event_items: 
                     time_str = item.get("time", "00:00") 
                     try: 
-                        time_obj = datetime.strptime(time_str, "%H:%M") + timedelta(hours=2) 
+                        # Prima verifica l'orario originale (senza aggiungere le 2 ore)
+                        original_time_obj = datetime.strptime(time_str, "%H:%M")
+                        
+                        # Se è il giorno precedente, includi solo gli eventi dalle 00:00 alle 04:00
+                        if date_obj == yesterday:
+                            if original_time_obj.hour < 0 or original_time_obj.hour >= 4:
+                                continue
+                        
+                        # Ora aggiungi le 2 ore per il display
+                        time_obj = original_time_obj + timedelta(hours=2)
                         event_datetime = datetime.combine(date_obj, time_obj.time()) 
       
-                        if now - event_datetime > timedelta(hours=2): 
+                        # Per il giorno corrente, mantieni la logica esistente
+                        if date_obj == now.date() and now - event_datetime > timedelta(hours=2): 
                             continue 
       
                         time_formatted = time_obj.strftime("%H:%M") 
@@ -1049,7 +1045,7 @@ def eventi_m3u8_generator_world():
                                 "event_title": event_title  # Aggiungiamo il titolo dell'evento per la ricerca del logo 
                             }) 
       
-        return categorized_channels 
+        return categorized_channels
       
     def generate_m3u_from_schedule(json_file, output_file): 
         categorized_channels = extract_channels_from_json(json_file) 
@@ -1088,7 +1084,7 @@ def eventi_m3u8_generator_world():
             print("[!] Il modulo 'requests' non è installato. Installalo con 'pip install requests'") 
             exit(1) 
              
-        generate_m3u_from_schedule(JSON_FILE, OUTPUT_FILE) 
+        generate_m3u_from_schedule(JSON_FILE, OUTPUT_FILE)
     
 # Funzione per il quarto script (schedule_extractor.py)
 def schedule_extractor():
