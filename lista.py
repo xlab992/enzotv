@@ -418,7 +418,7 @@ def eventi_m3u8_generator_world():
                 print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
                 
                 # Prepara la query di ricerca con il prefisso
-                search_query = urllib.parse.quote(f"{prefix_name} logo epg")
+                search_query = urllib.parse.quote(f"{prefix_name} logo")
                 
                 # Utilizziamo l'API di Bing Image Search con parametri migliorati
                 search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -461,7 +461,7 @@ def eventi_m3u8_generator_world():
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
-            search_query = urllib.parse.quote(f"{clean_event_name} logo epg")
+            search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -533,7 +533,7 @@ def eventi_m3u8_generator_world():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -909,7 +909,7 @@ def eventi_m3u8_generator():
                 print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
                 
                 # Prepara la query di ricerca con il prefisso
-                search_query = urllib.parse.quote(f"{prefix_name} logo epg")
+                search_query = urllib.parse.quote(f"{prefix_name} logo")
                 
                 # Utilizziamo l'API di Bing Image Search con parametri migliorati
                 search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -951,7 +951,7 @@ def eventi_m3u8_generator():
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca più specifica
-            search_query = urllib.parse.quote(f"{clean_event_name} logo epg")
+            search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
@@ -1023,7 +1023,7 @@ def eventi_m3u8_generator():
         """
         try:
             # Prepara la query di ricerca specifica per la squadra
-            search_query = urllib.parse.quote(f"{team_name} logo squadra calcio")
+            search_query = urllib.parse.quote(f"{team_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
             search_url = f"https://www.bing.com/images/search?q={search_query}&qft=+filterui:photo-transparent+filterui:aspect-square&form=IRFLTR"
