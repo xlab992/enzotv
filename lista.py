@@ -693,7 +693,7 @@ def eventi_m3u8_generator_world():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{PROXY}/proxy?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
+                    stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
@@ -1171,7 +1171,7 @@ def eventi_m3u8_generator():
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
-                    stream_url = (f"{PROXY}/proxy?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
+                    stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
                     f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
@@ -1848,7 +1848,7 @@ def vavoo_italy_channels():
                     tvg_id = channel_id_map.get(normalized_name, "")
                     tvg_logo = logos_dict.get(tvg_name_cleaned.lower(), DEFAULT_TVG_ICON)
                     f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name_cleaned}" tvg-logo="{tvg_logo}" group-title="{category}", {name}\n')
-                    f.write(f"{PROXY}/proxy?url={url}\n\n")
+                    f.write(f"{PROXY}/proxy/m3u?url={url}\n\n")
     
     def main():
         epg_root = fetch_epg(EPG_FILE)
@@ -1927,7 +1927,7 @@ def world_channels_generator():
     
                 for name, url in grouped_channels[country]:
                     f.write(f'#EXTINF:-1 tvg-name="{name}" group-title="{country}", {name}\n')
-                    f.write(f"{PROXY}/proxy?url={url}\n\n")
+                    f.write(f"{PROXY}/proxy/m3u?url={url}\n\n")
     
     # Funzione principale
     def main():
