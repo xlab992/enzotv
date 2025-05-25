@@ -71,7 +71,7 @@ Se il proxy fornito non dovesse funzionare o preferisci crearne uno tuo, puoi fa
 
 ---
 
-## ⚙️ Personalizza il tuo proxy
+## ⚙️ Personalizza la lista
 
 ### 1. Fai il fork della repo
 
