@@ -1365,9 +1365,7 @@ def epg_eventi_generator_world():
     
     # --- SCRIPT 5: epg_eventi_xml_generator (genera eventi.xml) ---
     def load_json_for_epg(json_file_path):
-        """
-        Carica e filtra i dati JSON per la generazione EPG
-        """
+        """Carica e filtra i dati JSON per la generazione EPG"""
         if not os.path.exists(json_file_path):
             print(f"[!] File JSON non trovato per EPG: {json_file_path}")
             return {}
@@ -1375,8 +1373,11 @@ def epg_eventi_generator_world():
         try:
             with open(json_file_path, "r", encoding="utf-8") as file:
                 json_data = json.load(file)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"[!] Errore nel caricamento del file JSON: {e}")
+        except json.JSONDecodeError as e:
+            print(f"[!] Errore nel parsing del file JSON: {e}")
+            return {}
+        except Exception as e:
+            print(f"[!] Errore nell'apertura del file JSON: {e}")
             return {}
         
         filtered_data = {}
@@ -1409,7 +1410,7 @@ def epg_eventi_generator_world():
         
         return filtered_data
     
-def generate_epg_xml(json_data):
+    def generate_epg_xml(json_data):
         """Genera il contenuto XML EPG dai dati JSON filtrati"""
         epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
         
@@ -1423,6 +1424,8 @@ def generate_epg_xml(json_data):
         channel_ids_processed_for_channel_tag = set() 
     
         for date_key, categories in json_data.items():
+            # Dizionario per memorizzare l'ora di fine dell'ultimo evento per ciascun canale IN QUESTA DATA SPECIFICA
+            # Viene resettato per ogni nuova data.
             last_event_end_time_per_channel_on_date = {}
     
             try:
@@ -1440,6 +1443,7 @@ def generate_epg_xml(json_data):
                 continue
     
             for category_name, events_list in categories.items():
+                # Ordina gli eventi per orario di inizio (UTC) per garantire la corretta logica "evento precedente"
                 try:
                     sorted_events_list = sorted(
                         events_list,
@@ -1455,7 +1459,7 @@ def generate_epg_xml(json_data):
                     event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
     
                     # USA EVENT NAME COME CHANNEL ID - MANTIENI FORMATO ORIGINALE
-                    channel_id = event_name  # NESSUNA MODIFICA AL FORMATO
+                    channel_id = event_name
     
                     try:
                         event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
@@ -1468,6 +1472,7 @@ def generate_epg_xml(json_data):
                     if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
                         continue
     
+                    # Verifica che ci siano canali disponibili
                     channels_list = event_info.get("channels", [])
                     if not channels_list:
                         print(f"[!] Nessun canale disponibile per l'evento '{event_name}'")
@@ -1480,29 +1485,36 @@ def generate_epg_xml(json_data):
     
                         channel_name_cleaned = clean_text(channel_data.get("channel_name", "Canale Sconosciuto"))
     
-                        # Crea tag <channel> se non già processato - USA CHANNEL_ID ORIGINALE
+                        # Crea tag <channel> se non già processato
                         if channel_id not in channel_ids_processed_for_channel_tag:
-                            epg_content += f'  <channel id="{channel_id}">\n'  # FORMATO ORIGINALE
-                            epg_content += f'    <display-name>{event_name}</display-name>\n'  # FORMATO ORIGINALE
+                            epg_content += f'  <channel id="{channel_id}">\n'
+                            epg_content += f'    <display-name>{event_name}</display-name>\n'
                             epg_content += f'  </channel>\n'
                             channel_ids_processed_for_channel_tag.add(channel_id)
                         
-                        # Resto del codice per annunci ed eventi...
-                        announcement_stop_local = event_datetime_local
+                        # --- LOGICA ANNUNCIO MODIFICATA ---
+                        announcement_stop_local = event_datetime_local # L'annuncio termina quando inizia l'evento corrente
     
+                        # Determina l'inizio dell'annuncio
                         if channel_id in last_event_end_time_per_channel_on_date:
+                            # C'è stato un evento precedente su questo canale in questa data
                             previous_event_end_time_local = last_event_end_time_per_channel_on_date[channel_id]
                             
+                            # Assicurati che l'evento precedente termini prima che inizi quello corrente
                             if previous_event_end_time_local < event_datetime_local:
                                 announcement_start_local = previous_event_end_time_local
                             else:
-                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente. Fallback per l'inizio dell'annuncio.")
+                                # Sovrapposizione o stesso orario di inizio, problematico.
+                                # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
+                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
                                 announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
                         else:
-                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
+                            # Primo evento per questo canale in questa data
+                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
     
+                        # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
-                            announcement_title = f'Inizierà alle {event_datetime_local.strftime("%H:%M")}.'
+                            announcement_title = f'Inizierà alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
                             
                             epg_content += f'  <programme start="{announcement_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{announcement_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                             epg_content += f'    <title lang="it">{announcement_title}</title>\n'
@@ -1510,13 +1522,13 @@ def generate_epg_xml(json_data):
                             epg_content += f'    <category lang="it">Annuncio</category>\n'
                             epg_content += f'  </programme>\n'
                         elif announcement_start_local == announcement_stop_local:
-                            print(f"[INFO] Annuncio di durata zero saltato per l'evento '{event_name}'.")
-                        else:
-                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio è successivo all'orario di fine per l'evento '{event_name}'. Annuncio saltato.")
+                            print(f"[INFO] Annuncio di durata zero saltato per l'evento '{event_name}' sul canale '{channel_id}'.")
+                        else: # announcement_start_local > announcement_stop_local
+                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio è successivo all'orario di fine per l'evento '{event_name}' sul canale '{channel_id}'. Annuncio saltato.")
     
-                        # EVENTO PRINCIPALE - USA CHANNEL_ID ORIGINALE
+                        # --- EVENTO PRINCIPALE ---
                         main_event_start_local = event_datetime_local
-                        main_event_stop_local = event_datetime_local + timedelta(hours=2)
+                        main_event_stop_local = event_datetime_local + timedelta(hours=2) # Durata fissa 2 ore
                         
                         epg_content += f'  <programme start="{main_event_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{main_event_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                         epg_content += f'    <title lang="it">{event_name}</title>\n'
@@ -1524,62 +1536,59 @@ def generate_epg_xml(json_data):
                         epg_content += f'    <category lang="it">{clean_text(category_name)}</category>\n'
                         epg_content += f'  </programme>\n'
     
+                        # Aggiorna l'orario di fine dell'ultimo evento per questo canale in questa data
                         last_event_end_time_per_channel_on_date[channel_id] = main_event_stop_local
         
         epg_content += "</tv>\n"
         return epg_content
     
     def save_epg_xml(epg_content, output_file_path):
-        """
-        Salva il contenuto EPG XML su file
-        """
+        """Salva il contenuto EPG XML su file"""
         try:
             with open(output_file_path, "w", encoding="utf-8") as file:
                 file.write(epg_content)
             print(f"[✓] File EPG XML salvato con successo: {output_file_path}")
             return True
-        except IOError as e:
+        except Exception as e:
             print(f"[!] Errore nel salvataggio del file EPG XML: {e}")
             return False
     
-    def main():
-        """
-        Funzione principale per generare l'EPG XML
-        """
-        # Configurazione percorsi file
-        json_input_file = "daddyliveSchedule.json"  # Modifica con il tuo percorso
-        xml_output_file = "eventi.xml"
-        
-        print("[INFO] Inizio generazione EPG XML...")
+    def main_epg_generator(json_file_path, output_file_path="eventi.xml"):
+        """Funzione principale per generare l'EPG XML"""
+        print(f"[INFO] Inizio generazione EPG XML da: {json_file_path}")
         
         # Carica e filtra i dati JSON
-        print(f"[INFO] Caricamento dati da: {json_input_file}")
-        json_data = load_json_for_epg(json_input_file)
+        json_data = load_json_for_epg(json_file_path)
         
         if not json_data:
-            print("[!] Nessun dato disponibile per la generazione EPG.")
+            print("[!] Nessun dato valido trovato nel file JSON.")
             return False
         
-        print(f"[INFO] Dati caricati per {len(json_data)} date.")
+        print(f"[INFO] Dati caricati per {len(json_data)} date")
         
-        # Genera contenuto EPG XML
-        print("[INFO] Generazione contenuto EPG XML...")
+        # Genera il contenuto XML EPG
         epg_content = generate_epg_xml(json_data)
         
-        # Salva file XML
-        print(f"[INFO] Salvataggio EPG XML in: {xml_output_file}")
-        success = save_epg_xml(epg_content, xml_output_file)
+        # Salva il file XML
+        success = save_epg_xml(epg_content, output_file_path)
         
         if success:
-            print("[✓] Generazione EPG XML completata con successo!")
+            print(f"[✓] Generazione EPG XML completata con successo!")
             return True
         else:
-            print("[!] Errore durante la generazione EPG XML.")
+            print(f"[!] Errore durante la generazione EPG XML.")
             return False
     
-    # Esecuzione dello script
+    # Esempio di utilizzo
     if __name__ == "__main__":
-        main()
+        # Percorso del file JSON di input
+        input_json_path = "daddyliveSchedule.json"  # Modifica con il tuo percorso
+        
+        # Percorso del file XML di output
+        output_xml_path = "eventi.xml"
+        
+        # Esegui la generazione EPG
+        main_epg_generator(input_json_path, output_xml_path)
     
 # Funzione per il quinto script (epg_eventi_generator.py)
 def epg_eventi_generator():
@@ -1587,7 +1596,7 @@ def epg_eventi_generator():
     # Aggiungi il codice del tuo script "epg_eventi_generator.py" in questa funzione.
     print("Eseguendo l'epg_eventi_generator.py...")
     # Il codice che avevi nello script "epg_eventi_generator.py" va qui, senza modifiche.
-    import os
+import os
     import re
     import json
     from datetime import datetime, timedelta
@@ -1598,9 +1607,7 @@ def epg_eventi_generator():
     
     # --- SCRIPT 5: epg_eventi_xml_generator (genera eventi.xml) ---
     def load_json_for_epg(json_file_path):
-        """
-        Carica e filtra i dati JSON per la generazione EPG
-        """
+        """Carica e filtra i dati JSON per la generazione EPG"""
         if not os.path.exists(json_file_path):
             print(f"[!] File JSON non trovato per EPG: {json_file_path}")
             return {}
@@ -1608,8 +1615,11 @@ def epg_eventi_generator():
         try:
             with open(json_file_path, "r", encoding="utf-8") as file:
                 json_data = json.load(file)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"[!] Errore nel caricamento del file JSON: {e}")
+        except json.JSONDecodeError as e:
+            print(f"[!] Errore nel parsing del file JSON: {e}")
+            return {}
+        except Exception as e:
+            print(f"[!] Errore nell'apertura del file JSON: {e}")
             return {}
         
         filtered_data = {}
@@ -1656,6 +1666,8 @@ def epg_eventi_generator():
         channel_ids_processed_for_channel_tag = set() 
     
         for date_key, categories in json_data.items():
+            # Dizionario per memorizzare l'ora di fine dell'ultimo evento per ciascun canale IN QUESTA DATA SPECIFICA
+            # Viene resettato per ogni nuova data.
             last_event_end_time_per_channel_on_date = {}
     
             try:
@@ -1673,6 +1685,7 @@ def epg_eventi_generator():
                 continue
     
             for category_name, events_list in categories.items():
+                # Ordina gli eventi per orario di inizio (UTC) per garantire la corretta logica "evento precedente"
                 try:
                     sorted_events_list = sorted(
                         events_list,
@@ -1688,7 +1701,7 @@ def epg_eventi_generator():
                     event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
     
                     # USA EVENT NAME COME CHANNEL ID - MANTIENI FORMATO ORIGINALE
-                    channel_id = event_name  # NESSUNA MODIFICA AL FORMATO
+                    channel_id = event_name
     
                     try:
                         event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
@@ -1701,6 +1714,7 @@ def epg_eventi_generator():
                     if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
                         continue
     
+                    # Verifica che ci siano canali disponibili
                     channels_list = event_info.get("channels", [])
                     if not channels_list:
                         print(f"[!] Nessun canale disponibile per l'evento '{event_name}'")
@@ -1713,29 +1727,36 @@ def epg_eventi_generator():
     
                         channel_name_cleaned = clean_text(channel_data.get("channel_name", "Canale Sconosciuto"))
     
-                        # Crea tag <channel> se non già processato - USA CHANNEL_ID ORIGINALE
+                        # Crea tag <channel> se non già processato
                         if channel_id not in channel_ids_processed_for_channel_tag:
-                            epg_content += f'  <channel id="{channel_id}">\n'  # FORMATO ORIGINALE
-                            epg_content += f'    <display-name>{event_name}</display-name>\n'  # FORMATO ORIGINALE
+                            epg_content += f'  <channel id="{channel_id}">\n'
+                            epg_content += f'    <display-name>{event_name}</display-name>\n'
                             epg_content += f'  </channel>\n'
                             channel_ids_processed_for_channel_tag.add(channel_id)
                         
-                        # Resto del codice per annunci ed eventi...
-                        announcement_stop_local = event_datetime_local
+                        # --- LOGICA ANNUNCIO MODIFICATA ---
+                        announcement_stop_local = event_datetime_local # L'annuncio termina quando inizia l'evento corrente
     
+                        # Determina l'inizio dell'annuncio
                         if channel_id in last_event_end_time_per_channel_on_date:
+                            # C'è stato un evento precedente su questo canale in questa data
                             previous_event_end_time_local = last_event_end_time_per_channel_on_date[channel_id]
                             
+                            # Assicurati che l'evento precedente termini prima che inizi quello corrente
                             if previous_event_end_time_local < event_datetime_local:
                                 announcement_start_local = previous_event_end_time_local
                             else:
-                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente. Fallback per l'inizio dell'annuncio.")
+                                # Sovrapposizione o stesso orario di inizio, problematico.
+                                # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
+                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
                                 announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
                         else:
-                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
+                            # Primo evento per questo canale in questa data
+                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
     
+                        # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
-                            announcement_title = f'Inizierà alle {event_datetime_local.strftime("%H:%M")}.'
+                            announcement_title = f'Inizierà alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
                             
                             epg_content += f'  <programme start="{announcement_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{announcement_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                             epg_content += f'    <title lang="it">{announcement_title}</title>\n'
@@ -1743,13 +1764,13 @@ def epg_eventi_generator():
                             epg_content += f'    <category lang="it">Annuncio</category>\n'
                             epg_content += f'  </programme>\n'
                         elif announcement_start_local == announcement_stop_local:
-                            print(f"[INFO] Annuncio di durata zero saltato per l'evento '{event_name}'.")
-                        else:
-                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio è successivo all'orario di fine per l'evento '{event_name}'. Annuncio saltato.")
+                            print(f"[INFO] Annuncio di durata zero saltato per l'evento '{event_name}' sul canale '{channel_id}'.")
+                        else: # announcement_start_local > announcement_stop_local
+                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio è successivo all'orario di fine per l'evento '{event_name}' sul canale '{channel_id}'. Annuncio saltato.")
     
-                        # EVENTO PRINCIPALE - USA CHANNEL_ID ORIGINALE
+                        # --- EVENTO PRINCIPALE ---
                         main_event_start_local = event_datetime_local
-                        main_event_stop_local = event_datetime_local + timedelta(hours=2)
+                        main_event_stop_local = event_datetime_local + timedelta(hours=2) # Durata fissa 2 ore
                         
                         epg_content += f'  <programme start="{main_event_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{main_event_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                         epg_content += f'    <title lang="it">{event_name}</title>\n'
@@ -1757,62 +1778,59 @@ def epg_eventi_generator():
                         epg_content += f'    <category lang="it">{clean_text(category_name)}</category>\n'
                         epg_content += f'  </programme>\n'
     
+                        # Aggiorna l'orario di fine dell'ultimo evento per questo canale in questa data
                         last_event_end_time_per_channel_on_date[channel_id] = main_event_stop_local
         
         epg_content += "</tv>\n"
         return epg_content
     
     def save_epg_xml(epg_content, output_file_path):
-        """
-        Salva il contenuto EPG XML su file
-        """
+        """Salva il contenuto EPG XML su file"""
         try:
             with open(output_file_path, "w", encoding="utf-8") as file:
                 file.write(epg_content)
             print(f"[✓] File EPG XML salvato con successo: {output_file_path}")
             return True
-        except IOError as e:
+        except Exception as e:
             print(f"[!] Errore nel salvataggio del file EPG XML: {e}")
             return False
     
-    def main():
-        """
-        Funzione principale per generare l'EPG XML
-        """
-        # Configurazione percorsi file
-        json_input_file = "daddyliveSchedule.json"  # Modifica con il tuo percorso
-        xml_output_file = "eventi.xml"
-        
-        print("[INFO] Inizio generazione EPG XML...")
+    def main_epg_generator(json_file_path, output_file_path="eventi.xml"):
+        """Funzione principale per generare l'EPG XML"""
+        print(f"[INFO] Inizio generazione EPG XML da: {json_file_path}")
         
         # Carica e filtra i dati JSON
-        print(f"[INFO] Caricamento dati da: {json_input_file}")
-        json_data = load_json_for_epg(json_input_file)
+        json_data = load_json_for_epg(json_file_path)
         
         if not json_data:
-            print("[!] Nessun dato disponibile per la generazione EPG.")
+            print("[!] Nessun dato valido trovato nel file JSON.")
             return False
         
-        print(f"[INFO] Dati caricati per {len(json_data)} date.")
+        print(f"[INFO] Dati caricati per {len(json_data)} date")
         
-        # Genera contenuto EPG XML
-        print("[INFO] Generazione contenuto EPG XML...")
+        # Genera il contenuto XML EPG
         epg_content = generate_epg_xml(json_data)
         
-        # Salva file XML
-        print(f"[INFO] Salvataggio EPG XML in: {xml_output_file}")
-        success = save_epg_xml(epg_content, xml_output_file)
+        # Salva il file XML
+        success = save_epg_xml(epg_content, output_file_path)
         
         if success:
-            print("[✓] Generazione EPG XML completata con successo!")
+            print(f"[✓] Generazione EPG XML completata con successo!")
             return True
         else:
-            print("[!] Errore durante la generazione EPG XML.")
+            print(f"[!] Errore durante la generazione EPG XML.")
             return False
     
-    # Esecuzione dello script
+    # Esempio di utilizzo
     if __name__ == "__main__":
-        main()
+        # Percorso del file JSON di input
+        input_json_path = "daddyliveSchedule.json"  # Modifica con il tuo percorso
+        
+        # Percorso del file XML di output
+        output_xml_path = "eventi.xml"
+        
+        # Esegui la generazione EPG
+        main_epg_generator(input_json_path, output_xml_path)
         
 # Funzione per il sesto script (vavoo_italy_channels.py)
 def vavoo_italy_channels():
