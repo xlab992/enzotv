@@ -3413,7 +3413,12 @@
             {
                 "time": "19:00",
                 "event": "Major League Soccer : New York City vs Chicago Fire",
-                "channels": []
+                "channels": [
+                    {
+                        "channel_name": "MLS Season Pass",
+                        "channel_id": "154"
+                    }
+                ]
             },
             {
                 "time": "19:15",
