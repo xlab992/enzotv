@@ -694,7 +694,7 @@ def eventi_m3u8_generator_world():
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
                     stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
-                    f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    f.write(f'#EXTINF:-1 tvg-id="{clean_event_title}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
     if __name__ == "__main__": 
@@ -1172,7 +1172,7 @@ def eventi_m3u8_generator():
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
       
                     stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
-                    f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    f.write(f'#EXTINF:-1 tvg-id="{clean_event_title}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
                     print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
       
     if __name__ == "__main__": 
@@ -1460,10 +1460,10 @@ def epg_eventi_generator_world():
                             continue
 
                         if channel_id not in channel_ids_processed_for_channel_tag:
-                            epg_content += f'  <channel id="{channel_id}">\n'
+                            epg_content += f'  <channel id="{event_name}">\n'
                             epg_content += f'    <display-name>{channel_name_cleaned}</display-name>\n'
                             epg_content += f'  </channel>\n'
-                            channel_ids_processed_for_channel_tag.add(channel_id)
+                            channel_ids_processed_for_channel_tag.add(event_named)
                         
                         # --- LOGICA ANNUNCIO MODIFICATA ---
                         announcement_stop_local = event_datetime_local # L'annuncio termina quando inizia l'evento corrente
@@ -1471,7 +1471,7 @@ def epg_eventi_generator_world():
                         # Determina l'inizio dell'annuncio
                         if channel_id in last_event_end_time_per_channel_on_date:
                             # C'è stato un evento precedente su questo canale in questa data
-                            previous_event_end_time_local = last_event_end_time_per_channel_on_date[channel_id]
+                            previous_event_end_time_local = last_event_end_time_per_channel_on_date[event_name]
                             
                             # Assicurati che l'evento precedente termini prima che inizi quello corrente
                             if previous_event_end_time_local < event_datetime_local:
@@ -1479,7 +1479,7 @@ def epg_eventi_generator_world():
                             else:
                                 # Sovrapposizione o stesso orario di inizio, problematico.
                                 # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
-                                print(f"[!] Attenzione: L'evento '{event_name}' sul canale '{channel_id}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
+                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
                                 announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
                         else:
                             # Primo evento per questo canale in questa data
@@ -1654,10 +1654,10 @@ def epg_eventi_generator():
                             continue
 
                         if channel_id not in channel_ids_processed_for_channel_tag:
-                            epg_content += f'  <channel id="{channel_id}">\n'
+                            epg_content += f'  <channel id="{event_name}">\n'
                             epg_content += f'    <display-name>{channel_name_cleaned}</display-name>\n'
                             epg_content += f'  </channel>\n'
-                            channel_ids_processed_for_channel_tag.add(channel_id)
+                            channel_ids_processed_for_channel_tag.add(event_name)
                         
                         # --- LOGICA ANNUNCIO MODIFICATA ---
                         announcement_stop_local = event_datetime_local # L'annuncio termina quando inizia l'evento corrente
@@ -1665,7 +1665,7 @@ def epg_eventi_generator():
                         # Determina l'inizio dell'annuncio
                         if channel_id in last_event_end_time_per_channel_on_date:
                             # C'è stato un evento precedente su questo canale in questa data
-                            previous_event_end_time_local = last_event_end_time_per_channel_on_date[channel_id]
+                            previous_event_end_time_local = last_event_end_time_per_channel_on_date[event_name]
                             
                             # Assicurati che l'evento precedente termini prima che inizi quello corrente
                             if previous_event_end_time_local < event_datetime_local:
@@ -1673,7 +1673,7 @@ def epg_eventi_generator():
                             else:
                                 # Sovrapposizione o stesso orario di inizio, problematico.
                                 # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
-                                print(f"[!] Attenzione: L'evento '{event_name}' sul canale '{channel_id}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
+                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
                                 announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
                         else:
                             # Primo evento per questo canale in questa data
@@ -1704,7 +1704,7 @@ def epg_eventi_generator():
                         epg_content += f'  </programme>\n'
 
                         # Aggiorna l'orario di fine dell'ultimo evento per questo canale in questa data
-                        last_event_end_time_per_channel_on_date[channel_id] = main_event_stop_local
+                        last_event_end_time_per_channel_on_date[event_name] = main_event_stop_local
         
         epg_content += "</tv>\n"
         return epg_content
