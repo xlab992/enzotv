@@ -1431,7 +1431,12 @@ def epg_eventi_generator_world():
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
                         # Filtra per canali italiani
-                        if re.search(r'\b(italy|rai|italia|it|uk|tnt|usa|tennis channel|tennis stream|la)\b', channel_name, re.IGNORECASE):
+                        # Lista delle parole chiave per canali italiani
+                        keywords = ['italy', 'rai', 'italia', 'it', 'uk', 'tnt', 'usa', 'tennis channel', 'tennis stream', 'la']
+                        
+                        # Filtra per canali italiani - solo parole intere
+                        channel_words = channel_name.lower().split()
+                        if any(word in keywords for word in channel_words):
                             filtered_channels.append(channel)
                     
                     if filtered_channels:
@@ -1686,8 +1691,12 @@ def epg_eventi_generator():
                     # Utilizza .get("channels", []) per gestire casi in cui "channels" potrebbe mancare
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
-                        # Filtra per canali italiani
-                        if re.search(r'\b(italy|rai|italia|it)\b', channel_name, re.IGNORECASE):
+                        # Lista delle parole chiave per canali italiani
+                        keywords = ['italy', 'rai', 'italia', 'it']
+                        
+                        # Filtra per canali italiani - solo parole intere
+                        channel_words = channel_name.lower().split()
+                        if any(word in keywords for word in channel_words):
                             filtered_channels.append(channel)
                     
                     if filtered_channels:
