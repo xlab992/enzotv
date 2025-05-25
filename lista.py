@@ -687,15 +687,17 @@ def eventi_m3u8_generator_world():
                     event_title = ch["event_title"] 
                     
                     # Cerca un logo per questo evento
-                    # Rimuovi l'orario dal titolo dell'evento prima di cercare il logo
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
                     print(f"[🔍] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
+                    
+                    # Applica la pulizia al tvg-id
+                    tvg_id_cleaned = clean_tvg_id(clean_event_title)
       
                     stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
-                    f.write(f'#EXTINF:-1 tvg-id="{clean_event_title}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
-                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
       
     if __name__ == "__main__": 
         # Assicurati che il modulo requests sia installato 
@@ -1147,7 +1149,7 @@ def eventi_m3u8_generator():
       
         return categorized_channels 
       
-    def generate_m3u_from_schedule(json_file, output_file): 
+def generate_m3u_from_schedule(json_file, output_file): 
         categorized_channels = extract_channels_from_json(json_file) 
       
         with open(output_file, "w", encoding="utf-8") as f: 
@@ -1165,15 +1167,17 @@ def eventi_m3u8_generator():
                     event_title = ch["event_title"] 
                     
                     # Cerca un logo per questo evento
-                    # Rimuovi l'orario dal titolo dell'evento prima di cercare il logo
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
                     print(f"[🔍] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
+                    
+                    # Applica la pulizia al tvg-id
+                    tvg_id_cleaned = clean_tvg_id(clean_event_title)
       
                     stream_url = (f"{PROXY}/proxy/m3u?url={LINK_DADDY}/embed/stream-{channel_id}.php")                    
-                    f.write(f'#EXTINF:-1 tvg-id="{clean_event_title}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
-                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
       
     if __name__ == "__main__": 
         # Assicurati che il modulo requests sia installato 
