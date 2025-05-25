@@ -1551,7 +1551,7 @@ def epg_eventi_generator_world():
         Funzione principale per generare l'EPG XML
         """
         # Configurazione percorsi file
-        json_input_file = "eventi_sportivi.json"  # Modifica con il tuo percorso
+        json_input_file = "daddyliveSchedule.json"  # Modifica con il tuo percorso
         xml_output_file = "eventi.xml"
         
         print("[INFO] Inizio generazione EPG XML...")
@@ -1788,7 +1788,7 @@ def epg_eventi_generator():
         Funzione principale per generare l'EPG XML
         """
         # Configurazione percorsi file
-        json_input_file = "eventi_sportivi.json"  # Modifica con il tuo percorso
+        json_input_file = "daddyliveSchedule.json"  # Modifica con il tuo percorso
         xml_output_file = "eventi.xml"
         
         print("[INFO] Inizio generazione EPG XML...")
