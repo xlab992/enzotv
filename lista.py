@@ -1149,7 +1149,7 @@ def eventi_m3u8_generator():
       
         return categorized_channels 
       
-def generate_m3u_from_schedule(json_file, output_file): 
+    def generate_m3u_from_schedule(json_file, output_file): 
         categorized_channels = extract_channels_from_json(json_file) 
       
         with open(output_file, "w", encoding="utf-8") as f: 
