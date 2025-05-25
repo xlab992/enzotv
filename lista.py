@@ -1385,6 +1385,20 @@ def epg_eventi_generator_world():
     def clean_text(text):
         return re.sub(r'</?span.*?>', '', str(text))
     
+    # Funzione di utilità per pulire il Channel ID (rimuovere spazi e caratteri speciali)
+    def clean_channel_id(text):
+        """Rimuove caratteri speciali e spazi dal channel ID lasciando tutto attaccato"""
+        # Rimuovi prima i tag HTML
+        text = clean_text(text)
+        # Rimuovi tutti gli spazi
+        text = re.sub(r'\s+', '', text)
+        # Mantieni solo caratteri alfanumerici (rimuovi tutto il resto)
+        text = re.sub(r'[^a-zA-Z0-9]', '', text)
+        # Assicurati che non sia vuoto
+        if not text:
+            text = "unknownchannel"
+        return text
+    
     # --- SCRIPT 5: epg_eventi_xml_generator (genera eventi.xml) ---
     def load_json_for_epg(json_file_path):
         """Carica e filtra i dati JSON per la generazione EPG"""
@@ -1413,7 +1427,7 @@ def epg_eventi_generator_world():
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
                         # Filtra per canali italiani
-                        if re.search(r'\b(italy|rai|italia|it|uk|tnt|usa|tennis channel|tennis stream|la)\b', channel_name, re.IGNORECASE):
+                        if re.search(r'\b(italy|rai|italia|it)\b', channel_name, re.IGNORECASE):
                             filtered_channels.append(channel)
                     
                     if filtered_channels:
@@ -1480,8 +1494,8 @@ def epg_eventi_generator_world():
                     event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
                     event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
     
-                    # USA EVENT NAME COME CHANNEL ID - MANTIENI FORMATO ORIGINALE
-                    channel_id = event_name
+                    # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
+                    channel_id = clean_channel_id(event_name)
     
                     try:
                         event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
@@ -1611,14 +1625,14 @@ def epg_eventi_generator_world():
         
         # Esegui la generazione EPG
         main_epg_generator(input_json_path, output_xml_path)
-    
+
 # Funzione per il quinto script (epg_eventi_generator.py)
 def epg_eventi_generator():
     # Codice del quinto script qui
     # Aggiungi il codice del tuo script "epg_eventi_generator.py" in questa funzione.
     print("Eseguendo l'epg_eventi_generator.py...")
     # Il codice che avevi nello script "epg_eventi_generator.py" va qui, senza modifiche.
-    import os
+import os
     import re
     import json
     from datetime import datetime, timedelta
@@ -1626,6 +1640,20 @@ def epg_eventi_generator():
     # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
     def clean_text(text):
         return re.sub(r'</?span.*?>', '', str(text))
+    
+    # Funzione di utilità per pulire il Channel ID (rimuovere spazi e caratteri speciali)
+    def clean_channel_id(text):
+        """Rimuove caratteri speciali e spazi dal channel ID lasciando tutto attaccato"""
+        # Rimuovi prima i tag HTML
+        text = clean_text(text)
+        # Rimuovi tutti gli spazi
+        text = re.sub(r'\s+', '', text)
+        # Mantieni solo caratteri alfanumerici (rimuovi tutto il resto)
+        text = re.sub(r'[^a-zA-Z0-9]', '', text)
+        # Assicurati che non sia vuoto
+        if not text:
+            text = "unknownchannel"
+        return text
     
     # --- SCRIPT 5: epg_eventi_xml_generator (genera eventi.xml) ---
     def load_json_for_epg(json_file_path):
@@ -1655,7 +1683,7 @@ def epg_eventi_generator():
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
                         # Filtra per canali italiani
-                        if re.search(r'\b(italy|rai|italia|it)\b', channel_name, re.IGNORECASE):
+                        if re.search(r'\b(italy|rai|italia|it|uk|tnt|usa|tennis channel|tennis stream|la)\b', channel_name, re.IGNORECASE):
                             filtered_channels.append(channel)
                     
                     if filtered_channels:
@@ -1722,8 +1750,8 @@ def epg_eventi_generator():
                     event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
                     event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
     
-                    # USA EVENT NAME COME CHANNEL ID - MANTIENI FORMATO ORIGINALE
-                    channel_id = event_name
+                    # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
+                    channel_id = clean_channel_id(event_name)
     
                     try:
                         event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
