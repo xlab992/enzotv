@@ -1198,10 +1198,10 @@ def schedule_extractor():
     import re
     from bs4 import BeautifulSoup
     from dotenv import load_dotenv
-
+    
     # Carica le variabili d'ambiente dal file .env
     load_dotenv()
-
+    
     LINK_DADDY = os.getenv("LINK_DADDY", "https://daddylive.dad").strip()
     
     def html_to_json(html_content):
@@ -1299,36 +1299,50 @@ def schedule_extractor():
             )
             page = context.new_page()
     
-            try:
-                print("Navigazione alla pagina...")
-                page.goto(url)
-                print("Attesa per il caricamento completo...")
-                page.wait_for_timeout(10000)  # 10 secondi
+            max_attempts = 3
+            for attempt in range(1, max_attempts + 1):
+                try:
+                    print(f"Tentativo {attempt} di {max_attempts}...")
+                    page.goto(url)
+                    print("Attesa per il caricamento completo...")
+                    page.wait_for_timeout(10000)  # 10 secondi
     
-                schedule_content = page.evaluate("""() => {
-                    const container = document.getElementById('main-schedule-container');
-                    return container ? container.outerHTML : '';
-                }""")
+                    schedule_content = page.evaluate("""() => {
+                        const container = document.getElementById('main-schedule-container');
+                        return container ? container.outerHTML : '';
+                    }""")
     
-                if not schedule_content:
-                    print("AVVISO: main-schedule-container non trovato o vuoto!")
-                    return False
+                    if not schedule_content:
+                        print("AVVISO: main-schedule-container non trovato o vuoto!")
+                        if attempt == max_attempts:
+                            browser.close()
+                            return False
+                        else:
+                            continue
     
-                print("Conversione HTML in formato JSON...")
-                json_data = html_to_json(schedule_content)
+                    print("Conversione HTML in formato JSON...")
+                    json_data = html_to_json(schedule_content)
     
-                with open(json_output, "w", encoding="utf-8") as f:
-                    json.dump(json_data, f, indent=4)
+                    with open(json_output, "w", encoding="utf-8") as f:
+                        json.dump(json_data, f, indent=4)
     
-                print(f"Dati JSON salvati in {json_output}")
+                    print(f"Dati JSON salvati in {json_output}")
     
-                modify_json_file(json_output)
-                browser.close()
-                return True
+                    modify_json_file(json_output)
+                    browser.close()
+                    return True
     
-            except Exception as e:
-                print(f"ERRORE: {str(e)}")
-                return False
+                except Exception as e:
+                    print(f"ERRORE nel tentativo {attempt}: {str(e)}")
+                    if attempt == max_attempts:
+                        print("Tutti i tentativi falliti!")
+                        browser.close()
+                        return False
+                    else:
+                        print(f"Riprovando... (tentativo {attempt + 1} di {max_attempts})")
+    
+            browser.close()
+            return False
     
     if __name__ == "__main__":
         success = extract_schedule_container()
