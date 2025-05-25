@@ -1632,7 +1632,7 @@ def epg_eventi_generator():
     # Aggiungi il codice del tuo script "epg_eventi_generator.py" in questa funzione.
     print("Eseguendo l'epg_eventi_generator.py...")
     # Il codice che avevi nello script "epg_eventi_generator.py" va qui, senza modifiche.
-import os
+    import os
     import re
     import json
     from datetime import datetime, timedelta
