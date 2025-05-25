@@ -10,14 +10,14 @@ Benvenuto nella tua **lista IPTV personalizzata** con **EPG** integrata e suppor
   Il meglio della TV italiana con tutti i canali Pluto TV sempre disponibili.
 
 - **⚽ Eventi Sportivi Live**  
-  Segui in diretta **calcio**, **basket** e altri sport. Non perderti neanche un’azione!
+  Segui in diretta **calcio**, **basket** e altri sport. Non perderti neanche un'azione!
 
 - **📡 Sky e altro ancora**  
   Contenuti esclusivi: film, serie TV, sport e molto di più direttamente da Sky.
 
 ---
 
-## 🔗 Link pronti all’uso
+## 🔗 Link pronti all'uso
 
 Queste liste utilizzano un proxy ospitato su **HuggingFace Spaces**.
 
@@ -26,6 +26,31 @@ Queste liste utilizzano un proxy ospitato su **HuggingFace Spaces**.
 
 - **EPG XML**  
   [`https://raw.githubusercontent.com/nzo66/TV/refs/heads/main/epg.xml`](https://raw.githubusercontent.com/nzo66/TV/refs/heads/main/epg.xml)
+
+---
+
+## 📺 Come aggiungere la lista su Stremio
+
+Per utilizzare questa lista IPTV su Stremio, dovrai usare l'addon **OMG Premium TV**:
+
+### 🚀 Installazione OMG Premium TV
+
+1. **Usa questo fork specifico**: [https://github.com/nzo66/OMG-Premium-TV](https://github.com/nzo66/OMG-Premium-TV)
+2. **Deploy su Docker** tramite Hugging Face o VPS seguendo la guida nel repository
+3. **Configura l'addon** inserendo:
+   - **URL M3U**: Il link della lista M3U sopra indicato
+   - **URL EPG**: Il link dell'EPG XML sopra indicato
+4. **Installa su Stremio** cliccando sul pulsante "INSTALLA SU STREMIO"
+
+### ✨ Funzionalità disponibili
+
+Con OMG Premium TV potrai sfruttare:
+- **Supporto playlist M3U/M3U8** complete
+- **EPG integrata** con informazioni sui programmi
+- **Filtri per genere** e ricerca canali
+- **Proxy per maggiore compatibilità** 
+- **Resolver Python** per stream speciali
+- **Backup e ripristino** della configurazione
 
 ---
 
@@ -69,4 +94,4 @@ Dopo le modifiche:
 ## 🤝 Hai bisogno di aiuto?
 
 Apri una **issue** o proponi un miglioramento con una **pull request**.  
-Contribuire è sempre benvenuto!
+Contribuire è sempre benvenuto
