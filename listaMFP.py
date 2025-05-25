@@ -170,7 +170,7 @@ def epg_merger():
                 with gzip.open(io.BytesIO(response.content), 'rb') as f_in:
                     xml_content = f_in.read()
             except (gzip.BadGzipFile, OSError):
-                # Non è un file gzip, usa direttamente il contenuto
+                # Non Ã¨ un file gzip, usa direttamente il contenuto
                 xml_content = response.content
 
             return ET.ElementTree(ET.fromstring(xml_content))
@@ -263,6 +263,15 @@ def eventi_m3u8_generator_world():
     def clean_category_name(name): 
         # Rimuove tag html come </span> o simili 
         return re.sub(r'<[^>]+>', '', name).strip()
+        
+    def clean_tvg_id(tvg_id):
+        """
+        Pulisce il tvg-id rimuovendo caratteri speciali, spazi e convertendo tutto in minuscolo
+        """
+        import re
+        # Rimuove caratteri speciali comuni mantenendo solo lettere e numeri
+        cleaned = re.sub(r'[^a-zA-Z0-9Ã-Ã¿]', '', tvg_id)
+        return cleaned.lower()
      
     def search_logo_for_event(event_name): 
         """ 
@@ -273,7 +282,7 @@ def eventi_m3u8_generator_world():
             # Rimuovi eventuali riferimenti all'orario dal nome dell'evento
             # Cerca pattern come "Team A vs Team B (20:00)" e rimuovi la parte dell'orario
             clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
-            # Se c'è un ':', prendi solo la parte dopo
+            # Se c'Ã¨ un ':', prendi solo la parte dopo
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
             
@@ -293,10 +302,10 @@ def eventi_m3u8_generator_world():
                 team1 = teams[0].strip()
                 team2 = teams[1].strip()
                 
-                print(f"[🔍] Ricerca logo per Team 1: {team1}")
+                print(f"[ð] Ricerca logo per Team 1: {team1}")
                 logo1_url = search_team_logo(team1)
                 
-                print(f"[🔍] Ricerca logo per Team 2: {team2}")
+                print(f"[ð] Ricerca logo per Team 2: {team2}")
                 logo2_url = search_team_logo(team2)
                 
                 # Se abbiamo trovato entrambi i loghi, creiamo un'immagine combinata
@@ -309,12 +318,12 @@ def eventi_m3u8_generator_world():
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
                         
-                        # Verifica se l'immagine combinata esiste già e non è obsoleta
+                        # Verifica se l'immagine combinata esiste giÃ  e non Ã¨ obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
                         if exists(output_filename):
                             file_age = current_time - os.path.getmtime(output_filename)
                             if file_age <= three_hours_in_seconds:
-                                print(f"[✓] Utilizzo immagine combinata esistente: {output_filename}")
+                                print(f"[â] Utilizzo immagine combinata esistente: {output_filename}")
                                 
                                 # Carica le variabili d'ambiente per GitHub
                                 NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -323,7 +332,7 @@ def eventi_m3u8_generator_world():
                                 # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                                 if NOMEGITHUB and NOMEREPO:
                                     github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                                    print(f"[✓] URL GitHub generato per logo esistente: {github_raw_url}")
+                                    print(f"[â] URL GitHub generato per logo esistente: {github_raw_url}")
                                     return github_raw_url
                                 else:
                                     # Altrimenti restituisci il percorso locale
@@ -340,7 +349,7 @@ def eventi_m3u8_generator_world():
                         vs_path = "vs.png"
                         if exists(vs_path):
                             img_vs = Image.open(vs_path)
-                            # Converti l'immagine VS in modalità RGBA se non lo è già
+                            # Converti l'immagine VS in modalitÃ  RGBA se non lo Ã¨ giÃ 
                             if img_vs.mode != 'RGBA':
                                 img_vs = img_vs.convert('RGBA')
                         else:
@@ -360,7 +369,7 @@ def eventi_m3u8_generator_world():
                         img2 = img2.resize(size)
                         img_vs = img_vs.resize((100, 100))
                         
-                        # Assicurati che tutte le immagini siano in modalità RGBA per supportare la trasparenza
+                        # Assicurati che tutte le immagini siano in modalitÃ  RGBA per supportare la trasparenza
                         if img1.mode != 'RGBA':
                             img1 = img1.convert('RGBA')
                         if img2.mode != 'RGBA':
@@ -380,7 +389,7 @@ def eventi_m3u8_generator_world():
                         vs_x = (combined_width - 100) // 2
                         
                         # Crea una copia dell'immagine combinata prima di sovrapporre il VS
-                        # Questo passaggio è importante per preservare i dettagli dei loghi sottostanti
+                        # Questo passaggio Ã¨ importante per preservare i dettagli dei loghi sottostanti
                         combined_with_vs = combined.copy()
                         combined_with_vs.paste(img_vs, (vs_x, 25), img_vs)
                         
@@ -391,7 +400,7 @@ def eventi_m3u8_generator_world():
                         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
                         combined.save(output_filename)
                         
-                        print(f"[✓] Immagine combinata creata: {output_filename}")
+                        print(f"[â] Immagine combinata creata: {output_filename}")
                         
                         # Carica le variabili d'ambiente per GitHub
                         NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -400,7 +409,7 @@ def eventi_m3u8_generator_world():
                         # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                         if NOMEGITHUB and NOMEREPO:
                             github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                            print(f"[✓] URL GitHub generato: {github_raw_url}")
+                            print(f"[â] URL GitHub generato: {github_raw_url}")
                             return github_raw_url
                         else:
                             # Altrimenti restituisci il percorso locale
@@ -416,7 +425,7 @@ def eventi_m3u8_generator_world():
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
-                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
+                print(f"[ð] Tentativo ricerca logo con prefisso: {prefix_name}")
                 
                 # Prepara la query di ricerca con il prefisso
                 search_query = urllib.parse.quote(f"{prefix_name} logo")
@@ -450,18 +459,18 @@ def eventi_m3u8_generator_world():
                             # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
                             for match in matches:
                                 if '.png' in match.lower() or '.svg' in match.lower():
-                                    print(f"[✓] Logo trovato con prefisso: {match}")
+                                    print(f"[â] Logo trovato con prefisso: {match}")
                                     return match
                             # Se non troviamo PNG o SVG, prendi il primo risultato
-                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
+                            print(f"[â] Logo trovato con prefisso: {matches[0]}")
                             return matches[0]
             
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
-            print(f"[🔍] Ricerca standard per: {clean_event_name}")
+            print(f"[ð] Ricerca standard per: {clean_event_name}")
             
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
-            # Prepara la query di ricerca più specifica
+            # Prepara la query di ricerca piÃ¹ specifica
             search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
@@ -635,7 +644,7 @@ def eventi_m3u8_generator_world():
                         # Prima verifica l'orario originale (senza aggiungere le 2 ore)
                         original_time_obj = datetime.strptime(time_str, "%H:%M")
                         
-                        # Se è il giorno precedente, includi solo gli eventi dalle 00:00 alle 04:00
+                        # Se Ã¨ il giorno precedente, includi solo gli eventi dalle 00:00 alle 04:00
                         if date_obj == yesterday:
                             if original_time_obj.hour < 0 or original_time_obj.hour >= 4:
                                 continue
@@ -688,23 +697,25 @@ def eventi_m3u8_generator_world():
                     event_title = ch["event_title"] 
                     
                     # Cerca un logo per questo evento
-                    # Rimuovi l'orario dal titolo dell'evento prima di cercare il logo
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
-                    print(f"[🔍] Ricerca logo per: {clean_event_title}") 
+                    print(f"[ð] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
+                    
+                    # Applica la pulizia al tvg-id
+                    tvg_id_cleaned = clean_tvg_id(clean_event_title)
       
                     stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php" 
-                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")                
-                    f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
-                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
+                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")                  
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    print(f"[â] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
       
     if __name__ == "__main__": 
         # Assicurati che il modulo requests sia installato 
         try: 
             import requests 
         except ImportError: 
-            print("[!] Il modulo 'requests' non è installato. Installalo con 'pip install requests'") 
+            print("[!] Il modulo 'requests' non Ã¨ installato. Installalo con 'pip install requests'") 
             exit(1) 
              
         generate_m3u_from_schedule(JSON_FILE, OUTPUT_FILE)
@@ -740,6 +751,15 @@ def eventi_m3u8_generator():
     def clean_category_name(name): 
         # Rimuove tag html come </span> o simili 
         return re.sub(r'<[^>]+>', '', name).strip()
+        
+    def clean_tvg_id(tvg_id):
+        """
+        Pulisce il tvg-id rimuovendo caratteri speciali, spazi e convertendo tutto in minuscolo
+        """
+        import re
+        # Rimuove caratteri speciali comuni mantenendo solo lettere e numeri
+        cleaned = re.sub(r'[^a-zA-Z0-9Ã-Ã¿]', '', tvg_id)
+        return cleaned.lower()
      
     def search_logo_for_event(event_name): 
         """ 
@@ -750,7 +770,7 @@ def eventi_m3u8_generator():
             # Rimuovi eventuali riferimenti all'orario dal nome dell'evento
             # Cerca pattern come "Team A vs Team B (20:00)" e rimuovi la parte dell'orario
             clean_event_name = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_name)
-            # Se c'è un ':', prendi solo la parte dopo
+            # Se c'Ã¨ un ':', prendi solo la parte dopo
             if ':' in clean_event_name:
                 clean_event_name = clean_event_name.split(':', 1)[1].strip()
             
@@ -770,10 +790,10 @@ def eventi_m3u8_generator():
                 team1 = teams[0].strip()
                 team2 = teams[1].strip()
                 
-                print(f"[🔍] Ricerca logo per Team 1: {team1}")
+                print(f"[ð] Ricerca logo per Team 1: {team1}")
                 logo1_url = search_team_logo(team1)
                 
-                print(f"[🔍] Ricerca logo per Team 2: {team2}")
+                print(f"[ð] Ricerca logo per Team 2: {team2}")
                 logo2_url = search_team_logo(team2)
                 
                 # Se abbiamo trovato entrambi i loghi, creiamo un'immagine combinata
@@ -786,7 +806,7 @@ def eventi_m3u8_generator():
                         logos_dir = "logos"
                         os.makedirs(logos_dir, exist_ok=True)
                         
-                        # Controlla e rimuovi i loghi più vecchi di 3 ore
+                        # Controlla e rimuovi i loghi piÃ¹ vecchi di 3 ore
                         current_time = time.time()
                         three_hours_in_seconds = 3 * 60 * 60
                         
@@ -797,16 +817,16 @@ def eventi_m3u8_generator():
                                 if file_age > three_hours_in_seconds:
                                     try:
                                         os.remove(logo_path)
-                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
+                                        print(f"[ðï¸] Rimosso logo obsoleto: {logo_path}")
                                     except Exception as e:
                                         print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
                         
-                        # Verifica se l'immagine combinata esiste già e non è obsoleta
+                        # Verifica se l'immagine combinata esiste giÃ  e non Ã¨ obsoleta
                         output_filename = f"logos/{team1}_vs_{team2}.png"
                         if exists(output_filename):
                             file_age = current_time - os.path.getmtime(output_filename)
                             if file_age <= three_hours_in_seconds:
-                                print(f"[✓] Utilizzo immagine combinata esistente: {output_filename}")
+                                print(f"[â] Utilizzo immagine combinata esistente: {output_filename}")
                                 
                                 # Carica le variabili d'ambiente per GitHub
                                 NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -815,7 +835,7 @@ def eventi_m3u8_generator():
                                 # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                                 if NOMEGITHUB and NOMEREPO:
                                     github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                                    print(f"[✓] URL GitHub generato per logo esistente: {github_raw_url}")
+                                    print(f"[â] URL GitHub generato per logo esistente: {github_raw_url}")
                                     return github_raw_url
                                 else:
                                     # Altrimenti restituisci il percorso locale
@@ -832,7 +852,7 @@ def eventi_m3u8_generator():
                         vs_path = "vs.png"
                         if exists(vs_path):
                             img_vs = Image.open(vs_path)
-                            # Converti l'immagine VS in modalità RGBA se non lo è già
+                            # Converti l'immagine VS in modalitÃ  RGBA se non lo Ã¨ giÃ 
                             if img_vs.mode != 'RGBA':
                                 img_vs = img_vs.convert('RGBA')
                         else:
@@ -852,7 +872,7 @@ def eventi_m3u8_generator():
                         img2 = img2.resize(size)
                         img_vs = img_vs.resize((100, 100))
                         
-                        # Assicurati che tutte le immagini siano in modalità RGBA per supportare la trasparenza
+                        # Assicurati che tutte le immagini siano in modalitÃ  RGBA per supportare la trasparenza
                         if img1.mode != 'RGBA':
                             img1 = img1.convert('RGBA')
                         if img2.mode != 'RGBA':
@@ -872,7 +892,7 @@ def eventi_m3u8_generator():
                         vs_x = (combined_width - 100) // 2
                         
                         # Crea una copia dell'immagine combinata prima di sovrapporre il VS
-                        # Questo passaggio è importante per preservare i dettagli dei loghi sottostanti
+                        # Questo passaggio Ã¨ importante per preservare i dettagli dei loghi sottostanti
                         combined_with_vs = combined.copy()
                         combined_with_vs.paste(img_vs, (vs_x, 25), img_vs)
                         
@@ -883,7 +903,7 @@ def eventi_m3u8_generator():
                         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
                         combined.save(output_filename)
                         
-                        print(f"[✓] Immagine combinata creata: {output_filename}")
+                        print(f"[â] Immagine combinata creata: {output_filename}")
                         
                         # Carica le variabili d'ambiente per GitHub
                         NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -892,7 +912,7 @@ def eventi_m3u8_generator():
                         # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                         if NOMEGITHUB and NOMEREPO:
                             github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                            print(f"[✓] URL GitHub generato: {github_raw_url}")
+                            print(f"[â] URL GitHub generato: {github_raw_url}")
                             return github_raw_url
                         else:
                             # Altrimenti restituisci il percorso locale
@@ -909,7 +929,7 @@ def eventi_m3u8_generator():
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
-                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
+                print(f"[ð] Tentativo ricerca logo con prefisso: {prefix_name}")
                 
                 # Prepara la query di ricerca con il prefisso
                 search_query = urllib.parse.quote(f"{prefix_name} logo")
@@ -943,17 +963,17 @@ def eventi_m3u8_generator():
                             # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
                             for match in matches:
                                 if '.png' in match.lower() or '.svg' in match.lower():
-                                    print(f"[✓] Logo trovato con prefisso: {match}")
+                                    print(f"[â] Logo trovato con prefisso: {match}")
                                     return match
                             # Se non troviamo PNG o SVG, prendi il primo risultato
-                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
+                            print(f"[â] Logo trovato con prefisso: {matches[0]}")
                             return matches[0]
             
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
-            print(f"[🔍] Ricerca standard per: {clean_event_name}")
+            print(f"[ð] Ricerca standard per: {clean_event_name}")
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
-            # Prepara la query di ricerca più specifica
+            # Prepara la query di ricerca piÃ¹ specifica
             search_query = urllib.parse.quote(f"{clean_event_name} logo")
             
             # Utilizziamo l'API di Bing Image Search con parametri migliorati
@@ -1168,23 +1188,25 @@ def eventi_m3u8_generator():
                     event_title = ch["event_title"] 
                     
                     # Cerca un logo per questo evento
-                    # Rimuovi l'orario dal titolo dell'evento prima di cercare il logo
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
-                    print(f"[🔍] Ricerca logo per: {clean_event_title}") 
+                    print(f"[ð] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
+                    
+                    # Applica la pulizia al tvg-id
+                    tvg_id_cleaned = clean_tvg_id(clean_event_title)
       
                     stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php" 
-                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")                     
-                    f.write(f'#EXTINF:-1 tvg-id="{channel_id}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
-                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)")) 
+                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")                   
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
+                    print(f"[â] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
       
     if __name__ == "__main__": 
         # Assicurati che il modulo requests sia installato 
         try: 
             import requests 
         except ImportError: 
-            print("[!] Il modulo 'requests' non è installato. Installalo con 'pip install requests'") 
+            print("[!] Il modulo 'requests' non Ã¨ installato. Installalo con 'pip install requests'") 
             exit(1) 
              
         generate_m3u_from_schedule(JSON_FILE, OUTPUT_FILE) 
@@ -1195,7 +1217,7 @@ def schedule_extractor():
     # Aggiungi il codice del tuo script "schedule_extractor.py" in questa funzione.
     print("Eseguendo lo schedule_extractor.py...")
     # Il codice che avevi nello script "schedule_extractor.py" va qui, senza modifiche.
-from playwright.sync_api import sync_playwright
+    from playwright.sync_api import sync_playwright
     import os
     import json
     from datetime import datetime
@@ -1362,18 +1384,41 @@ def epg_eventi_generator_world():
     import re
     import json
     from datetime import datetime, timedelta
-
-    # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
+    
+    # Funzione di utilitÃ  per pulire il testo (rimuovere tag HTML span)
     def clean_text(text):
         return re.sub(r'</?span.*?>', '', str(text))
-
+    
+    # Funzione di utilitÃ  per pulire il Channel ID (rimuovere spazi e caratteri speciali)
+    def clean_channel_id(text):
+        """Rimuove caratteri speciali e spazi dal channel ID lasciando tutto attaccato"""
+        # Rimuovi prima i tag HTML
+        text = clean_text(text)
+        # Rimuovi tutti gli spazi
+        text = re.sub(r'\s+', '', text)
+        # Mantieni solo caratteri alfanumerici (rimuovi tutto il resto)
+        text = re.sub(r'[^a-zA-Z0-9]', '', text)
+        # Assicurati che non sia vuoto
+        if not text:
+            text = "unknownchannel"
+        return text
+    
     # --- SCRIPT 5: epg_eventi_xml_generator (genera eventi.xml) ---
     def load_json_for_epg(json_file_path):
+        """Carica e filtra i dati JSON per la generazione EPG"""
         if not os.path.exists(json_file_path):
             print(f"[!] File JSON non trovato per EPG: {json_file_path}")
             return {}
-        with open(json_file_path, "r", encoding="utf-8") as file:
-            json_data = json.load(file)
+        
+        try:
+            with open(json_file_path, "r", encoding="utf-8") as file:
+                json_data = json.load(file)
+        except json.JSONDecodeError as e:
+            print(f"[!] Errore nel parsing del file JSON: {e}")
+            return {}
+        except Exception as e:
+            print(f"[!] Errore nell'apertura del file JSON: {e}")
+            return {}
         
         filtered_data = {}
         for date, categories in json_data.items():
@@ -1386,38 +1431,43 @@ def epg_eventi_generator_world():
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
                         # Filtra per canali italiani
-                        if re.search(r'\b(italy|rai|italia|it|uk|tnt|usa|tennis channel|tennis stream)\b', channel_name, re.IGNORECASE):
+                        if re.search(r'\b(italy|rai|italia|it|uk|tnt|usa|tennis channel|tennis stream|la)\b', channel_name, re.IGNORECASE):
                             filtered_channels.append(channel)
+                    
                     if filtered_channels:
                         # Assicura che event_info sia un dizionario prima dello unpacking
                         if isinstance(event_info, dict):
                             filtered_events.append({**event_info, "channels": filtered_channels})
                         else:
-                            # Logga un avviso se il formato dell'evento non è quello atteso
+                            # Logga un avviso se il formato dell'evento non Ã¨ quello atteso
                             print(f"[!] Formato evento non valido durante il filtraggio per EPG: {event_info}")
+                
                 if filtered_events:
                     filtered_categories[category] = filtered_events
+            
             if filtered_categories:
                 filtered_data[date] = filtered_categories
+        
         return filtered_data
-
+    
     def generate_epg_xml(json_data):
+        """Genera il contenuto XML EPG dai dati JSON filtrati"""
         epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
         
         italian_offset = timedelta(hours=2)
         italian_offset_str = "+0200" 
-
+    
         current_datetime_utc = datetime.utcnow()
         current_datetime_local = current_datetime_utc + italian_offset
-
-        # Tiene traccia degli ID dei canali per cui è già stato scritto il tag <channel>
+    
+        # Tiene traccia degli ID dei canali per cui Ã¨ giÃ  stato scritto il tag <channel>
         channel_ids_processed_for_channel_tag = set() 
-
+    
         for date_key, categories in json_data.items():
             # Dizionario per memorizzare l'ora di fine dell'ultimo evento per ciascun canale IN QUESTA DATA SPECIFICA
             # Viene resettato per ogni nuova data.
             last_event_end_time_per_channel_on_date = {}
-
+    
             try:
                 date_str_from_key = date_key.split(' - ')[0]
                 date_str_cleaned = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', date_str_from_key)
@@ -1425,10 +1475,13 @@ def epg_eventi_generator_world():
             except ValueError as e:
                 print(f"[!] Errore nel parsing della data EPG: '{date_str_from_key}'. Errore: {e}")
                 continue
-
+            except IndexError as e:
+                print(f"[!] Formato data non valido: '{date_key}'. Errore: {e}")
+                continue
+    
             if event_date_part < current_datetime_local.date():
                 continue
-
+    
             for category_name, events_list in categories.items():
                 # Ordina gli eventi per orario di inizio (UTC) per garantire la corretta logica "evento precedente"
                 try:
@@ -1439,12 +1492,15 @@ def epg_eventi_generator_world():
                 except Exception as e_sort:
                     print(f"[!] Attenzione: Impossibile ordinare gli eventi per la categoria '{category_name}' nella data '{date_key}'. Si procede senza ordinamento. Errore: {e_sort}")
                     sorted_events_list = events_list
-
+    
                 for event_info in sorted_events_list:
                     time_str_utc = event_info.get("time", "00:00")
                     event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
                     event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
-
+    
+                    # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
+                    channel_id = clean_channel_id(event_name)
+    
                     try:
                         event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
                         event_datetime_utc = datetime.combine(event_date_part, event_time_utc_obj)
@@ -1455,26 +1511,33 @@ def epg_eventi_generator_world():
                     
                     if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
                         continue
-
-                    for channel_data in event_info.get("channels", []):
-                        channel_id = channel_data.get("channel_id", "")
-                        channel_name_cleaned = clean_text(channel_data.get("channel_name", "Canale Sconosciuto"))
-
-                        if not channel_id: 
+    
+                    # Verifica che ci siano canali disponibili
+                    channels_list = event_info.get("channels", [])
+                    if not channels_list:
+                        print(f"[!] Nessun canale disponibile per l'evento '{event_name}'")
+                        continue
+    
+                    for channel_data in channels_list:
+                        if not isinstance(channel_data, dict):
+                            print(f"[!] Formato canale non valido per l'evento '{event_name}': {channel_data}")
                             continue
-
+    
+                        channel_name_cleaned = clean_text(channel_data.get("channel_name", "Canale Sconosciuto"))
+    
+                        # Crea tag <channel> se non giÃ  processato
                         if channel_id not in channel_ids_processed_for_channel_tag:
                             epg_content += f'  <channel id="{channel_id}">\n'
-                            epg_content += f'    <display-name>{channel_name_cleaned}</display-name>\n'
+                            epg_content += f'    <display-name>{event_name}</display-name>\n'
                             epg_content += f'  </channel>\n'
                             channel_ids_processed_for_channel_tag.add(channel_id)
                         
                         # --- LOGICA ANNUNCIO MODIFICATA ---
                         announcement_stop_local = event_datetime_local # L'annuncio termina quando inizia l'evento corrente
-
+    
                         # Determina l'inizio dell'annuncio
                         if channel_id in last_event_end_time_per_channel_on_date:
-                            # C'è stato un evento precedente su questo canale in questa data
+                            # C'Ã¨ stato un evento precedente su questo canale in questa data
                             previous_event_end_time_local = last_event_end_time_per_channel_on_date[channel_id]
                             
                             # Assicurati che l'evento precedente termini prima che inizi quello corrente
@@ -1483,15 +1546,15 @@ def epg_eventi_generator_world():
                             else:
                                 # Sovrapposizione o stesso orario di inizio, problematico.
                                 # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
-                                print(f"[!] Attenzione: L'evento '{event_name}' sul canale '{channel_id}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
+                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
                                 announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
                         else:
                             # Primo evento per questo canale in questa data
                             announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
-
+    
                         # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
-                            announcement_title = f'Inizierà alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
+                            announcement_title = f'Inizia  alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
                             
                             epg_content += f'  <programme start="{announcement_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{announcement_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                             epg_content += f'    <title lang="it">{announcement_title}</title>\n'
@@ -1501,50 +1564,71 @@ def epg_eventi_generator_world():
                         elif announcement_start_local == announcement_stop_local:
                             print(f"[INFO] Annuncio di durata zero saltato per l'evento '{event_name}' sul canale '{channel_id}'.")
                         else: # announcement_start_local > announcement_stop_local
-                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio è successivo all'orario di fine per l'evento '{event_name}' sul canale '{channel_id}'. Annuncio saltato.")
-
+                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio Ã¨ successivo all'orario di fine per l'evento '{event_name}' sul canale '{channel_id}'. Annuncio saltato.")
+    
                         # --- EVENTO PRINCIPALE ---
-                        main_event_start_local = event_datetime_local
-                        main_event_stop_local = event_datetime_local + timedelta(hours=2) # Durata fissa 2 ore
+                        main_event_start_local = event_datetime_local + timedelta(hours=1)
+                        main_event_stop_local = event_datetime_local + timedelta(hours=3) # Durata fissa 2 ore
                         
                         epg_content += f'  <programme start="{main_event_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{main_event_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                         epg_content += f'    <title lang="it">{event_name}</title>\n'
                         epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
                         epg_content += f'    <category lang="it">{clean_text(category_name)}</category>\n'
                         epg_content += f'  </programme>\n'
-
+    
                         # Aggiorna l'orario di fine dell'ultimo evento per questo canale in questa data
                         last_event_end_time_per_channel_on_date[channel_id] = main_event_stop_local
         
         epg_content += "</tv>\n"
         return epg_content
-
-    def epg_eventi_xml_generator():
-        print("Eseguendo la generazione di eventi.xml...")
-        JSON_INPUT_FILE_EPG = "daddyliveSchedule.json" # File JSON di input
-        XML_OUTPUT_FILE_EPG = "eventi.xml"          # File XML di output
+    
+    def save_epg_xml(epg_content, output_file_path):
+        """Salva il contenuto EPG XML su file"""
+        try:
+            with open(output_file_path, "w", encoding="utf-8") as file:
+                file.write(epg_content)
+            print(f"[â] File EPG XML salvato con successo: {output_file_path}")
+            return True
+        except Exception as e:
+            print(f"[!] Errore nel salvataggio del file EPG XML: {e}")
+            return False
+    
+    def main_epg_generator(json_file_path, output_file_path="eventi.xml"):
+        """Funzione principale per generare l'EPG XML"""
+        print(f"[INFO] Inizio generazione EPG XML da: {json_file_path}")
         
-        # Determina il percorso assoluto dei file basandosi sulla directory dello script
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        json_input_full_path = os.path.join(script_dir, JSON_INPUT_FILE_EPG)
-        xml_output_full_path = os.path.join(script_dir, XML_OUTPUT_FILE_EPG)
-
-        # Carica i dati JSON filtrati per i canali italiani
-        json_data_for_epg = load_json_for_epg(json_input_full_path)
-        if not json_data_for_epg: # Se non ci sono dati (es. file non trovato o vuoto dopo il filtro)
-            print(f"[!] Nessun dato JSON caricato o filtrato da {json_input_full_path}. Salto la generazione di {XML_OUTPUT_FILE_EPG}.")
-            return # Esce dalla funzione se non ci sono dati
-
-        # Genera il contenuto XML dell'EPG
-        epg_content_xml = generate_epg_xml(json_data_for_epg)
+        # Carica e filtra i dati JSON
+        json_data = load_json_for_epg(json_file_path)
         
-        # Salva il contenuto XML nel file di output
-        with open(xml_output_full_path, "w", encoding="utf-8") as file:
-            file.write(epg_content_xml)
-        print(f"File EPG eventi.xml salvato in: {xml_output_full_path}")
-
+        if not json_data:
+            print("[!] Nessun dato valido trovato nel file JSON.")
+            return False
+        
+        print(f"[INFO] Dati caricati per {len(json_data)} date")
+        
+        # Genera il contenuto XML EPG
+        epg_content = generate_epg_xml(json_data)
+        
+        # Salva il file XML
+        success = save_epg_xml(epg_content, output_file_path)
+        
+        if success:
+            print(f"[â] Generazione EPG XML completata con successo!")
+            return True
+        else:
+            print(f"[!] Errore durante la generazione EPG XML.")
+            return False
+    
+    # Esempio di utilizzo
     if __name__ == "__main__":
-        epg_eventi_xml_generator()
+        # Percorso del file JSON di input
+        input_json_path = "daddyliveSchedule.json"  # Modifica con il tuo percorso
+        
+        # Percorso del file XML di output
+        output_xml_path = "eventi.xml"
+        
+        # Esegui la generazione EPG
+        main_epg_generator(input_json_path, output_xml_path)
 
 # Funzione per il quinto script (epg_eventi_generator.py)
 def epg_eventi_generator():
@@ -1556,18 +1640,41 @@ def epg_eventi_generator():
     import re
     import json
     from datetime import datetime, timedelta
-
-    # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
+    
+    # Funzione di utilitÃ  per pulire il testo (rimuovere tag HTML span)
     def clean_text(text):
         return re.sub(r'</?span.*?>', '', str(text))
-
+    
+    # Funzione di utilitÃ  per pulire il Channel ID (rimuovere spazi e caratteri speciali)
+    def clean_channel_id(text):
+        """Rimuove caratteri speciali e spazi dal channel ID lasciando tutto attaccato"""
+        # Rimuovi prima i tag HTML
+        text = clean_text(text)
+        # Rimuovi tutti gli spazi
+        text = re.sub(r'\s+', '', text)
+        # Mantieni solo caratteri alfanumerici (rimuovi tutto il resto)
+        text = re.sub(r'[^a-zA-Z0-9]', '', text)
+        # Assicurati che non sia vuoto
+        if not text:
+            text = "unknownchannel"
+        return text
+    
     # --- SCRIPT 5: epg_eventi_xml_generator (genera eventi.xml) ---
     def load_json_for_epg(json_file_path):
+        """Carica e filtra i dati JSON per la generazione EPG"""
         if not os.path.exists(json_file_path):
             print(f"[!] File JSON non trovato per EPG: {json_file_path}")
             return {}
-        with open(json_file_path, "r", encoding="utf-8") as file:
-            json_data = json.load(file)
+        
+        try:
+            with open(json_file_path, "r", encoding="utf-8") as file:
+                json_data = json.load(file)
+        except json.JSONDecodeError as e:
+            print(f"[!] Errore nel parsing del file JSON: {e}")
+            return {}
+        except Exception as e:
+            print(f"[!] Errore nell'apertura del file JSON: {e}")
+            return {}
         
         filtered_data = {}
         for date, categories in json_data.items():
@@ -1582,36 +1689,41 @@ def epg_eventi_generator():
                         # Filtra per canali italiani
                         if re.search(r'\b(italy|rai|italia|it)\b', channel_name, re.IGNORECASE):
                             filtered_channels.append(channel)
+                    
                     if filtered_channels:
                         # Assicura che event_info sia un dizionario prima dello unpacking
                         if isinstance(event_info, dict):
                             filtered_events.append({**event_info, "channels": filtered_channels})
                         else:
-                            # Logga un avviso se il formato dell'evento non è quello atteso
+                            # Logga un avviso se il formato dell'evento non Ã¨ quello atteso
                             print(f"[!] Formato evento non valido durante il filtraggio per EPG: {event_info}")
+                
                 if filtered_events:
                     filtered_categories[category] = filtered_events
+            
             if filtered_categories:
                 filtered_data[date] = filtered_categories
+        
         return filtered_data
-
+    
     def generate_epg_xml(json_data):
+        """Genera il contenuto XML EPG dai dati JSON filtrati"""
         epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
         
         italian_offset = timedelta(hours=2)
         italian_offset_str = "+0200" 
-
+    
         current_datetime_utc = datetime.utcnow()
         current_datetime_local = current_datetime_utc + italian_offset
-
-        # Tiene traccia degli ID dei canali per cui è già stato scritto il tag <channel>
+    
+        # Tiene traccia degli ID dei canali per cui Ã¨ giÃ  stato scritto il tag <channel>
         channel_ids_processed_for_channel_tag = set() 
-
+    
         for date_key, categories in json_data.items():
             # Dizionario per memorizzare l'ora di fine dell'ultimo evento per ciascun canale IN QUESTA DATA SPECIFICA
             # Viene resettato per ogni nuova data.
             last_event_end_time_per_channel_on_date = {}
-
+    
             try:
                 date_str_from_key = date_key.split(' - ')[0]
                 date_str_cleaned = re.sub(r'(\d+)(st|nd|rd|th)', r'\1', date_str_from_key)
@@ -1619,10 +1731,13 @@ def epg_eventi_generator():
             except ValueError as e:
                 print(f"[!] Errore nel parsing della data EPG: '{date_str_from_key}'. Errore: {e}")
                 continue
-
+            except IndexError as e:
+                print(f"[!] Formato data non valido: '{date_key}'. Errore: {e}")
+                continue
+    
             if event_date_part < current_datetime_local.date():
                 continue
-
+    
             for category_name, events_list in categories.items():
                 # Ordina gli eventi per orario di inizio (UTC) per garantire la corretta logica "evento precedente"
                 try:
@@ -1633,12 +1748,15 @@ def epg_eventi_generator():
                 except Exception as e_sort:
                     print(f"[!] Attenzione: Impossibile ordinare gli eventi per la categoria '{category_name}' nella data '{date_key}'. Si procede senza ordinamento. Errore: {e_sort}")
                     sorted_events_list = events_list
-
+    
                 for event_info in sorted_events_list:
                     time_str_utc = event_info.get("time", "00:00")
                     event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
                     event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
-
+    
+                    # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
+                    channel_id = clean_channel_id(event_name)
+    
                     try:
                         event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
                         event_datetime_utc = datetime.combine(event_date_part, event_time_utc_obj)
@@ -1649,26 +1767,33 @@ def epg_eventi_generator():
                     
                     if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
                         continue
-
-                    for channel_data in event_info.get("channels", []):
-                        channel_id = channel_data.get("channel_id", "")
-                        channel_name_cleaned = clean_text(channel_data.get("channel_name", "Canale Sconosciuto"))
-
-                        if not channel_id: 
+    
+                    # Verifica che ci siano canali disponibili
+                    channels_list = event_info.get("channels", [])
+                    if not channels_list:
+                        print(f"[!] Nessun canale disponibile per l'evento '{event_name}'")
+                        continue
+    
+                    for channel_data in channels_list:
+                        if not isinstance(channel_data, dict):
+                            print(f"[!] Formato canale non valido per l'evento '{event_name}': {channel_data}")
                             continue
-
+    
+                        channel_name_cleaned = clean_text(channel_data.get("channel_name", "Canale Sconosciuto"))
+    
+                        # Crea tag <channel> se non giÃ  processato
                         if channel_id not in channel_ids_processed_for_channel_tag:
                             epg_content += f'  <channel id="{channel_id}">\n'
-                            epg_content += f'    <display-name>{channel_name_cleaned}</display-name>\n'
+                            epg_content += f'    <display-name>{event_name}</display-name>\n'
                             epg_content += f'  </channel>\n'
                             channel_ids_processed_for_channel_tag.add(channel_id)
                         
                         # --- LOGICA ANNUNCIO MODIFICATA ---
                         announcement_stop_local = event_datetime_local # L'annuncio termina quando inizia l'evento corrente
-
+    
                         # Determina l'inizio dell'annuncio
                         if channel_id in last_event_end_time_per_channel_on_date:
-                            # C'è stato un evento precedente su questo canale in questa data
+                            # C'Ã¨ stato un evento precedente su questo canale in questa data
                             previous_event_end_time_local = last_event_end_time_per_channel_on_date[channel_id]
                             
                             # Assicurati che l'evento precedente termini prima che inizi quello corrente
@@ -1677,15 +1802,15 @@ def epg_eventi_generator():
                             else:
                                 # Sovrapposizione o stesso orario di inizio, problematico.
                                 # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
-                                print(f"[!] Attenzione: L'evento '{event_name}' sul canale '{channel_id}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
+                                print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
                                 announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
                         else:
                             # Primo evento per questo canale in questa data
                             announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
-
+    
                         # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
-                            announcement_title = f'Inizierà alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
+                            announcement_title = f'Inizia  alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
                             
                             epg_content += f'  <programme start="{announcement_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{announcement_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                             epg_content += f'    <title lang="it">{announcement_title}</title>\n'
@@ -1695,50 +1820,71 @@ def epg_eventi_generator():
                         elif announcement_start_local == announcement_stop_local:
                             print(f"[INFO] Annuncio di durata zero saltato per l'evento '{event_name}' sul canale '{channel_id}'.")
                         else: # announcement_start_local > announcement_stop_local
-                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio è successivo all'orario di fine per l'evento '{event_name}' sul canale '{channel_id}'. Annuncio saltato.")
-
+                            print(f"[!] Attenzione: L'orario di inizio calcolato per l'annuncio Ã¨ successivo all'orario di fine per l'evento '{event_name}' sul canale '{channel_id}'. Annuncio saltato.")
+    
                         # --- EVENTO PRINCIPALE ---
-                        main_event_start_local = event_datetime_local
-                        main_event_stop_local = event_datetime_local + timedelta(hours=2) # Durata fissa 2 ore
+                        main_event_start_local = event_datetime_local + timedelta(hours=1)
+                        main_event_stop_local = event_datetime_local + timedelta(hours=3) # Durata fissa 2 ore
                         
                         epg_content += f'  <programme start="{main_event_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{main_event_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                         epg_content += f'    <title lang="it">{event_name}</title>\n'
                         epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
                         epg_content += f'    <category lang="it">{clean_text(category_name)}</category>\n'
                         epg_content += f'  </programme>\n'
-
+    
                         # Aggiorna l'orario di fine dell'ultimo evento per questo canale in questa data
                         last_event_end_time_per_channel_on_date[channel_id] = main_event_stop_local
         
         epg_content += "</tv>\n"
         return epg_content
-
-    def epg_eventi_xml_generator():
-        print("Eseguendo la generazione di eventi.xml...")
-        JSON_INPUT_FILE_EPG = "daddyliveSchedule.json" # File JSON di input
-        XML_OUTPUT_FILE_EPG = "eventi.xml"          # File XML di output
+    
+    def save_epg_xml(epg_content, output_file_path):
+        """Salva il contenuto EPG XML su file"""
+        try:
+            with open(output_file_path, "w", encoding="utf-8") as file:
+                file.write(epg_content)
+            print(f"[â] File EPG XML salvato con successo: {output_file_path}")
+            return True
+        except Exception as e:
+            print(f"[!] Errore nel salvataggio del file EPG XML: {e}")
+            return False
+    
+    def main_epg_generator(json_file_path, output_file_path="eventi.xml"):
+        """Funzione principale per generare l'EPG XML"""
+        print(f"[INFO] Inizio generazione EPG XML da: {json_file_path}")
         
-        # Determina il percorso assoluto dei file basandosi sulla directory dello script
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        json_input_full_path = os.path.join(script_dir, JSON_INPUT_FILE_EPG)
-        xml_output_full_path = os.path.join(script_dir, XML_OUTPUT_FILE_EPG)
-
-        # Carica i dati JSON filtrati per i canali italiani
-        json_data_for_epg = load_json_for_epg(json_input_full_path)
-        if not json_data_for_epg: # Se non ci sono dati (es. file non trovato o vuoto dopo il filtro)
-            print(f"[!] Nessun dato JSON caricato o filtrato da {json_input_full_path}. Salto la generazione di {XML_OUTPUT_FILE_EPG}.")
-            return # Esce dalla funzione se non ci sono dati
-
-        # Genera il contenuto XML dell'EPG
-        epg_content_xml = generate_epg_xml(json_data_for_epg)
+        # Carica e filtra i dati JSON
+        json_data = load_json_for_epg(json_file_path)
         
-        # Salva il contenuto XML nel file di output
-        with open(xml_output_full_path, "w", encoding="utf-8") as file:
-            file.write(epg_content_xml)
-        print(f"File EPG eventi.xml salvato in: {xml_output_full_path}")
-
+        if not json_data:
+            print("[!] Nessun dato valido trovato nel file JSON.")
+            return False
+        
+        print(f"[INFO] Dati caricati per {len(json_data)} date")
+        
+        # Genera il contenuto XML EPG
+        epg_content = generate_epg_xml(json_data)
+        
+        # Salva il file XML
+        success = save_epg_xml(epg_content, output_file_path)
+        
+        if success:
+            print(f"[â] Generazione EPG XML completata con successo!")
+            return True
+        else:
+            print(f"[!] Errore durante la generazione EPG XML.")
+            return False
+    
+    # Esempio di utilizzo
     if __name__ == "__main__":
-        epg_eventi_xml_generator()
+        # Percorso del file JSON di input
+        input_json_path = "daddyliveSchedule.json"  # Modifica con il tuo percorso
+        
+        # Percorso del file XML di output
+        output_xml_path = "eventi.xml"
+        
+        # Esegui la generazione EPG
+        main_epg_generator(input_json_path, output_xml_path)
         
 # Funzione per il sesto script (vavoo_italy_channels.py)
 def vavoo_italy_channels():
@@ -1956,7 +2102,7 @@ def world_channels_generator():
             channels = fetch_channels(url)
             for ch in channels:
                 clean_name = clean_channel_name(ch["name"])
-                country = ch.get("country", "Unknown")  # Estrai la nazione del canale, default è "Unknown"
+                country = ch.get("country", "Unknown")  # Estrai la nazione del canale, default Ã¨ "Unknown"
                 all_channels.append((clean_name, f"{url}/play/{ch['id']}/index.m3u8", country))
     
         save_m3u8(all_channels)
