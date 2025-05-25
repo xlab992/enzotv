@@ -1279,7 +1279,7 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-
 #EXTINF:-1 tvg-name="Tennis" group-title="Eventi Live",--- Tennis ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="rolandgarrostennismensandwomenssinglesround1day1" tvg-name="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1 (11:00)" tvg-logo="https://static.xx.fbcdn.net/rsrc.php/v4/yq/r/jEqNR7sbsaf.png" group-title="Eventi Live",Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1 (11:00)
+#EXTINF:-1 tvg-id="rolandgarrostennismensandwomenssinglesround1day1" tvg-name="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1 (11:00)" tvg-logo="http://www.bing.com/sa/simg/facebook_sharing_5.png" group-title="Eventi Live",Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1 (11:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-879.php
 
 #EXTINF:-1 tvg-name="Motorsport" group-title="Eventi Live",--- Motorsport ---
@@ -1288,13 +1288,13 @@ https://example.m3u8
 #EXTINF:-1 tvg-id="formula2tagheuermonacograndprixfeaturerace" tvg-name="Formula 2 : Tag Heuer Monaco Grand Prix Feature Race (09:40)" tvg-logo="https://www.thesportsdb.com/images/media/league/badge/3iwfjg1536242234.png" group-title="Eventi Live",Formula 2 : Tag Heuer Monaco Grand Prix Feature Race (09:40)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-577.php
 
-#EXTINF:-1 tvg-id="motogpround7greatbritainwarmup" tvg-name="MotoGP | Round 7 | Great Britain Warm Up (10:30)" tvg-logo="https://www.pngarts.com/files/9/MotoGP-Racing-Bike-PNG-Background-Image.png" group-title="Eventi Live",MotoGP | Round 7 | Great Britain Warm Up (10:30)
+#EXTINF:-1 tvg-id="motogpround7greatbritainwarmup" tvg-name="MotoGP | Round 7 | Great Britain Warm Up (10:30)" tvg-logo="https://www.pngarts.com/files/9/MotoGP-Racing-Bike-PNG-Pic.png" group-title="Eventi Live",MotoGP | Round 7 | Great Britain Warm Up (10:30)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-575.php
 
-#EXTINF:-1 tvg-id="moto2round7greatbritainrace" tvg-name="Moto2 | Round 7 | Great Britain Race (11:00)" tvg-logo="https://www.gresiniracing.com/wp-content/uploads/2025/01/moto2-gresini-2025.png" group-title="Eventi Live",Moto2 | Round 7 | Great Britain Race (11:00)
+#EXTINF:-1 tvg-id="moto2round7greatbritainrace" tvg-name="Moto2 | Round 7 | Great Britain Race (11:00)" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixlEc3yNhAqVUG90nx-GnON0rFRTgmSECv2n8rGOJIkKtWbLKhVv5tEoOXj8LGjrR9WHteoFJHYdPy7VY-0zUNbk6LvXMxNzGPAH_hh6CJQ9mt3pq1hHpdTdiIeeVmKgAtzUrn0kPKR-I/s0/Moto2.png" group-title="Eventi Live",Moto2 | Round 7 | Great Britain Race (11:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-575.php
 
-#EXTINF:-1 tvg-id="motogpround7greatbritainrace" tvg-name="MotoGP | Round 7 | Great Britain Race (13:15)" tvg-logo="https://i.pinimg.com/originals/c1/bd/29/c1bd290b7e6438eae005500d785b8adf.png" group-title="Eventi Live",MotoGP | Round 7 | Great Britain Race (13:15)
+#EXTINF:-1 tvg-id="motogpround7greatbritainrace" tvg-name="MotoGP | Round 7 | Great Britain Race (13:15)" tvg-logo="https://www.pngarts.com/files/9/MotoGP-Racing-Bike-PNG-Background-Image.png" group-title="Eventi Live",MotoGP | Round 7 | Great Britain Race (13:15)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-575.php
 
 #EXTINF:-1 tvg-id="francemxgpworldchampionshiprace1" tvg-name="France | MXGP | World Championship Race 1 (14:00)" tvg-logo="https://static.vecteezy.com/system/resources/previews/022/110/404/large_2x/france-flag-icon-free-png.png" group-title="Eventi Live",France | MXGP | World Championship Race 1 (14:00)
@@ -1360,7 +1360,7 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-
 #EXTINF:-1 tvg-id="piazzadisiena2025grandprixrome" tvg-name="Piazza di Siena 2025-Grand Prix Rome (14:00)" tvg-logo="https://cdn-assets.inwink.com/5d702bd6-c5e8-ed11-907c-6045bd8c1ae7-public/assets/pictures/sceau-GPI-fond-blanc1.png" group-title="Eventi Live",Piazza di Siena 2025-Grand Prix Rome (14:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-882.php
 
-#EXTINF:-1 tvg-id="piazzadisiena2025grandprixrome" tvg-name="Piazza di Siena 2025-Grand Prix Rome (19:00)" tvg-logo="https://www.pngall.com/wp-content/uploads/10/Grand-Prix-Logo.png" group-title="Eventi Live",Piazza di Siena 2025-Grand Prix Rome (19:00)
+#EXTINF:-1 tvg-id="piazzadisiena2025grandprixrome" tvg-name="Piazza di Siena 2025-Grand Prix Rome (19:00)" tvg-logo="https://cdn-assets.inwink.com/5d702bd6-c5e8-ed11-907c-6045bd8c1ae7-public/assets/pictures/sceau-GPI-fond-blanc1.png" group-title="Eventi Live",Piazza di Siena 2025-Grand Prix Rome (19:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-851.php
 
 
