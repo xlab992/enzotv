@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="England - Premier League : Liverpool vs Crystal Palace">
+    <display-name>England - Premier League : Liverpool vs Crystal Palace</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525170000 +0200" channel="England - Premier League : Liverpool vs Crystal Palace">
+    <title lang="it">Inizierà alle 17:00.</title>
+    <desc lang="it">England - Premier League : Liverpool vs Crystal Palace.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525170000 +0200" stop="20250525190000 +0200" channel="England - Premier League : Liverpool vs Crystal Palace">
+    <title lang="it">England - Premier League : Liverpool vs Crystal Palace</title>
+    <desc lang="it">England - Premier League : Liverpool vs Crystal Palace trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="England - Premier League : Nottingham Forest vs Chelsea">
+    <display-name>England - Premier League : Nottingham Forest vs Chelsea</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525170000 +0200" channel="England - Premier League : Nottingham Forest vs Chelsea">
+    <title lang="it">Inizierà alle 17:00.</title>
+    <desc lang="it">England - Premier League : Nottingham Forest vs Chelsea.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525170000 +0200" stop="20250525190000 +0200" channel="England - Premier League : Nottingham Forest vs Chelsea">
+    <title lang="it">England - Premier League : Nottingham Forest vs Chelsea</title>
+    <desc lang="it">England - Premier League : Nottingham Forest vs Chelsea trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie B : Cremonese vs Juve Stabia">
+    <display-name>Italy - Serie B : Cremonese vs Juve Stabia</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525171500 +0200" channel="Italy - Serie B : Cremonese vs Juve Stabia">
+    <title lang="it">Inizierà alle 17:15.</title>
+    <desc lang="it">Italy - Serie B : Cremonese vs Juve Stabia.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525171500 +0200" stop="20250525191500 +0200" channel="Italy - Serie B : Cremonese vs Juve Stabia">
+    <title lang="it">Italy - Serie B : Cremonese vs Juve Stabia</title>
+    <desc lang="it">Italy - Serie B : Cremonese vs Juve Stabia trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie B : Spezia vs Catanzaro">
+    <display-name>Italy - Serie B : Spezia vs Catanzaro</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525193000 +0200" channel="Italy - Serie B : Spezia vs Catanzaro">
+    <title lang="it">Inizierà alle 19:30.</title>
+    <desc lang="it">Italy - Serie B : Spezia vs Catanzaro.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525193000 +0200" stop="20250525213000 +0200" channel="Italy - Serie B : Spezia vs Catanzaro">
+    <title lang="it">Italy - Serie B : Spezia vs Catanzaro</title>
+    <desc lang="it">Italy - Serie B : Spezia vs Catanzaro trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara">
+    <display-name>Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525200000 +0200" channel="Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara">
+    <title lang="it">Inizierà alle 20:00.</title>
+    <desc lang="it">Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525200000 +0200" stop="20250525220000 +0200" channel="Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara">
+    <title lang="it">Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara</title>
+    <desc lang="it">Italian Serie C Divisional Play-Offs : Audace Cerignola vs Pescara trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italian Serie C Divisional Play-Offs : Vicenza v Ternana">
+    <display-name>Italian Serie C Divisional Play-Offs : Vicenza v Ternana</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525200000 +0200" channel="Italian Serie C Divisional Play-Offs : Vicenza v Ternana">
+    <title lang="it">Inizierà alle 20:00.</title>
+    <desc lang="it">Italian Serie C Divisional Play-Offs : Vicenza v Ternana.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525200000 +0200" stop="20250525220000 +0200" channel="Italian Serie C Divisional Play-Offs : Vicenza v Ternana">
+    <title lang="it">Italian Serie C Divisional Play-Offs : Vicenza v Ternana</title>
+    <desc lang="it">Italian Serie C Divisional Play-Offs : Vicenza v Ternana trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie A : Atalanta vs Parma">
+    <display-name>Italy - Serie A : Atalanta vs Parma</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Atalanta vs Parma">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Atalanta vs Parma.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Atalanta vs Parma">
+    <title lang="it">Italy - Serie A : Atalanta vs Parma</title>
+    <desc lang="it">Italy - Serie A : Atalanta vs Parma trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie A : Empoli vs Hellas Verona">
+    <display-name>Italy - Serie A : Empoli vs Hellas Verona</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Empoli vs Hellas Verona">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Empoli vs Hellas Verona.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Empoli vs Hellas Verona">
+    <title lang="it">Italy - Serie A : Empoli vs Hellas Verona</title>
+    <desc lang="it">Italy - Serie A : Empoli vs Hellas Verona trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie A : Lazio vs Lecce">
+    <display-name>Italy - Serie A : Lazio vs Lecce</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Lazio vs Lecce">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Lazio vs Lecce.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Lazio vs Lecce">
+    <title lang="it">Italy - Serie A : Lazio vs Lecce</title>
+    <desc lang="it">Italy - Serie A : Lazio vs Lecce trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie A : Torino vs Roma">
+    <display-name>Italy - Serie A : Torino vs Roma</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Torino vs Roma">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Torino vs Roma.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Torino vs Roma">
+    <title lang="it">Italy - Serie A : Torino vs Roma</title>
+    <desc lang="it">Italy - Serie A : Torino vs Roma trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie A : Udinese vs Fiorentina">
+    <display-name>Italy - Serie A : Udinese vs Fiorentina</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Udinese vs Fiorentina">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Udinese vs Fiorentina.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Udinese vs Fiorentina">
+    <title lang="it">Italy - Serie A : Udinese vs Fiorentina</title>
+    <desc lang="it">Italy - Serie A : Udinese vs Fiorentina trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Italy - Serie A : Venezia vs Juventus">
+    <display-name>Italy - Serie A : Venezia vs Juventus</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Venezia vs Juventus">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Venezia vs Juventus.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Venezia vs Juventus">
+    <title lang="it">Italy - Serie A : Venezia vs Juventus</title>
+    <desc lang="it">Italy - Serie A : Venezia vs Juventus trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <programme start="20250525000000 +0200" stop="20250525204500 +0200" channel="Italy - Serie A : Venezia vs Juventus">
+    <title lang="it">Inizierà alle 20:45.</title>
+    <desc lang="it">Italy - Serie A : Venezia vs Juventus.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204500 +0200" stop="20250525224500 +0200" channel="Italy - Serie A : Venezia vs Juventus">
+    <title lang="it">Italy - Serie A : Venezia vs Juventus</title>
+    <desc lang="it">Italy - Serie A : Venezia vs Juventus trasmesso in diretta.</desc>
+    <category lang="it">Soccer</category>
+  </programme>
+  <channel id="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1">
+    <display-name>Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525110000 +0200" channel="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1">
+    <title lang="it">Inizierà alle 11:00.</title>
+    <desc lang="it">Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525110000 +0200" stop="20250525130000 +0200" channel="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1">
+    <title lang="it">Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1</title>
+    <desc lang="it">Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 1 trasmesso in diretta.</desc>
+    <category lang="it">Tennis</category>
+  </programme>
+  <channel id="MotoGP | Round 7 | Great Britain Warm Up">
+    <display-name>MotoGP | Round 7 | Great Britain Warm Up</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525103000 +0200" channel="MotoGP | Round 7 | Great Britain Warm Up">
+    <title lang="it">Inizierà alle 10:30.</title>
+    <desc lang="it">MotoGP | Round 7 | Great Britain Warm Up.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525103000 +0200" stop="20250525123000 +0200" channel="MotoGP | Round 7 | Great Britain Warm Up">
+    <title lang="it">MotoGP | Round 7 | Great Britain Warm Up</title>
+    <desc lang="it">MotoGP | Round 7 | Great Britain Warm Up trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="Moto2 | Round 7 | Great Britain Race">
+    <display-name>Moto2 | Round 7 | Great Britain Race</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525110000 +0200" channel="Moto2 | Round 7 | Great Britain Race">
+    <title lang="it">Inizierà alle 11:00.</title>
+    <desc lang="it">Moto2 | Round 7 | Great Britain Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525110000 +0200" stop="20250525130000 +0200" channel="Moto2 | Round 7 | Great Britain Race">
+    <title lang="it">Moto2 | Round 7 | Great Britain Race</title>
+    <desc lang="it">Moto2 | Round 7 | Great Britain Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="MotoGP | Round 7 | Great Britain Race">
+    <display-name>MotoGP | Round 7 | Great Britain Race</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525131500 +0200" channel="MotoGP | Round 7 | Great Britain Race">
+    <title lang="it">Inizierà alle 13:15.</title>
+    <desc lang="it">MotoGP | Round 7 | Great Britain Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525131500 +0200" stop="20250525151500 +0200" channel="MotoGP | Round 7 | Great Britain Race">
+    <title lang="it">MotoGP | Round 7 | Great Britain Race</title>
+    <desc lang="it">MotoGP | Round 7 | Great Britain Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="France | MXGP | World Championship Race 1">
+    <display-name>France | MXGP | World Championship Race 1</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525140000 +0200" channel="France | MXGP | World Championship Race 1">
+    <title lang="it">Inizierà alle 14:00.</title>
+    <desc lang="it">France | MXGP | World Championship Race 1.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525140000 +0200" stop="20250525160000 +0200" channel="France | MXGP | World Championship Race 1">
+    <title lang="it">France | MXGP | World Championship Race 1</title>
+    <desc lang="it">France | MXGP | World Championship Race 1 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday">
+    <display-name>Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525140000 +0200" channel="Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday">
+    <title lang="it">Inizierà alle 14:00.</title>
+    <desc lang="it">Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525140000 +0200" stop="20250525160000 +0200" channel="Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday">
+    <title lang="it">Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday</title>
+    <desc lang="it">Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix Sunday trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race">
+    <display-name>Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525150000 +0200" channel="Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race">
+    <title lang="it">Inizierà alle 15:00.</title>
+    <desc lang="it">Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525150000 +0200" stop="20250525170000 +0200" channel="Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race">
+    <title lang="it">Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race</title>
+    <desc lang="it">Formula 1 : Tag Heuer Monaco Grand Prix - Grand Prix - Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="Moto3 | Round 7 | Great Britain Race">
+    <display-name>Moto3 | Round 7 | Great Britain Race</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525151500 +0200" channel="Moto3 | Round 7 | Great Britain Race">
+    <title lang="it">Inizierà alle 15:15.</title>
+    <desc lang="it">Moto3 | Round 7 | Great Britain Race.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525151500 +0200" stop="20250525171500 +0200" channel="Moto3 | Round 7 | Great Britain Race">
+    <title lang="it">Moto3 | Round 7 | Great Britain Race</title>
+    <desc lang="it">Moto3 | Round 7 | Great Britain Race trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="World Championship France | MX2 | Race 2">
+    <display-name>World Championship France | MX2 | Race 2</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525160000 +0200" channel="World Championship France | MX2 | Race 2">
+    <title lang="it">Inizierà alle 16:00.</title>
+    <desc lang="it">World Championship France | MX2 | Race 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525160000 +0200" stop="20250525180000 +0200" channel="World Championship France | MX2 | Race 2">
+    <title lang="it">World Championship France | MX2 | Race 2</title>
+    <desc lang="it">World Championship France | MX2 | Race 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="France | MXGP | World Championship Race 2">
+    <display-name>France | MXGP | World Championship Race 2</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525170000 +0200" channel="France | MXGP | World Championship Race 2">
+    <title lang="it">Inizierà alle 17:00.</title>
+    <desc lang="it">France | MXGP | World Championship Race 2.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525170000 +0200" stop="20250525190000 +0200" channel="France | MXGP | World Championship Race 2">
+    <title lang="it">France | MXGP | World Championship Race 2</title>
+    <desc lang="it">France | MXGP | World Championship Race 2 trasmesso in diretta.</desc>
+    <category lang="it">Motorsport</category>
+  </programme>
+  <channel id="Diamond League (T2025): Rabat">
+    <display-name>Diamond League (T2025): Rabat</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525200000 +0200" channel="Diamond League (T2025): Rabat">
+    <title lang="it">Inizierà alle 20:00.</title>
+    <desc lang="it">Diamond League (T2025): Rabat.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525200000 +0200" stop="20250525220000 +0200" channel="Diamond League (T2025): Rabat">
+    <title lang="it">Diamond League (T2025): Rabat</title>
+    <desc lang="it">Diamond League (T2025): Rabat trasmesso in diretta.</desc>
+    <category lang="it">Athletics</category>
+  </programme>
+  <programme start="20250525000000 +0200" stop="20250525200000 +0200" channel="Diamond League (T2025): Rabat">
+    <title lang="it">Inizierà alle 20:00.</title>
+    <desc lang="it">Diamond League (T2025): Rabat.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525200000 +0200" stop="20250525220000 +0200" channel="Diamond League (T2025): Rabat">
+    <title lang="it">Diamond League (T2025): Rabat</title>
+    <desc lang="it">Diamond League (T2025): Rabat trasmesso in diretta.</desc>
+    <category lang="it">Athletics</category>
+  </programme>
+  <channel id="Basket : Serie A Playoffs | Quarterfinals | Game 4">
+    <display-name>Basket : Serie A Playoffs | Quarterfinals | Game 4</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525175500 +0200" channel="Basket : Serie A Playoffs | Quarterfinals | Game 4">
+    <title lang="it">Inizierà alle 17:55.</title>
+    <desc lang="it">Basket : Serie A Playoffs | Quarterfinals | Game 4.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525175500 +0200" stop="20250525195500 +0200" channel="Basket : Serie A Playoffs | Quarterfinals | Game 4">
+    <title lang="it">Basket : Serie A Playoffs | Quarterfinals | Game 4</title>
+    <desc lang="it">Basket : Serie A Playoffs | Quarterfinals | Game 4 trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <channel id="Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli">
+    <display-name>Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525180000 +0200" channel="Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli">
+    <title lang="it">Inizierà alle 18:00.</title>
+    <desc lang="it">Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525180000 +0200" stop="20250525200000 +0200" channel="Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli">
+    <title lang="it">Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli</title>
+    <desc lang="it">Italy Serie A2 Gold : Rinascita Basket Rimini vs. Pallacanestro 2.015 Forli trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <programme start="20250525195500 +0200" stop="20250525204000 +0200" channel="Basket : Serie A Playoffs | Quarterfinals | Game 4">
+    <title lang="it">Inizierà alle 20:40.</title>
+    <desc lang="it">Basket : Serie A Playoffs | Quarterfinals | Game 4.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525204000 +0200" stop="20250525224000 +0200" channel="Basket : Serie A Playoffs | Quarterfinals | Game 4">
+    <title lang="it">Basket : Serie A Playoffs | Quarterfinals | Game 4</title>
+    <desc lang="it">Basket : Serie A Playoffs | Quarterfinals | Game 4 trasmesso in diretta.</desc>
+    <category lang="it">Basketball</category>
+  </programme>
+  <channel id="World Cup | Men Salt Lake City | Bouldering | Final">
+    <display-name>World Cup | Men Salt Lake City | Bouldering | Final</display-name>
+  </channel>
+  <programme start="20250526000000 +0200" stop="20250526010000 +0200" channel="World Cup | Men Salt Lake City | Bouldering | Final">
+    <title lang="it">Inizierà alle 01:00.</title>
+    <desc lang="it">World Cup | Men Salt Lake City | Bouldering | Final.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250526010000 +0200" stop="20250526030000 +0200" channel="World Cup | Men Salt Lake City | Bouldering | Final">
+    <title lang="it">World Cup | Men Salt Lake City | Bouldering | Final</title>
+    <desc lang="it">World Cup | Men Salt Lake City | Bouldering | Final trasmesso in diretta.</desc>
+    <category lang="it">Climbing</category>
+  </programme>
+  <channel id="Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)">
+    <display-name>Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525112000 +0200" channel="Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)">
+    <title lang="it">Inizierà alle 11:20.</title>
+    <desc lang="it">Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525112000 +0200" stop="20250525132000 +0200" channel="Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)">
+    <title lang="it">Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)</title>
+    <desc lang="it">Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <programme start="20250525000000 +0200" stop="20250525112000 +0200" channel="Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)">
+    <title lang="it">Inizierà alle 11:20.</title>
+    <desc lang="it">Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525112000 +0200" stop="20250525132000 +0200" channel="Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)">
+    <title lang="it">Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km)</title>
+    <desc lang="it">Giro d'Italia | Stage 15 | Multi-Screen Men | Fiume Veneto – Asiago (214km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <channel id="Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)">
+    <display-name>Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525150000 +0200" channel="Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)">
+    <title lang="it">Inizierà alle 15:00.</title>
+    <desc lang="it">Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525150000 +0200" stop="20250525170000 +0200" channel="Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)">
+    <title lang="it">Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)</title>
+    <desc lang="it">Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <programme start="20250525000000 +0200" stop="20250525150000 +0200" channel="Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)">
+    <title lang="it">Inizierà alle 15:00.</title>
+    <desc lang="it">Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km).</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525150000 +0200" stop="20250525170000 +0200" channel="Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)">
+    <title lang="it">Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km)</title>
+    <desc lang="it">Giro de Italia | Etapa 15 Masculino | Fiume Veneto > Asiago (219 km) trasmesso in diretta.</desc>
+    <category lang="it">Cycling</category>
+  </programme>
+  <channel id="Piazza di Siena 2025-Grand Prix Rome">
+    <display-name>Piazza di Siena 2025-Grand Prix Rome</display-name>
+  </channel>
+  <programme start="20250525000000 +0200" stop="20250525140000 +0200" channel="Piazza di Siena 2025-Grand Prix Rome">
+    <title lang="it">Inizierà alle 14:00.</title>
+    <desc lang="it">Piazza di Siena 2025-Grand Prix Rome.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525140000 +0200" stop="20250525160000 +0200" channel="Piazza di Siena 2025-Grand Prix Rome">
+    <title lang="it">Piazza di Siena 2025-Grand Prix Rome</title>
+    <desc lang="it">Piazza di Siena 2025-Grand Prix Rome trasmesso in diretta.</desc>
+    <category lang="it">Equestrian</category>
+  </programme>
+  <programme start="20250525160000 +0200" stop="20250525190000 +0200" channel="Piazza di Siena 2025-Grand Prix Rome">
+    <title lang="it">Inizierà alle 19:00.</title>
+    <desc lang="it">Piazza di Siena 2025-Grand Prix Rome.</desc>
+    <category lang="it">Annuncio</category>
+  </programme>
+  <programme start="20250525190000 +0200" stop="20250525210000 +0200" channel="Piazza di Siena 2025-Grand Prix Rome">
+    <title lang="it">Piazza di Siena 2025-Grand Prix Rome</title>
+    <desc lang="it">Piazza di Siena 2025-Grand Prix Rome trasmesso in diretta.</desc>
+    <category lang="it">Equestrian</category>
+  </programme>
+</tv>
