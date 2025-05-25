@@ -262,6 +262,12 @@ def eventi_m3u8_generator_world():
     def clean_category_name(name): 
         # Rimuove tag html come </span> o simili 
         return re.sub(r'<[^>]+>', '', name).strip()
+        
+    def clean_tvg_id(tvg_id):
+        """
+        Pulisce il tvg-id rimuovendo spazi e convertendo tutto in minuscolo
+        """
+        return re.sub(r'\s+', '', tvg_id).lower()
      
     def search_logo_for_event(event_name): 
         """ 
@@ -739,6 +745,12 @@ def eventi_m3u8_generator():
     def clean_category_name(name): 
         # Rimuove tag html come </span> o simili 
         return re.sub(r'<[^>]+>', '', name).strip()
+        
+    def clean_tvg_id(tvg_id):
+        """
+        Pulisce il tvg-id rimuovendo spazi e convertendo tutto in minuscolo
+        """
+        return re.sub(r'\s+', '', tvg_id).lower()
      
     def search_logo_for_event(event_name): 
         """ 
