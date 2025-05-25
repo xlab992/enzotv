@@ -1379,6 +1379,7 @@ def epg_eventi_generator_world():
     import os
     import re
     import json
+    import pytz
     from datetime import datetime, timedelta
     
     # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
@@ -1450,11 +1451,16 @@ def epg_eventi_generator_world():
         """Genera il contenuto XML EPG dai dati JSON filtrati"""
         epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
         
-        italian_offset = timedelta(hours=2)
-        italian_offset_str = "+0200" 
-    
-        current_datetime_utc = datetime.utcnow()
-        current_datetime_local = current_datetime_utc + italian_offset
+        # Gestione corretta del fuso orario italiano
+        italy_tz = pytz.timezone('Europe/Rome')
+        utc_tz = pytz.UTC
+        
+        current_datetime_utc = datetime.now(utc_tz)
+        current_datetime_local = current_datetime_utc.astimezone(italy_tz)
+        
+        # Determina l'offset corrente (ora solare/legale)
+        current_offset = current_datetime_local.strftime('%z')
+        italian_offset_str = f"{current_offset[:3]}:{current_offset[3:]}"
     
         # Tiene traccia degli ID dei canali per cui è già stato scritto il tag <channel>
         channel_ids_processed_for_channel_tag = set() 
@@ -1479,7 +1485,7 @@ def epg_eventi_generator_world():
                 continue
     
             for category_name, events_list in categories.items():
-                # Ordina gli eventi per orario di inizio (UTC) per garantire la corretta logica "evento precedente"
+                # Ordina gli eventi per orario di inizio per garantire la corretta logica "evento precedente"
                 try:
                     sorted_events_list = sorted(
                         events_list,
@@ -1498,11 +1504,12 @@ def epg_eventi_generator_world():
                     channel_id = clean_channel_id(event_name)
     
                     try:
-                        event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
-                        event_datetime_utc = datetime.combine(event_date_part, event_time_utc_obj)
-                        event_datetime_local = event_datetime_utc + italian_offset
+                        event_time_obj = datetime.strptime(time_str_utc, "%H:%M").time()
+                        # Crea datetime naive e poi localizza nel fuso orario italiano
+                        event_datetime_naive = datetime.combine(event_date_part, event_time_obj)
+                        event_datetime_local = italy_tz.localize(event_datetime_naive)
                     except ValueError as e:
-                        print(f"[!] Errore parsing orario UTC '{time_str_utc}' per EPG evento '{event_name}'. Errore: {e}")
+                        print(f"[!] Errore parsing orario '{time_str_utc}' per EPG evento '{event_name}'. Errore: {e}")
                         continue
                     
                     if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
@@ -1541,12 +1548,16 @@ def epg_eventi_generator_world():
                                 announcement_start_local = previous_event_end_time_local
                             else:
                                 # Sovrapposizione o stesso orario di inizio, problematico.
-                                # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
+                                # Fallback a 00:00 del giorno
                                 print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
-                                announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
+                                announcement_start_local = italy_tz.localize(
+                                    datetime.combine(event_datetime_local.date(), datetime.min.time())
+                                )
                         else:
                             # Primo evento per questo canale in questa data
-                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
+                            announcement_start_local = italy_tz.localize(
+                                datetime.combine(event_datetime_local.date(), datetime.min.time())
+                            ) # 00:00 ora italiana
     
                         # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
@@ -1635,6 +1646,7 @@ def epg_eventi_generator():
     import os
     import re
     import json
+    import pytz
     from datetime import datetime, timedelta
     
     # Funzione di utilità per pulire il testo (rimuovere tag HTML span)
@@ -1706,11 +1718,16 @@ def epg_eventi_generator():
         """Genera il contenuto XML EPG dai dati JSON filtrati"""
         epg_content = '<?xml version="1.0" encoding="UTF-8"?>\n<tv>\n'
         
-        italian_offset = timedelta(hours=2)
-        italian_offset_str = "+0200" 
-    
-        current_datetime_utc = datetime.utcnow()
-        current_datetime_local = current_datetime_utc + italian_offset
+        # Gestione corretta del fuso orario italiano
+        italy_tz = pytz.timezone('Europe/Rome')
+        utc_tz = pytz.UTC
+        
+        current_datetime_utc = datetime.now(utc_tz)
+        current_datetime_local = current_datetime_utc.astimezone(italy_tz)
+        
+        # Determina l'offset corrente (ora solare/legale)
+        current_offset = current_datetime_local.strftime('%z')
+        italian_offset_str = f"{current_offset[:3]}:{current_offset[3:]}"
     
         # Tiene traccia degli ID dei canali per cui è già stato scritto il tag <channel>
         channel_ids_processed_for_channel_tag = set() 
@@ -1735,7 +1752,7 @@ def epg_eventi_generator():
                 continue
     
             for category_name, events_list in categories.items():
-                # Ordina gli eventi per orario di inizio (UTC) per garantire la corretta logica "evento precedente"
+                # Ordina gli eventi per orario di inizio per garantire la corretta logica "evento precedente"
                 try:
                     sorted_events_list = sorted(
                         events_list,
@@ -1754,11 +1771,12 @@ def epg_eventi_generator():
                     channel_id = clean_channel_id(event_name)
     
                     try:
-                        event_time_utc_obj = datetime.strptime(time_str_utc, "%H:%M").time()
-                        event_datetime_utc = datetime.combine(event_date_part, event_time_utc_obj)
-                        event_datetime_local = event_datetime_utc + italian_offset
+                        event_time_obj = datetime.strptime(time_str_utc, "%H:%M").time()
+                        # Crea datetime naive e poi localizza nel fuso orario italiano
+                        event_datetime_naive = datetime.combine(event_date_part, event_time_obj)
+                        event_datetime_local = italy_tz.localize(event_datetime_naive)
                     except ValueError as e:
-                        print(f"[!] Errore parsing orario UTC '{time_str_utc}' per EPG evento '{event_name}'. Errore: {e}")
+                        print(f"[!] Errore parsing orario '{time_str_utc}' per EPG evento '{event_name}'. Errore: {e}")
                         continue
                     
                     if event_datetime_local < (current_datetime_local - timedelta(hours=2)):
@@ -1797,12 +1815,16 @@ def epg_eventi_generator():
                                 announcement_start_local = previous_event_end_time_local
                             else:
                                 # Sovrapposizione o stesso orario di inizio, problematico.
-                                # Fallback a 00:00 del giorno, o potresti saltare l'annuncio.
+                                # Fallback a 00:00 del giorno
                                 print(f"[!] Attenzione: L'evento '{event_name}' inizia prima o contemporaneamente alla fine dell'evento precedente su questo canale. Fallback per l'inizio dell'annuncio.")
-                                announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time())
+                                announcement_start_local = italy_tz.localize(
+                                    datetime.combine(event_datetime_local.date(), datetime.min.time())
+                                )
                         else:
                             # Primo evento per questo canale in questa data
-                            announcement_start_local = datetime.combine(event_datetime_local.date(), datetime.min.time()) # 00:00 ora italiana
+                            announcement_start_local = italy_tz.localize(
+                                datetime.combine(event_datetime_local.date(), datetime.min.time())
+                            ) # 00:00 ora italiana
     
                         # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
@@ -1881,7 +1903,7 @@ def epg_eventi_generator():
         
         # Esegui la generazione EPG
         main_epg_generator(input_json_path, output_xml_path)
-        
+                
 # Funzione per il sesto script (vavoo_italy_channels.py)
 def vavoo_italy_channels():
     # Codice del sesto script qui
