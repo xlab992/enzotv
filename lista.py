@@ -1550,7 +1550,7 @@ def epg_eventi_generator_world():
     
                         # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
-                            announcement_title = f'InizierÃ  alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
+                            announcement_title = f'Inizia  alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
                             
                             epg_content += f'  <programme start="{announcement_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{announcement_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                             epg_content += f'    <title lang="it">{announcement_title}</title>\n'
@@ -1806,7 +1806,7 @@ def epg_eventi_generator():
     
                         # Assicura che l'inizio dell'annuncio sia prima della fine
                         if announcement_start_local < announcement_stop_local:
-                            announcement_title = f'InizierÃ  alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
+                            announcement_title = f'Inizia  alle {event_datetime_local.strftime("%H:%M")}.' # Orario italiano
                             
                             epg_content += f'  <programme start="{announcement_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{announcement_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
                             epg_content += f'    <title lang="it">{announcement_title}</title>\n'
