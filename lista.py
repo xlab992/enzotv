@@ -1492,7 +1492,7 @@ def epg_eventi_generator_world():
                 for event_info in sorted_events_list:
                     time_str_utc = event_info.get("time", "00:00")
                     event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
-                    event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
+                    event_desc = event_info.get("description", f"Trasmesso in diretta.")
     
                     # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
                     channel_id = clean_channel_id(event_name)
@@ -1567,8 +1567,8 @@ def epg_eventi_generator_world():
                         main_event_stop_local = event_datetime_local + timedelta(hours=3) # Durata fissa 2 ore
                         
                         epg_content += f'  <programme start="{main_event_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{main_event_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
-                        epg_content += f'    <title lang="it">{event_name}</title>\n'
-                        epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
+                        epg_content += f'    <title lang="it">{event_desc}</title>\n'
+                        epg_content += f'    <desc lang="it">{event_name}</desc>\n'
                         epg_content += f'    <category lang="it">{clean_text(category_name)}</category>\n'
                         epg_content += f'  </programme>\n'
     
@@ -1748,7 +1748,7 @@ def epg_eventi_generator():
                 for event_info in sorted_events_list:
                     time_str_utc = event_info.get("time", "00:00")
                     event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
-                    event_desc = event_info.get("description", f"{event_name} trasmesso in diretta.")
+                    event_desc = event_info.get("description", f"Trasmesso in diretta.")
     
                     # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
                     channel_id = clean_channel_id(event_name)
@@ -1823,8 +1823,8 @@ def epg_eventi_generator():
                         main_event_stop_local = event_datetime_local + timedelta(hours=3) # Durata fissa 2 ore
                         
                         epg_content += f'  <programme start="{main_event_start_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" stop="{main_event_stop_local.strftime("%Y%m%d%H%M%S")} {italian_offset_str}" channel="{channel_id}">\n'
-                        epg_content += f'    <title lang="it">{event_name}</title>\n'
-                        epg_content += f'    <desc lang="it">{event_desc}</desc>\n'
+                        epg_content += f'    <title lang="it">{event_desc}</title>\n'
+                        epg_content += f'    <desc lang="it">{event_name}</desc>\n'
                         epg_content += f'    <category lang="it">{clean_text(category_name)}</category>\n'
                         epg_content += f'  </programme>\n'
     
