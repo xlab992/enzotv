@@ -1419,6 +1419,9 @@ def epg_eventi_generator_world():
         except Exception as e:
             print(f"[!] Errore nell'apertura del file JSON: {e}")
             return {}
+            
+        # Lista delle parole chiave per canali italiani
+        keywords = ['italy', 'rai', 'italia', 'it', 'uk', 'tnt', 'usa', 'tennis channel', 'tennis stream', 'la']
         
         filtered_data = {}
         for date, categories in json_data.items():
@@ -1430,9 +1433,6 @@ def epg_eventi_generator_world():
                     # Utilizza .get("channels", []) per gestire casi in cui "channels" potrebbe mancare
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
-                        # Filtra per canali italiani
-                        # Lista delle parole chiave per canali italiani
-                        keywords = ['italy', 'rai', 'italia', 'it', 'uk', 'tnt', 'usa', 'tennis channel', 'tennis stream', 'la']
                         
                         # Filtra per canali italiani - solo parole intere
                         channel_words = channel_name.lower().split()
@@ -1680,6 +1680,9 @@ def epg_eventi_generator():
         except Exception as e:
             print(f"[!] Errore nell'apertura del file JSON: {e}")
             return {}
+            
+        # Lista delle parole chiave per canali italiani
+        keywords = ['italy', 'rai', 'italia', 'it']
         
         filtered_data = {}
         for date, categories in json_data.items():
@@ -1691,8 +1694,6 @@ def epg_eventi_generator():
                     # Utilizza .get("channels", []) per gestire casi in cui "channels" potrebbe mancare
                     for channel in event_info.get("channels", []): 
                         channel_name = clean_text(channel.get("channel_name", "")) # Usa .get per sicurezza
-                        # Lista delle parole chiave per canali italiani
-                        keywords = ['italy', 'rai', 'italia', 'it']
                         
                         # Filtra per canali italiani - solo parole intere
                         channel_words = channel_name.lower().split()
