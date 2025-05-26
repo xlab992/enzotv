@@ -348,10 +348,6 @@ def epg_merger():
         logger.error(f"Errore durante il salvataggio: {e}")
         print(f"❌ Errore durante il salvataggio: {e}")
 
-    # Esempio di utilizzo
-    if __name__ == "__main__":
-        epg_merger()
-
 def eventi_m3u8_generator_world():
     # Codice del terzo script qui
     # Aggiungi il codice del tuo script "eventi_m3u8_generator.py" in questa funzione.
