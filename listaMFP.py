@@ -2086,6 +2086,7 @@ def vavoo_italy_channels():
 
         for name, url in all_links:
             category = classify_channel(name)
+            name_for_mapping = re.sub(r'\s*\(\d+\)$', '', name)
             organized_channels[category].append({
                 "name": name,
                 "url": url,
