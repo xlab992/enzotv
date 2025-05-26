@@ -1366,7 +1366,7 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-
 #EXTINF:-1 tvg-name="Tennis" group-title="Eventi Live",--- Tennis ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="rolandgarrostennismensandwomenssinglesround1day2" tvg-name="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 2 (11:00)" tvg-logo="https://static.xx.fbcdn.net/rsrc.php/v4/yq/r/jEqNR7sbsaf.png" group-title="Eventi Live",Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 2 (11:00)
+#EXTINF:-1 tvg-id="rolandgarrostennismensandwomenssinglesround1day2" tvg-name="Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 2 (11:00)" tvg-logo="http://www.bing.com/sa/simg/facebook_sharing_5.png" group-title="Eventi Live",Roland-Garros Tennis Men's and Women's Singles | Round 1 | Day 2 (11:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-879.php
 
 #EXTINF:-1 tvg-name="Basketball" group-title="Eventi Live",--- Basketball ---
@@ -1390,7 +1390,7 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-
 #EXTINF:-1 tvg-name="Equestrian" group-title="Eventi Live",--- Equestrian ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="piazzadisiena2025sixbarriersaward" tvg-name="Piazza di Siena 2025-Six Barriers Award (15:00)" tvg-logo="https://www.sienasalute.it/sito1/wp-content/uploads/2019/09/oxford-600x600.png" group-title="Eventi Live",Piazza di Siena 2025-Six Barriers Award (15:00)
+#EXTINF:-1 tvg-id="piazzadisiena2025sixbarriersaward" tvg-name="Piazza di Siena 2025-Six Barriers Award (15:00)" tvg-logo="https://www.leanaward.it/wp-content/uploads/siena.png" group-title="Eventi Live",Piazza di Siena 2025-Six Barriers Award (15:00)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-882.php
 
 
