@@ -2078,10 +2078,14 @@ def vavoo_italy_channels():
 
         for name, url in all_links:
             category = classify_channel(name)
+            
+            # Rimuovi il numero tra parentesi per il mapping tvg-id
+            name_for_mapping = re.sub(r'\s*\(\d+\)$', '', name)
+            
             organized_channels[category].append({
                 "name": name,
                 "url": url,
-                "tvg_id": channel_id_map.get(normalize_channel_name(name), ""),
+                "tvg_id": channel_id_map.get(normalize_channel_name(name_for_mapping), ""),
                 "logo": logos_dict.get(name.lower(), DEFAULT_TVG_ICON)
             })
 
