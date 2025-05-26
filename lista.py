@@ -2046,7 +2046,7 @@ def vavoo_italy_channels():
             {"name": "SKY SPORT 257   (D)", "url": "https://daddylive.dad/embed/stream-877.php", "tvg_id": "sky.sport..257.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SERIE  (D)", "url": "https://daddylive.dad/embed/stream-880.php", "tvg_id": "skyserie.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-serie-it.png", "category": "Film & Serie TV"},
             {"name": "20 MEDIASET  (D)", "url": "https://daddylive.dad/embed/stream-857.php", "tvg_id": "20mediasethd.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/20-it.png", "category": "Mediaset"},
-            {"name": "DAZN 1 (D)", "url": "https://daddylive.dad/embed/stream-877.php", "tvg_id": "dazn.1.it.it", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png", "category": "Sport"},
+            {"name": "DAZN 1 (D)", "url": "https://daddylive.dad/embed/stream-877.php", "tvg_id": "dazn1.it", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png", "category": "Sport"},
         ]
 
     def save_m3u8(organized_channels):
