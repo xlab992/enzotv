@@ -2004,6 +2004,10 @@ def vavoo_italy_channels():
             return "DAZN2"
         if "mediaset 20" in name.lower():
             return "20 MEDIASET"
+        if "mediaset italia 2" in name.lower():
+            return "ITALIA 2"
+        if "mediaset 1" in name.lower():
+            return "ITALIA 1"
         return name.strip()
 
     def filter_italian_channels(channels, base_url):
@@ -2029,8 +2033,8 @@ def vavoo_italy_channels():
 
     def get_manual_channels():
         return [
-            {"name": "EUROSPORT 1 (D)", "url": f"{LINK_DADDY}/embed/stream-878.php", "tvg_id": "eurosport1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png", "category": "Sport"},
-            {"name": "EUROSPORT 2 (D)", "url": f"{LINK_DADDY}/embed/stream-879.php", "tvg_id": "eurosport2.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-2-es.png", "category": "Sport"},
+            {"name": "EUROSPORT 1 (D)", "url": f"{LINK_DADDY}/embed/stream-878.php", "tvg_id": "eurosport.1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png", "category": "Sport"},
+            {"name": "EUROSPORT 2 (D)", "url": f"{LINK_DADDY}/embed/stream-879.php", "tvg_id": "eurosport.2.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-2-es.png", "category": "Sport"},
             {"name": "ITALIA 1 (D)", "url": f"{LINK_DADDY}/embed/stream-854.php", "tvg_id": "italia.1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/italia1-it.png", "category": "Mediaset"},
             {"name": "LA7 (D)", "url": f"{LINK_DADDY}/embed/stream-855.php", "tvg_id": "la7.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png", "category": "Altro"},
             {"name": "LA7D (D)", "url": f"{LINK_DADDY}/embed/stream-856.php", "tvg_id": "la7.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png", "category": "Altro"},
@@ -2040,26 +2044,26 @@ def vavoo_italy_channels():
             {"name": "RAI 3 (D)", "url": f"{LINK_DADDY}/embed/stream-853.php", "tvg_id": "rai3.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-3-it.png", "category": "Rai"},
             {"name": "RAI SPORT (D)", "url": f"{LINK_DADDY}/embed/stream-882.php", "tvg_id": "raisport.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-sport-it.png", "category": "Sport"},
             {"name": "RAI PREMIUM (D)", "url": f"{LINK_DADDY}/embed/stream-858.php", "tvg_id": "raipremium.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-premium-it.png", "category": "Rai"},
-            {"name": "SKY SPORT GOLF (D)", "url": f"{LINK_DADDY}/embed/stream-574.php", "tvg_id": "skysportgolf.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-golf-it.png", "category": "Sport"},
-            {"name": "SKY SPORT MOTOGP (D)", "url": f"{LINK_DADDY}/embed/stream-575.php", "tvg_id": "skysportmotogp.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-motogp-it.png", "category": "Sport"},
-            {"name": "SKY SPORT TENNIS (D)", "url": f"{LINK_DADDY}/embed/stream-576.php", "tvg_id": "skysporttennis.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-tennis-it.png", "category": "Sport"},
-            {"name": "SKY SPORR F1 (D)", "url": f"{LINK_DADDY}/embed/stream-577.php", "tvg_id": "skysportf1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png", "category": "Sport"},
-            {"name": "SKY SPORT FOOTBALL (D)", "url": f"{LINK_DADDY}/embed/stream-460.php", "tvg_id": "skysportmax.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-football-it.png", "category": "Sport"},
-            {"name": "SKY SPORT UNO (D)", "url": f"{LINK_DADDY}/embed/stream-461.php", "tvg_id": "skysportuno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-uno-it.png", "category": "Sport"},
-            {"name": "SKY APORT ARENA (D)", "url": f"{LINK_DADDY}/embed/stream-462.php", "tvg_id": "skysportarena.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-arena-it.png", "category": "Sport"},
-            {"name": "SKY UNO (D)", "url": f"{LINK_DADDY}/embed/stream-881.php", "tvg_id": "skyuno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-uno-it.png", "category": "Altro"},
+            {"name": "SKY SPORT GOLF (D)", "url": f"{LINK_DADDY}/embed/stream-574.php", "tvg_id": "sky.sport.golf.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-golf-it.png", "category": "Sport"},
+            {"name": "SKY SPORT MOTOGP (D)", "url": f"{LINK_DADDY}/embed/stream-575.php", "tvg_id": "sky.sport.motogp.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-motogp-it.png", "category": "Sport"},
+            {"name": "SKY SPORT TENNIS (D)", "url": f"{LINK_DADDY}/embed/stream-576.php", "tvg_id": "sky.sport.tennis.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-tennis-it.png", "category": "Sport"},
+            {"name": "SKY SPORT F1 (D)", "url": f"{LINK_DADDY}/embed/stream-577.php", "tvg_id": "sky.sport.f1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-f1-it.png", "category": "Sport"},
+            {"name": "SKY SPORT FOOTBALL (D)", "url": f"{LINK_DADDY}/embed/stream-460.php", "tvg_id": "sky.sport.max.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-football-it.png", "category": "Sport"},
+            {"name": "SKY SPORT UNO (D)", "url": f"{LINK_DADDY}/embed/stream-461.php", "tvg_id": "sky.sport.uno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-uno-it.png", "category": "Sport"},
+            {"name": "SKY APORT ARENA (D)", "url": f"{LINK_DADDY}/embed/stream-462.php", "tvg_id": "sky.sport.arena.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-arena-it.png", "category": "Sport"},
+            {"name": "SKY UNO (D)", "url": f"{LINK_DADDY}/embed/stream-881.php", "tvg_id": "sky.uno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-uno-it.png", "category": "Altro"},
             {"name": "SKY CINEMA COLLECTION (D)", "url": f"{LINK_DADDY}/embed/stream-859.php", "tvg_id": "skycinemacollectionhd.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-collection-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA UNO (D)", "url": f"{LINK_DADDY}/embed/stream-860.php", "tvg_id": "skycinemauno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA ACTION (D)", "url": f"{LINK_DADDY}/embed/stream-861.php", "tvg_id": "skycinemaaction.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png", "category": "Film & Serie TV"},
-            {"name": "SLY CINEMA COMEDY (D)", "url": f"{LINK_DADDY}/embed/stream-862.php", "tvg_id": "skycinemacomedy.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-comedy-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA UNO +24 (D)", "url": f"{LINK_DADDY}/embed/stream-863.php", "tvg_id": "skycinemauno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA ROMANCE (D)", "url": f"{LINK_DADDY}/embed/stream-864.php", "tvg_id": "skycinemaromance.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-romance-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA FAMILY (D)", "url": f"{LINK_DADDY}/embed/stream-865.php", "tvg_id": "skycinemafamily.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-family-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA DUE +24 (D)", "url": f"{LINK_DADDY}/embed/stream-866.php", "tvg_id": "skycinemadue+24.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-plus24-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA DRAMA (D)", "url": f"{LINK_DADDY}/embed/stream-867.php", "tvg_id": "skycinemadrama.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-drama-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY CINEMA SUSPENSE (D)", "url": f"{LINK_DADDY}/embed/stream-868.php", "tvg_id": "skycinemasuspense.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-suspense-it.png", "category": "Film & Serie TV"},
-            {"name": "SKY SPORT 24 (D)", "url": f"{LINK_DADDY}/embed/stream-869.php", "tvg_id": "skysport24.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-24-it.png", "category": "Sport"},
-            {"name": "SKY SPORT CALCIO (D)", "url": f"{LINK_DADDY}/embed/stream-870.php", "tvg_id": "skysportcalcio.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png", "category": "Sport"},
+            {"name": "SKY CINEMA UNO (D)", "url": f"{LINK_DADDY}/embed/stream-860.php", "tvg_id": "sky.cinema.uno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA ACTION (D)", "url": f"{LINK_DADDY}/embed/stream-861.php", "tvg_id": "sky.cinema.action.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png", "category": "Film & Serie TV"},
+            {"name": "SLY CINEMA COMEDY (D)", "url": f"{LINK_DADDY}/embed/stream-862.php", "tvg_id": "sky.cinema.comedy.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-comedy-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA UNO +24 (D)", "url": f"{LINK_DADDY}/embed/stream-863.php", "tvg_id": "sky.cinema.uno.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-uno-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA ROMANCE (D)", "url": f"{LINK_DADDY}/embed/stream-864.php", "tvg_id": "sky.cinema.romance.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-romance-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA FAMILY (D)", "url": f"{LINK_DADDY}/embed/stream-865.php", "tvg_id": "sky.cinema.family.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-family-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA DUE +24 (D)", "url": f"{LINK_DADDY}/embed/stream-866.php", "tvg_id": "sky.cinema.due.+24.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-plus24-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA DRAMA (D)", "url": f"{LINK_DADDY}/embed/stream-867.php", "tvg_id": "sky.cinema.drama.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-drama-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY CINEMA SUSPENSE (D)", "url": f"{LINK_DADDY}/embed/stream-868.php", "tvg_id": "sky.cinema.suspense.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-suspense-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY SPORT 24 (D)", "url": f"{LINK_DADDY}/embed/stream-869.php", "tvg_id": "sky.sport24.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-24-it.png", "category": "Sport"},
+            {"name": "SKY SPORT CALCIO (D)", "url": f"{LINK_DADDY}/embed/stream-870.php", "tvg_id": "sky.sport.calcio.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-calcio-it.png", "category": "Sport"},
             {"name": "SKY SPORT 251 (D)", "url": f"{LINK_DADDY}/embed/stream-871.php", "tvg_id": "sky.sport..251.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SPORT 252 (D)", "url": f"{LINK_DADDY}/embed/stream-872.php", "tvg_id": "sky.sport..252.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SPORT 253 (D)", "url": f"{LINK_DADDY}/embed/stream-873.php", "tvg_id": "sky.sport..253.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
@@ -2067,9 +2071,9 @@ def vavoo_italy_channels():
             {"name": "SKY SPORT 255 (D)", "url": f"{LINK_DADDY}/embed/stream-875.php", "tvg_id": "sky.sport..255.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SPORT 256 (D)", "url": f"{LINK_DADDY}/embed/stream-876.php", "tvg_id": "sky.sport..256.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SPORT 257 (D)", "url": f"{LINK_DADDY}/embed/stream-877.php", "tvg_id": "sky.sport..257.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
-            {"name": "SKY SERIE (D)", "url": f"{LINK_DADDY}/embed/stream-880.php", "tvg_id": "skyserie.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-serie-it.png", "category": "Film & Serie TV"},
+            {"name": "SKY SERIE (D)", "url": f"{LINK_DADDY}/embed/stream-880.php", "tvg_id": "sky.serie.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-serie-it.png", "category": "Film & Serie TV"},
             {"name": "20 MEDIASET (D)", "url": f"{LINK_DADDY}/embed/stream-857.php", "tvg_id": "20mediasethd.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/20-it.png", "category": "Mediaset"},
-            {"name": "DAZN 1 (D)", "url": f"{LINK_DADDY}/embed/stream-877.php", "tvg_id": "dazn1.it", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png", "category": "Sport"},
+            {"name": "DAZN 1 (D)", "url": f"{LINK_DADDY}/embed/stream-877.php", "tvg_id": "dazn.1.it.it", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png", "category": "Sport"}
         ]
 
     def save_m3u8(organized_channels):
