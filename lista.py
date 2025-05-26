@@ -2086,7 +2086,7 @@ def vavoo_italy_channels():
                 "name": name,
                 "url": url,
                 "tvg_id": channel_id_map.get(normalize_channel_name(name_for_mapping), ""),
-                "logo": logos_dict.get(name.lower(), DEFAULT_TVG_ICON)
+                "logo": logos_dict.get(re.sub(r'\s*\(\d+\)$', '', name.lower()), DEFAULT_TVG_ICON)
             })
 
         for ch in manual_channels:
