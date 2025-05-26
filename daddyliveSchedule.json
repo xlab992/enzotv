@@ -8391,6 +8391,16 @@
         ],
         "Soccer</span>": [
             {
+                "time": "07:00",
+                "event": "China - League 2 - North : Beijing Institute Technology vs Lanzhou Longyuan",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "China - League 1 : Yanbian Longding vs Jiangxi Dingnan United",
+                "channels": []
+            },
+            {
                 "time": "09:00",
                 "event": "Vietnam V.League 1 : Dong Nai vs Phu Dong",
                 "channels": [
@@ -9953,6 +9963,206 @@
                         "channel_id": "232"
                     }
                 ]
+            },
+            {
+                "time": "03:40",
+                "event": "UTR (M) - Lovedale (AUS) : Vishal Prakash vs Arjun Mehrotra",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "UTR (M) - Trnava (SVK) : David Quayle vs Zdenek Derkas",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "Challenger - Chisinau (MDA) - Qualifiers : Giles Hussey vs Ben Jones",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "Challenger - Chisinau (MDA) - Qualifiers : Harry Wendelken vs Theo Papamalamis",
+                "channels": []
+            },
+            {
+                "time": "07:00",
+                "event": "Challenger - Chisinau (MDA) - Qualifiers : Sai Karteek Reddy Ganta vs Ramkumar Ramanathan",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Vicenza (ITA) - Qualifiers : Ivan Gakhov vs Joel Josef Schwarzler",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Vicenza (ITA) - Qualifiers : Marco Cecchinato vs Matthew Dellavedova",
+                "channels": []
+            },
+            {
+                "time": "08:00",
+                "event": "Challenger - Vicenza (ITA) - Qualifiers : Martin Klizan vs Justin Engel",
+                "channels": []
+            },
+            {
+                "time": "08:10",
+                "event": "Challenger - Chisinau (MDA) - Qualifiers : Lilian Marmousez vs Erik Arutiunian",
+                "channels": []
+            },
+            {
+                "time": "08:15",
+                "event": "UTR (M) - Trnava (SVK) : Aleksandr Braynin vs Roman Postolka",
+                "channels": []
+            },
+            {
+                "time": "08:15",
+                "event": "UTR (F) - Trnava (SVK) : Aleksandra Melnikova vs Adela Polakovicova",
+                "channels": []
+            },
+            {
+                "time": "08:15",
+                "event": "UTR (M) - Trnava (SVK) : Jakub Medved vs Kristof Minarik",
+                "channels": []
+            },
+            {
+                "time": "08:15",
+                "event": "UTR (F) - Trnava (SVK) : Stella Kovacicova vs Valentina Vachkova",
+                "channels": []
+            },
+            {
+                "time": "08:30",
+                "event": "UTR (M) - Pazardzhik (BGR) : Vladimir Holban vs Damian Frutos",
+                "channels": []
+            },
+            {
+                "time": "09:00",
+                "event": "Challenger - Chisinau (MDA) - Qualifiers : Maximus Jones vs Olaf Pieczkowski",
+                "channels": []
+            },
+            {
+                "time": "09:00",
+                "event": "Challenger - Chisinau (MDA) - Qualifiers : Stuart Parker vs Filip Pieczonka",
+                "channels": []
+            },
+            {
+                "time": "09:00",
+                "event": "UTR (M) - Pazardzhik (BGR) : Vasil Dimitrov vs Yoav Versloot",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Vicenza (ITA) - Qualifiers : Andres Santamarta Roig vs Giovanni Fonio",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Vicenza (ITA) - Qualifiers : Borna Gojo vs Gonzalo Bueno",
+                "channels": []
+            },
+            {
+                "time": "09:10",
+                "event": "Challenger - Vicenza (ITA) - Qualifiers : Federico Bondioli vs Nicolai Budkov Kjaer",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "UTR (F) - Pazardzhik (BGR) : Aleksandra Mateva vs Yoana Radulova",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "UTR (F) - Trnava (SVK) : Katarina Pavlechova vs Sofia Milatova",
+                "channels": []
+            },
+            {
+                "time": "09:30",
+                "event": "UTR (M) - Trnava (SVK) : Samuel Kyjaci vs Jakub Vrba",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "Challenger - Chisinau (MDA) : Ilia Simakin vs Charlie Robertson",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "UTR (M) - Trnava (SVK) : Norbert Marosik vs Roman Garkavenko",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "UTR (F) - Trnava (SVK) : Olga Bienzobas Fernandez vs Denise Hrdinkova",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "Challenger - Chisinau (MDA) : Robert Strombachs vs Jay Clarke",
+                "channels": []
+            },
+            {
+                "time": "11:00",
+                "event": "UTR (F) - Trnava (SVK) : Victoria Chramcova vs Martina Marusinova",
+                "channels": []
+            },
+            {
+                "time": "12:00",
+                "event": "Challenger - Vicenza (ITA) : Alejandro Moro Canas vs Ignacio Buse",
+                "channels": []
+            },
+            {
+                "time": "12:00",
+                "event": "Challenger - Vicenza (ITA) : Gauthier Onclin vs Timofey Skatov",
+                "channels": []
+            },
+            {
+                "time": "12:00",
+                "event": "Challenger - Vicenza (ITA) : Lukas Neumayer vs Rodrigo Pacheco Mendez",
+                "channels": []
+            },
+            {
+                "time": "12:10",
+                "event": "Challenger - Chisinau (MDA) : Clement Chidekh vs Lukas Pokorny",
+                "channels": []
+            },
+            {
+                "time": "12:10",
+                "event": "Challenger - Chisinau (MDA) : Philip Henning vs Daniil Glinka",
+                "channels": []
+            },
+            {
+                "time": "14:30",
+                "event": "Challenger - Vicenza (ITA) : Abedallah Shelbayh vs Jerome Kym",
+                "channels": []
+            },
+            {
+                "time": "15:25",
+                "event": "Challenger - Little Rock (USA) - Qualifiers : Rudy Quan vs Dan Martin",
+                "channels": []
+            },
+            {
+                "time": "16:00",
+                "event": "UTR (M) - Knoxville (USA) : Ian Bracks vs Ethan Muza",
+                "channels": []
+            },
+            {
+                "time": "17:00",
+                "event": "UTR (F) - Knoxville (USA) : Elza Tomase vs Taly Licht",
+                "channels": []
+            },
+            {
+                "time": "17:30",
+                "event": "Challenger - Vicenza (ITA) : Francesco Maestrelli vs Lorenzo Carboni",
+                "channels": []
+            },
+            {
+                "time": "18:45",
+                "event": "Challenger - Little Rock (USA) : Rafael Jodar vs Liam Draxl",
+                "channels": []
+            },
+            {
+                "time": "19:10",
+                "event": "Challenger - Little Rock (USA) : Naoki Nakagawa vs Alexander Kotzen",
+                "channels": []
             }
         ],
         "Motorsport</span>": [
@@ -10342,6 +10552,11 @@
             },
             {
                 "time": "16:00",
+                "event": "Turkey - TBSL - Play-in : Buyukcekmece vs Turk Telekom",
+                "channels": []
+            },
+            {
+                "time": "16:00",
                 "event": "Czech Republic NBL : A Plus Zs Brno BC vs. Basketball Nymburk",
                 "channels": [
                     {
@@ -10431,6 +10646,11 @@
                         "channel_id": "28"
                     }
                 ]
+            },
+            {
+                "time": "18:00",
+                "event": "Italy - Serie B - Playoff : Mestre vs LUISS Roma",
+                "channels": []
             },
             {
                 "time": "18:35",
