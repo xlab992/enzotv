@@ -2127,7 +2127,7 @@ def vavoo_italy_channels():
         return [
             {"name": "EUROSPORT 1  (D)", "url": "https://daddylive.dad/embed/stream-878.php", "tvg_id": "eurosport1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png", "category": "Sport"},
             {"name": "EUROSPORT 2  (D)", "url": "https://daddylive.dad/embed/stream-879.php", "tvg_id": "eurosport2.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-2-es.png", "category": "Sport"},
-            {"name": "ITALIA 1  (D)", "url": "https://daddylive.dad/embed/stream-854.php", "tvg_id": "italia1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/italia1-it.png", "category": "Mediaset"},
+            {"name": "ITALIA 1  (D)", "url": "https://daddylive.dad/embed/stream-854.php", "tvg_id": "italia.1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/italia1-it.png", "category": "Mediaset"},
             {"name": "LA7  (D)", "url": "https://daddylive.dad/embed/stream-855.php", "tvg_id": "la7.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png", "category": "Altro"},
             {"name": "LA7d   (D)", "url": "https://daddylive.dad/embed/stream-856.php", "tvg_id": "la7.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png", "category": "Altro"},
             {"name": "RAI 1  (D)", "url": "https://daddylive.dad/embed/stream-850.php", "tvg_id": "rai1.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-1-it.png", "category": "Rai"},
