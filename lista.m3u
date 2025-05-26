@@ -1366,7 +1366,7 @@ https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-
 #EXTINF:-1 tvg-name="Basketball" group-title="Eventi Live",--- Basketball ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="serieaplayoffsquarterfinalsgame5" tvg-name="Serie A Playoffs | Quarterfinals | Game 5 (17:55)" tvg-logo="https://www.derthonabasket.it/wp-content/uploads/2021/08/EaUhxBrHge2Ywzf2dLZgJuQ9-1024x1024.png" group-title="Eventi Live",Serie A Playoffs | Quarterfinals | Game 5 (17:55)
+#EXTINF:-1 tvg-id="serieaplayoffsquarterfinalsgame5" tvg-name="Serie A Playoffs | Quarterfinals | Game 5 (17:55)" tvg-logo="https://png.pngtree.com/png-clipart/20230102/original/pngtree-croatia-vs-brazil-quarterfinals-png-image_8855912.png" group-title="Eventi Live",Serie A Playoffs | Quarterfinals | Game 5 (17:55)
 https://nzo66-tvproxy.hf.space/proxy/m3u?url=https://daddylive.dad/embed/stream-879.php
 
 #EXTINF:-1 tvg-id="seriea2cantuvssebastiani" tvg-name="Serie A2 : Cantu vs Sebastiani (20:35)" tvg-logo="https://raw.githubusercontent.com/nzo66/TV/main/logos/Cantu_vs_Sebastiani.png" group-title="Eventi Live",Serie A2 : Cantu vs Sebastiani (20:35)
