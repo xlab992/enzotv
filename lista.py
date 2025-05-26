@@ -131,16 +131,24 @@ def merger_playlistworld():
 
 # Funzione per il secondo script (epg_merger.py)
 def epg_merger():
-    # Codice del secondo script qui
-    # Aggiungi il codice del tuo script "epg_merger.py" in questa funzione.
-    # Ad esempio:
-    print("Eseguendo l'epg_merger.py...")
-    # Il codice che avevi nello script "epg_merger.py" va qui, senza modifiche.
+    """
+    Funzione completa per il merge di file EPG da multiple sorgenti.
+    Combina file XML e GZIP da URL remoti e file locali.
+    """
     import requests
     import gzip
     import os
     import xml.etree.ElementTree as ET
     import io
+    import logging
+    from datetime import datetime
+
+    # Configurazione logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
+    logger = logging.getLogger(__name__)
 
     # URL dei file GZIP o XML da elaborare
     urls_gzip = [
@@ -152,7 +160,7 @@ def epg_merger():
     ]
 
     # File di output
-    output_xml = 'epg.xml'    # Nome del file XML finale
+    output_xml = 'epg.xml'
 
     # URL remoto di it.xml
     url_it = 'https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml'
@@ -161,8 +169,17 @@ def epg_merger():
     path_eventi = 'eventi.xml'
 
     def download_and_parse_xml(url):
-        """Scarica un file .xml o .gzip e restituisce l'ElementTree."""
+        """
+        Scarica un file .xml o .gzip e restituisce l'ElementTree.
+        
+        Args:
+            url (str): URL del file da scaricare
+            
+        Returns:
+            ET.ElementTree: Albero XML parsato o None se errore
+        """
         try:
+            logger.info(f"Scaricando da: {url}")
             response = requests.get(url, timeout=30)
             response.raise_for_status()
 
@@ -170,69 +187,171 @@ def epg_merger():
             try:
                 with gzip.open(io.BytesIO(response.content), 'rb') as f_in:
                     xml_content = f_in.read()
+                logger.info(f"File GZIP decompresso da {url}")
             except (gzip.BadGzipFile, OSError):
-                # Non Ã¨ un file gzip, usa direttamente il contenuto
+                # Non è un file gzip, usa direttamente il contenuto
                 xml_content = response.content
+                logger.info(f"File XML scaricato da {url}")
 
             return ET.ElementTree(ET.fromstring(xml_content))
+            
         except requests.exceptions.RequestException as e:
-            print(f"Errore durante il download da {url}: {e}")
+            logger.error(f"Errore durante il download da {url}: {e}")
         except ET.ParseError as e:
-            print(f"Errore nel parsing del file XML da {url}: {e}")
+            logger.error(f"Errore nel parsing del file XML da {url}: {e}")
+        except Exception as e:
+            logger.error(f"Errore generico con {url}: {e}")
         return None
 
-    # Creare un unico XML vuoto
-    root_finale = ET.Element('tv')
-    tree_finale = ET.ElementTree(root_finale)
-
-    # Processare ogni URL
-    for url in urls_gzip:
-        tree = download_and_parse_xml(url)
-        if tree is not None:
-            root = tree.getroot()
-            for element in root:
-                root_finale.append(element)
-
-    # Aggiungere eventi.xml da file locale
-    if os.path.exists(path_eventi):
-        try:
-            tree_eventi = ET.parse(path_eventi)
-            root_eventi = tree_eventi.getroot()
-            for programme in root_eventi.findall(".//programme"):
-                root_finale.append(programme)
-        except ET.ParseError as e:
-            print(f"Errore nel parsing del file eventi.xml: {e}")
-    else:
-        print(f"File non trovato: {path_eventi}")
-
-    # Aggiungere it.xml da URL remoto
-    tree_it = download_and_parse_xml(url_it)
-    if tree_it is not None:
-        root_it = tree_it.getroot()
-        for programme in root_it.findall(".//programme"):
-            root_finale.append(programme)
-    else:
-        print(f"Impossibile scaricare o analizzare il file it.xml da {url_it}")
-
-    # Funzione per pulire attributi
     def clean_attribute(element, attr_name):
+        """
+        Pulisce un attributo rimuovendo spazi e convertendo in minuscolo.
+        
+        Args:
+            element: Elemento XML
+            attr_name (str): Nome dell'attributo da pulire
+        """
         if attr_name in element.attrib:
             old_value = element.attrib[attr_name]
             new_value = old_value.replace(" ", "").lower()
             element.attrib[attr_name] = new_value
 
+    def validate_xml_structure(root):
+        """
+        Valida la struttura base dell'XML EPG.
+        
+        Args:
+            root: Root element dell'XML
+            
+        Returns:
+            bool: True se valido
+        """
+        if root.tag != 'tv':
+            logger.warning(f"Root element non standard: {root.tag}")
+            return False
+        return True
+
+    # Inizio elaborazione
+    logger.info("=== INIZIO EPG MERGER ===")
+    start_time = datetime.now()
+
+    # Creare un unico XML vuoto
+    root_finale = ET.Element('tv')
+    tree_finale = ET.ElementTree(root_finale)
+    
+    # Contatori per statistiche
+    total_channels = 0
+    total_programmes = 0
+
+    # Processare ogni URL
+    logger.info("Processando URL remoti...")
+    for i, url in enumerate(urls_gzip, 1):
+        logger.info(f"Processando URL {i}/{len(urls_gzip)}: {url}")
+        tree = download_and_parse_xml(url)
+        
+        if tree is not None:
+            root = tree.getroot()
+            validate_xml_structure(root)
+            
+            # Conteggio elementi
+            channels = len(root.findall(".//channel"))
+            programmes = len(root.findall(".//programme"))
+            total_channels += channels
+            total_programmes += programmes
+            
+            logger.info(f"Trovati {channels} canali e {programmes} programmi")
+            
+            for element in root:
+                root_finale.append(element)
+        else:
+            logger.warning(f"Saltato URL: {url}")
+
+    # Aggiungere eventi.xml da file locale
+    logger.info("Processando file locale eventi.xml...")
+    if os.path.exists(path_eventi):
+        try:
+            tree_eventi = ET.parse(path_eventi)
+            root_eventi = tree_eventi.getroot()
+            validate_xml_structure(root_eventi)
+            
+            programmes_eventi = root_eventi.findall(".//programme")
+            logger.info(f"Trovati {len(programmes_eventi)} programmi in eventi.xml")
+            
+            for programme in programmes_eventi:
+                root_finale.append(programme)
+                total_programmes += 1
+                
+        except ET.ParseError as e:
+            logger.error(f"Errore nel parsing del file eventi.xml: {e}")
+        except Exception as e:
+            logger.error(f"Errore generico con eventi.xml: {e}")
+    else:
+        logger.warning(f"File non trovato: {path_eventi}")
+
+    # Aggiungere it.xml da URL remoto
+    logger.info("Processando it.xml da PlutoTV...")
+    tree_it = download_and_parse_xml(url_it)
+    if tree_it is not None:
+        root_it = tree_it.getroot()
+        validate_xml_structure(root_it)
+        
+        programmes_it = root_it.findall(".//programme")
+        logger.info(f"Trovati {len(programmes_it)} programmi in it.xml")
+        
+        for programme in programmes_it:
+            root_finale.append(programme)
+            total_programmes += 1
+    else:
+        logger.error(f"Impossibile scaricare o analizzare il file it.xml da {url_it}")
+
+    # Pulizia degli attributi
+    logger.info("Pulizia attributi in corso...")
+    
     # Pulire gli ID dei canali
+    channels_cleaned = 0
     for channel in root_finale.findall(".//channel"):
         clean_attribute(channel, 'id')
+        channels_cleaned += 1
 
     # Pulire gli attributi 'channel' nei programmi
+    programmes_cleaned = 0
     for programme in root_finale.findall(".//programme"):
         clean_attribute(programme, 'channel')
+        programmes_cleaned += 1
+
+    logger.info(f"Puliti {channels_cleaned} canali e {programmes_cleaned} programmi")
 
     # Salvare il file XML finale
-    with open(output_xml, 'wb') as f_out:
-        tree_finale.write(f_out, encoding='utf-8', xml_declaration=True)
-    print(f"File XML salvato: {output_xml}")
+    logger.info(f"Salvando file XML finale: {output_xml}")
+    try:
+        with open(output_xml, 'wb') as f_out:
+            tree_finale.write(f_out, encoding='utf-8', xml_declaration=True)
+        
+        # Statistiche finali
+        file_size = os.path.getsize(output_xml) / (1024 * 1024)  # MB
+        end_time = datetime.now()
+        duration = (end_time - start_time).total_seconds()
+        
+        logger.info("=== COMPLETATO CON SUCCESSO ===")
+        logger.info(f"File salvato: {output_xml}")
+        logger.info(f"Dimensione file: {file_size:.2f} MB")
+        logger.info(f"Totale canali: {total_channels}")
+        logger.info(f"Totale programmi: {total_programmes}")
+        logger.info(f"Tempo di elaborazione: {duration:.2f} secondi")
+        
+        print(f"✅ EPG Merger completato!")
+        print(f"📁 File salvato: {output_xml}")
+        print(f"📊 {total_channels} canali, {total_programmes} programmi")
+        print(f"⏱️ Tempo: {duration:.2f}s")
+        
+    except Exception as e:
+        logger.error(f"Errore durante il salvataggio: {e}")
+        print(f"❌ Errore durante il salvataggio: {e}")
+
+# Esempio di utilizzo
+if __name__ == "__main__":
+    epg_merger()
+
 
 def eventi_m3u8_generator_world():
     # Codice del terzo script qui
