@@ -2055,7 +2055,6 @@ def vavoo_italy_channels():
             {"name": "SKY SPORT 254 (D)", "url": f"{LINK_DADDY}/embed/stream-874.php", "tvg_id": "sky.sport..254.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SPORT 255 (D)", "url": f"{LINK_DADDY}/embed/stream-875.php", "tvg_id": "sky.sport..255.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SPORT 256 (D)", "url": f"{LINK_DADDY}/embed/stream-876.php", "tvg_id": "sky.sport..256.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
-            {"name": "SKY SPORT 257 (D)", "url": f"{LINK_DADDY}/embed/stream-877.php", "tvg_id": "sky.sport..257.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png", "category": "Sport"},
             {"name": "SKY SERIE (D)", "url": f"{LINK_DADDY}/embed/stream-880.php", "tvg_id": "sky.serie.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-serie-it.png", "category": "Film & Serie TV"},
             {"name": "20 MEDIASET (D)", "url": f"{LINK_DADDY}/embed/stream-857.php", "tvg_id": "20mediasethd.it", "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/20-it.png", "category": "Mediaset"},
             {"name": "DAZN 1 (D)", "url": f"{LINK_DADDY}/embed/stream-877.php", "tvg_id": "dazn.1.it.it", "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Dazn-logo.png", "category": "Sport"}
@@ -2088,20 +2087,71 @@ def vavoo_italy_channels():
             channels = fetch_channels(url)
             all_links.extend(filter_italian_channels(channels, url))
 
+        # --- CANALI CUSTOM CON LOGO E TVG_ID GIA' PRESENTI ---
+        custom_channels = [
+            {
+                "name": "SKY SPORT 257 (SS)",
+                "url": "https://hls.kangal.icu/hls/sky257/index.m3u8&h_user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/133.0.0.0%20Safari/537.36&h_referer=https%3A//skystreaming.stream/&h_origin=https%3A//skystreaming.stream",
+                "tvg_id": "sky.sport..257.it",
+                "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png",
+                "category": "Sport"
+            },
+            {
+                "name": "SKY SPORT 258 (SS)",
+                "url": "https://hls.kangal.icu/hls/sky258/index.m3u8&h_user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/133.0.0.0%20Safari/537.36&h_referer=https%3A//skystreaming.stream/&h_origin=https%3A//skystreaming.stream",
+                "tvg_id": "sky.sport..258.it",
+                "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png",
+                "category": "Sport"
+            },
+            {
+                "name": "SKY SPORT 259 (SS)",
+                "url": "https://hls.kangal.icu/hls/sky259/index.m3u8&h_user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/133.0.0.0%20Safari/537.36&h_referer=https%3A//skystreaming.stream/&h_origin=https%3A//skystreaming.stream",
+                "tvg_id": "sky.sport..259.it",
+                "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png",
+                "category": "Sport"
+            },
+            {
+                "name": "SKY SPORT 260 (SS)",
+                "url": "https://hls.kangal.icu/hls/sky260/index.m3u8&h_user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/133.0.0.0%20Safari/537.36&h_referer=https%3A//skystreaming.stream/&h_origin=https%3A//skystreaming.stream",
+                "tvg_id": "sky.sport..260.it",
+                "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png",
+                "category": "Sport"
+            },
+            {
+                "name": "SKY SPORT 261 (SS)",
+                "url": "https://hls.kangal.icu/hls/sky261/index.m3u8&h_user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/133.0.0.0%20Safari/537.36&h_referer=https%3A//skystreaming.stream/&h_origin=https%3A//skystreaming.stream",
+                "tvg_id": "sky.sport..261.it",
+                "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/sky-sport-hd-it.png",
+                "category": "Sport"
+            },
+        ]
+        all_links.extend(custom_channels)
+
         manual_channels = get_manual_channels()
 
         organized_channels = {category: [] for category in CATEGORY_KEYWORDS.keys()}
 
-        for name, url in all_links:
-            category = classify_channel(name)
-            name_for_mapping = re.sub(r'\s*\(\d+\)$', '', name)
-            organized_channels[category].append({
-                "name": name,
-                "url": url,
-                "tvg_id": channel_id_map.get(normalize_channel_name(name), ""),
-                "logo": logos_dict.get(re.sub(r'\s*\(\d+\)$', '', name.lower()), DEFAULT_TVG_ICON),
-                "manual": False
-            })
+        for item in all_links:
+            if isinstance(item, tuple):
+                name, url = item
+                category = classify_channel(name)
+                name_for_mapping = re.sub(r'\s*\(\d+\)$', '', name)
+                organized_channels[category].append({
+                    "name": name,
+                    "url": url,
+                    "tvg_id": channel_id_map.get(normalize_channel_name(name), ""),
+                    "logo": logos_dict.get(re.sub(r'\s*\(\d+\)$', '', name.lower()), DEFAULT_TVG_ICON),
+                    "manual": False
+                })
+            elif isinstance(item, dict):
+                category = item.get("category") or classify_channel(item["name"])
+                organized_channels[category].append({
+                    "name": item["name"],
+                    "url": item["url"],
+                    "tvg_id": item["tvg_id"],
+                    "logo": item["logo"],
+                    "manual": False
+                })
 
         for ch in manual_channels:
             cat = ch.get("category") or classify_channel(ch["name"])
