@@ -2225,7 +2225,7 @@ def main():
     try:
         schedule_success = schedule_extractor()
     except Exception as e:
-        print(f"Errore durante l'esecuzione di vavoo_italy_channels: {e}")
+        print(f"Errore durante l'esecuzione di schedule_extractor: {e}")
 
     eventi_en = os.getenv("EVENTI_EN", "no").strip().lower()
     world_flag = os.getenv("WORLD", "si").strip().lower()
