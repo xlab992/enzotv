@@ -2240,70 +2240,99 @@ def remover():
             print(f"File non trovato: {filename}")
 
 # Funzione principale che esegue tutti gli script
-def main():
-    schedule_success = True
+def run_all_scripts():
+    import os
+    from dotenv import load_dotenv
+    load_dotenv()
+    
     try:
-        schedule_success = schedule_extractor()
-        if not schedule_success:
-            print("AVVISO: schedule_extractor ha fallito, si prosegue comunque.")
+        schedule_extractor()
     except Exception as e:
         print(f"Errore durante l'esecuzione di schedule_extractor: {e}")
-        print("Si prosegue comunque con la generazione EPG.")
 
+    # Selezione in base a EVENTI_EN per epg_eventi
     eventi_en = os.getenv("EVENTI_EN", "no").strip().lower()
-    world_flag = os.getenv("WORLD", "si").strip().lower()
 
-    # EPG Eventi
-    try:
-        if eventi_en == "si":
+    if eventi_en == "si":
+        try:
             epg_eventi_generator_world()
-        else:
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di epg_eventi_generator_world: {e}")
+            return
+    else:
+        try:
             epg_eventi_generator()
-    except Exception as e:
-        print(f"Errore durante la generazione EPG eventi: {e}")
-        return
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di epg_eventi_generator: {e}")
+            return
 
-    # Eventi M3U8
-    try:
-        if eventi_en == "si":
-            eventi_m3u8_generator_world()
-        else:
-            eventi_m3u8_generator()
-    except Exception as e:
-        print(f"Errore durante la generazione eventi.m3u8: {e}")
-        return
-
-    # EPG Merger
     try:
         epg_merger()
     except Exception as e:
         print(f"Errore durante l'esecuzione di epg_merger: {e}")
         return
 
-    # Canali Italia
+    # Selezione in base a EVENTI_EN per eventi_m3u8
+    if eventi_en == "si":
+        try:
+            eventi_m3u8_generator_world()
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di eventi_m3u8_generator_world: {e}")
+            return
+    else:
+        try:
+            eventi_m3u8_generator()
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di eventi_m3u8_generator: {e}")
+            return
+
     try:
         vavoo_italy_channels()
     except Exception as e:
         print(f"Errore durante l'esecuzione di vavoo_italy_channels: {e}")
         return
 
-    # Canali World e Merge finale
-    try:
-        if world_flag == "si":
+    # Controllo variabile WORLD
+    world_flag = os.getenv("WORLD", "si").strip().lower()
+
+    if world_flag == "si":
+        try:
             world_channels_generator()
-            merger_playlistworld()
-            removerworld()
-        elif world_flag == "no":
-            merger_playlist()
-            remover()
-        else:
-            print(f"Valore WORLD non valido: '{world_flag}'. Usa 'si' o 'no'.")
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di world_channels_generator: {e}")
             return
-    except Exception as e:
-        print(f"Errore nella fase finale: {e}")
+
+        try:
+            merger_playlistworld()
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di merger_playlistworld: {e}")
+            return
+
+        try:
+            removerworld()
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di removerworld: {e}")
+            return
+
+    elif world_flag == "no":
+        try:
+            merger_playlist()
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di merger_playlist: {e}")
+            return
+
+        try:
+            remover()
+        except Exception as e:
+            print(f"Errore durante l'esecuzione di remover: {e}")
+            return
+
+    else:
+        print(f"Valore WORLD non valido: '{world_flag}'. Usa 'si' o 'no'.")
         return
 
     print("Tutti gli script sono stati eseguiti correttamente!")
 
+# Esecuzione principale
 if __name__ == "__main__":
-    main()
+    run_all_scripts()
