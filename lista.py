@@ -134,6 +134,7 @@ def merger_playlistworld():
 
 # Funzione per il secondo script (epg_merger.py)
 def epg_merger():
+    print("Eseguendo il epg_merger.py...")
     """
     Unisce più EPG XML/GZIP e aggiunge eventi locali, escludendo dalla pulizia i canali/programmi PlutoTV.
     Logging dettagliato su console.
