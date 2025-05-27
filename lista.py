@@ -2222,14 +2222,10 @@ def remover():
 
 # Funzione principale che esegue tutti gli script
 def main():
-    schedule_success = True
     try:
         schedule_success = schedule_extractor()
-        if not schedule_success:
-            print("AVVISO: schedule_extractor ha fallito, si prosegue comunque.")
     except Exception as e:
-        print(f"Errore durante l'esecuzione di schedule_extractor: {e}")
-        print("Si prosegue comunque con la generazione EPG.")
+        print(f"Errore durante l'esecuzione di vavoo_italy_channels: {e}")
 
     eventi_en = os.getenv("EVENTI_EN", "no").strip().lower()
     world_flag = os.getenv("WORLD", "si").strip().lower()
