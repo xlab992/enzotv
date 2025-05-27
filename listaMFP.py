@@ -2270,13 +2270,6 @@ def main():
         print(f"Errore durante la generazione EPG eventi: {e}")
         return
 
-    # EPG Merger
-    try:
-        epg_merger()
-    except Exception as e:
-        print(f"Errore durante l'esecuzione di epg_merger: {e}")
-        return
-
     # Eventi M3U8
     try:
         if eventi_en == "si":
@@ -2285,6 +2278,13 @@ def main():
             eventi_m3u8_generator()
     except Exception as e:
         print(f"Errore durante la generazione eventi.m3u8: {e}")
+        return
+
+    # EPG Merger
+    try:
+        epg_merger()
+    except Exception as e:
+        print(f"Errore durante l'esecuzione di epg_merger: {e}")
         return
 
     # Canali Italia
@@ -2314,3 +2314,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
