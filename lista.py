@@ -1428,7 +1428,23 @@ def epg_eventi_generator_world():
             filtered_categories = {}
             for category, events in categories.items():
                 filtered_events = []
-                for event_info in events:
+                for event_info in events: # Original loop for events
+                    # Filtra gli eventi in base all'orario specificato (00:00 - 04:00)
+                    event_time_str = event_info.get("time", "00:00") # Prende l'orario dell'evento, default a "00:00" se mancante
+                    try:
+                        event_actual_time = datetime.strptime(event_time_str, "%H:%M").time()
+                        
+                        # Definisci gli orari limite per il filtro
+                        filter_start_time = datetime.strptime("00:00", "%H:%M").time()
+                        filter_end_time = datetime.strptime("04:00", "%H:%M").time()
+
+                        # Escludi eventi se l'orario Ã¨ compreso tra 00:00 e 04:00 inclusi
+                        if filter_start_time <= event_actual_time <= filter_end_time:
+                            continue # Salta questo evento e passa al successivo
+                    except ValueError:
+                        print(f"[!] Orario evento non valido '{event_time_str}' per l'evento '{event_info.get('event', 'Sconosciuto')}' durante il caricamento JSON. Evento saltato.")
+                        continue
+
                     filtered_channels = []
                     # Utilizza .get("channels", []) per gestire casi in cui "channels" potrebbe mancare
                     for channel in event_info.get("channels", []): 
