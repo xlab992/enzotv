@@ -306,10 +306,10 @@ def eventi_m3u8_generator_world():
                 team1 = teams[0].strip()
                 team2 = teams[1].strip()
                 
-                print(f"[ð] Ricerca logo per Team 1: {team1}")
+                print(f"[🔍] Ricerca logo per Team 1: {team1}")
                 logo1_url = search_team_logo(team1)
                 
-                print(f"[ð] Ricerca logo per Team 2: {team2}")
+                print(f"[🔍] Ricerca logo per Team 2: {team2}")
                 logo2_url = search_team_logo(team2)
                 
                 # Se abbiamo trovato entrambi i loghi, creiamo un'immagine combinata
@@ -327,7 +327,7 @@ def eventi_m3u8_generator_world():
                         if exists(output_filename):
                             file_age = current_time - os.path.getmtime(output_filename)
                             if file_age <= three_hours_in_seconds:
-                                print(f"[â] Utilizzo immagine combinata esistente: {output_filename}")
+                                print(f"[✓] Utilizzo immagine combinata esistente: {output_filename}")
                                 
                                 # Carica le variabili d'ambiente per GitHub
                                 NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -336,7 +336,7 @@ def eventi_m3u8_generator_world():
                                 # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                                 if NOMEGITHUB and NOMEREPO:
                                     github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                                    print(f"[â] URL GitHub generato per logo esistente: {github_raw_url}")
+                                    print(f"[✓] URL GitHub generato per logo esistente: {github_raw_url}")
                                     return github_raw_url
                                 else:
                                     # Altrimenti restituisci il percorso locale
@@ -404,7 +404,7 @@ def eventi_m3u8_generator_world():
                         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
                         combined.save(output_filename)
                         
-                        print(f"[â] Immagine combinata creata: {output_filename}")
+                        print(f"[✓] Immagine combinata creata: {output_filename}")
                         
                         # Carica le variabili d'ambiente per GitHub
                         NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -413,7 +413,7 @@ def eventi_m3u8_generator_world():
                         # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                         if NOMEGITHUB and NOMEREPO:
                             github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                            print(f"[â] URL GitHub generato: {github_raw_url}")
+                            print(f"[✓] URL GitHub generato: {github_raw_url}")
                             return github_raw_url
                         else:
                             # Altrimenti restituisci il percorso locale
@@ -429,7 +429,7 @@ def eventi_m3u8_generator_world():
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
-                print(f"[ð] Tentativo ricerca logo con prefisso: {prefix_name}")
+                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
                 
                 # Prepara la query di ricerca con il prefisso
                 search_query = urllib.parse.quote(f"{prefix_name} logo")
@@ -463,14 +463,14 @@ def eventi_m3u8_generator_world():
                             # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
                             for match in matches:
                                 if '.png' in match.lower() or '.svg' in match.lower():
-                                    print(f"[â] Logo trovato con prefisso: {match}")
+                                    print(f"[✓] Logo trovato con prefisso: {match}")
                                     return match
                             # Se non troviamo PNG o SVG, prendi il primo risultato
-                            print(f"[â] Logo trovato con prefisso: {matches[0]}")
+                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
                             return matches[0]
             
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
-            print(f"[ð] Ricerca standard per: {clean_event_name}")
+            print(f"[🔍] Ricerca standard per: {clean_event_name}")
             
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
@@ -702,17 +702,17 @@ def eventi_m3u8_generator_world():
                     
                     # Cerca un logo per questo evento
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
-                    print(f"[ð] Ricerca logo per: {clean_event_title}") 
+                    print(f"[🔍] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
                     
                     # Applica la pulizia al tvg-id
                     tvg_id_cleaned = clean_tvg_id(clean_event_title)
       
-                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php" 
-                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")                  
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
-                    print(f"[â] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
+                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php"
+                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n')
+                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
       
     if __name__ == "__main__": 
         # Assicurati che il modulo requests sia installato 
@@ -794,10 +794,10 @@ def eventi_m3u8_generator():
                 team1 = teams[0].strip()
                 team2 = teams[1].strip()
                 
-                print(f"[ð] Ricerca logo per Team 1: {team1}")
+                print(f"[🔍] Ricerca logo per Team 1: {team1}")
                 logo1_url = search_team_logo(team1)
                 
-                print(f"[ð] Ricerca logo per Team 2: {team2}")
+                print(f"[🔍] Ricerca logo per Team 2: {team2}")
                 logo2_url = search_team_logo(team2)
                 
                 # Se abbiamo trovato entrambi i loghi, creiamo un'immagine combinata
@@ -821,7 +821,7 @@ def eventi_m3u8_generator():
                                 if file_age > three_hours_in_seconds:
                                     try:
                                         os.remove(logo_path)
-                                        print(f"[ðï¸] Rimosso logo obsoleto: {logo_path}")
+                                        print(f"[🗑️] Rimosso logo obsoleto: {logo_path}")
                                     except Exception as e:
                                         print(f"[!] Errore nella rimozione del logo {logo_path}: {e}")
                         
@@ -830,7 +830,7 @@ def eventi_m3u8_generator():
                         if exists(output_filename):
                             file_age = current_time - os.path.getmtime(output_filename)
                             if file_age <= three_hours_in_seconds:
-                                print(f"[â] Utilizzo immagine combinata esistente: {output_filename}")
+                                print(f"[✓] Utilizzo immagine combinata esistente: {output_filename}")
                                 
                                 # Carica le variabili d'ambiente per GitHub
                                 NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -839,7 +839,7 @@ def eventi_m3u8_generator():
                                 # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                                 if NOMEGITHUB and NOMEREPO:
                                     github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                                    print(f"[â] URL GitHub generato per logo esistente: {github_raw_url}")
+                                    print(f"[✓] URL GitHub generato per logo esistente: {github_raw_url}")
                                     return github_raw_url
                                 else:
                                     # Altrimenti restituisci il percorso locale
@@ -907,7 +907,7 @@ def eventi_m3u8_generator():
                         os.makedirs(os.path.dirname(output_filename), exist_ok=True)
                         combined.save(output_filename)
                         
-                        print(f"[â] Immagine combinata creata: {output_filename}")
+                        print(f"[✓] Immagine combinata creata: {output_filename}")
                         
                         # Carica le variabili d'ambiente per GitHub
                         NOMEREPO = os.getenv("NOMEREPO", "").strip()
@@ -916,7 +916,7 @@ def eventi_m3u8_generator():
                         # Se le variabili GitHub sono disponibili, restituisci l'URL raw di GitHub
                         if NOMEGITHUB and NOMEREPO:
                             github_raw_url = f"https://raw.githubusercontent.com/{NOMEGITHUB}/{NOMEREPO}/main/{output_filename}"
-                            print(f"[â] URL GitHub generato: {github_raw_url}")
+                            print(f"[✓] URL GitHub generato: {github_raw_url}")
                             return github_raw_url
                         else:
                             # Altrimenti restituisci il percorso locale
@@ -933,7 +933,7 @@ def eventi_m3u8_generator():
             if ':' in event_name:
                 # Usa la parte prima dei ":" per la ricerca
                 prefix_name = event_name.split(':', 1)[0].strip()
-                print(f"[ð] Tentativo ricerca logo con prefisso: {prefix_name}")
+                print(f"[🔍] Tentativo ricerca logo con prefisso: {prefix_name}")
                 
                 # Prepara la query di ricerca con il prefisso
                 search_query = urllib.parse.quote(f"{prefix_name} logo")
@@ -967,14 +967,14 @@ def eventi_m3u8_generator():
                             # Prendi il primo risultato che sembra un logo (preferibilmente PNG o SVG)
                             for match in matches:
                                 if '.png' in match.lower() or '.svg' in match.lower():
-                                    print(f"[â] Logo trovato con prefisso: {match}")
+                                    print(f"[✓] Logo trovato con prefisso: {match}")
                                     return match
                             # Se non troviamo PNG o SVG, prendi il primo risultato
-                            print(f"[â] Logo trovato con prefisso: {matches[0]}")
+                            print(f"[✓] Logo trovato con prefisso: {matches[0]}")
                             return matches[0]
             
             # Se non riusciamo a identificare le squadre e il prefisso non ha dato risultati, procedi con la ricerca normale
-            print(f"[ð] Ricerca standard per: {clean_event_name}")
+            print(f"[🔍] Ricerca standard per: {clean_event_name}")
             
             # Se non riusciamo a identificare le squadre, procedi con la ricerca normale
             # Prepara la query di ricerca piÃ¹ specifica
@@ -1193,17 +1193,17 @@ def eventi_m3u8_generator():
                     
                     # Cerca un logo per questo evento
                     clean_event_title = re.sub(r'\s*\(\d{1,2}:\d{2}\)\s*$', '', event_title)
-                    print(f"[ð] Ricerca logo per: {clean_event_title}") 
+                    print(f"[🔍] Ricerca logo per: {clean_event_title}") 
                     logo_url = search_logo_for_event(clean_event_title) 
                     logo_attribute = f' tvg-logo="{logo_url}"' if logo_url else '' 
                     
                     # Applica la pulizia al tvg-id
                     tvg_id_cleaned = clean_tvg_id(clean_event_title)
       
-                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php" 
-                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")                   
-                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n') 
-                    print(f"[â] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
+                    stream_url = (f"{MFP_IP}/extractor/video?host=DLHD&d={LINK_DADDY}/embed/stream-{channel_id}.php"
+                                  f"&redirect_stream=true&api_password={MFP_PASSWORD}")
+                    f.write(f'#EXTINF:-1 tvg-id="{tvg_id_cleaned}" tvg-name="{tvg_name}"{logo_attribute} group-title="Eventi Live",{tvg_name}\n{stream_url}\n\n')
+                    print(f"[✓] {tvg_name}" + (f" (logo trovato)" if logo_url else " (nessun logo trovato)"))  
       
     if __name__ == "__main__": 
         # Assicurati che il modulo requests sia installato 
@@ -1613,7 +1613,7 @@ def epg_eventi_generator_world():
         try:
             with open(output_file_path, "w", encoding="utf-8") as file:
                 file.write(epg_content)
-            print(f"[â] File EPG XML salvato con successo: {output_file_path}")
+            print(f"[✓] File EPG XML salvato con successo: {output_file_path}")
             return True
         except Exception as e:
             print(f"[!] Errore nel salvataggio del file EPG XML: {e}")
@@ -1639,7 +1639,7 @@ def epg_eventi_generator_world():
         success = save_epg_xml(epg_content, output_file_path)
         
         if success:
-            print(f"[â] Generazione EPG XML completata con successo!")
+            print(f"[✓] Generazione EPG XML completata con successo!")
             return True
         else:
             print(f"[!] Errore durante la generazione EPG XML.")
@@ -1874,7 +1874,7 @@ def epg_eventi_generator():
         try:
             with open(output_file_path, "w", encoding="utf-8") as file:
                 file.write(epg_content)
-            print(f"[â] File EPG XML salvato con successo: {output_file_path}")
+            print(f"[✓] File EPG XML salvato con successo: {output_file_path}")
             return True
         except Exception as e:
             print(f"[!] Errore nel salvataggio del file EPG XML: {e}")
@@ -1900,7 +1900,7 @@ def epg_eventi_generator():
         success = save_epg_xml(epg_content, output_file_path)
         
         if success:
-            print(f"[â] Generazione EPG XML completata con successo!")
+            print(f"[✓] Generazione EPG XML completata con successo!")
             return True
         else:
             print(f"[!] Errore durante la generazione EPG XML.")
@@ -2359,4 +2359,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
