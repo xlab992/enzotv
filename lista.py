@@ -1500,7 +1500,8 @@ def epg_eventi_generator_world():
     
                 for event_info in sorted_events_list:
                     time_str_utc = event_info.get("time", "00:00")
-                    event_name = clean_text(event_info.get("event", "Evento Sconosciuto"))
+                    event_name_original = clean_text(event_info.get("event", "Evento Sconosciuto"))
+                    event_name = event_name_original.replace('&', 'and')
                     event_desc = event_info.get("description", f"Trasmesso in diretta.")
     
                     # USA EVENT NAME COME CHANNEL ID - PULITO DA CARATTERI SPECIALI E SPAZI
