@@ -1378,7 +1378,7 @@ def schedule_extractor():
 def epg_eventi_generator_world():
     # Codice del quinto script qui
     # Aggiungi il codice del tuo script "epg_eventi_generator.py" in questa funzione.
-    print("Eseguendo l'epg_eventi_generator.py...")
+    print("Eseguendo l'epg_eventi_generator_world.py...")
     # Il codice che avevi nello script "epg_eventi_generator.py" va qui, senza modifiche.
     import os
     import re
