@@ -1,10 +1,10 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/xlab992/enzotv/refs/heads/main/epg.xml"
 
 #EXTINF:-1 tvg-id="rai1.it" tvg-name="RAI 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-1-it.png" group-title="Rai", RAI 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/875922788/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1225653759/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAI 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-1-it.png" group-title="Rai", RAI 1 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1225653759/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/875922788/index.m3u8
 
 #EXTINF:-1 tvg-id="rai1.it" tvg-name="RAI 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-1-it.png" group-title="Rai", RAI 1 (D)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-850.php&redirect_stream=true&api_password=123
@@ -19,10 +19,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-851.php&redirect_stream=true&api_password=123
 
 #EXTINF:-1 tvg-id="rai3.it" tvg-name="RAI 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-3-it.png" group-title="Rai", RAI 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/869117599/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1324733956/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAI 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-3-it.png" group-title="Rai", RAI 3 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1324733956/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/869117599/index.m3u8
 
 #EXTINF:-1 tvg-id="rai3.it" tvg-name="RAI 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-3-it.png" group-title="Rai", RAI 3 (D)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-852.php&redirect_stream=true&api_password=123
@@ -31,19 +31,19 @@ https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.d
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-853.php&redirect_stream=true&api_password=123
 
 #EXTINF:-1 tvg-id="rai4.it" tvg-name="RAI 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-4-it.png" group-title="Rai", RAI 4
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2179822223/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4241820180/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAI 4" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-4-it.png" group-title="Rai", RAI 4 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4241820180/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2179822223/index.m3u8
 
 #EXTINF:-1 tvg-id="rai4k.it" tvg-name="RAI 4K" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rai_4K_-_Logo_2017.svg/1200px-Rai_4K_-_Logo_2017.svg.png" group-title="Rai", RAI 4K
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2049087681/index.m3u8
 
 #EXTINF:-1 tvg-id="rai5.it" tvg-name="RAI 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-5-it.png" group-title="Rai", RAI 5
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3249873828/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3163380543/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAI 5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-5-it.png" group-title="Rai", RAI 5 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3163380543/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3249873828/index.m3u8
 
 #EXTINF:-1 tvg-id="raigulp.it" tvg-name="RAI GULP" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-gulp-it.png" group-title="Rai", RAI GULP
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1803677691/index.m3u8
@@ -70,10 +70,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2239645272/index.m3u8
 
 #EXTINF:-1 tvg-id="raipremium.it" tvg-name="RAI PREMIUM" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-premium-it.png" group-title="Rai", RAI PREMIUM
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2828455552/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2861734300/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RAI PREMIUM" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-premium-it.png" group-title="Rai", RAI PREMIUM (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2861734300/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2828455552/index.m3u8
 
 #EXTINF:-1 tvg-id="raipremium.it" tvg-name="RAI PREMIUM" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-premium-it.png" group-title="Rai", RAI PREMIUM (D)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-858.php&redirect_stream=true&api_password=123
@@ -175,10 +175,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1376440573/index.m3u8
 
 #EXTINF:-1 tvg-id="eurosport.1.it" tvg-name="EUROSPORT 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png" group-title="Sport", EUROSPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3481346857/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3448075317/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png" group-title="Sport", EUROSPORT 1 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3448075317/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3481346857/index.m3u8
 
 #EXTINF:-1 tvg-id="eurosport.1.it" tvg-name="EUROSPORT 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/spain/eurosport-1-es.png" group-title="Sport", EUROSPORT 1 (D)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-878.php&redirect_stream=true&api_password=123
@@ -289,10 +289,10 @@ https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.d
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1989309231/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.sport.golf.it" tvg-name="SKY SPORT GOLF" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-golf-it.png" group-title="Sport", SKY SPORT GOLF
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/729945219/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3897711086/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY SPORT GOLF" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-golf-it.png" group-title="Sport", SKY SPORT GOLF (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3897711086/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/729945219/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.sport.golf.it" tvg-name="SKY SPORT GOLF" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-sport-golf-it.png" group-title="Sport", SKY SPORT GOLF (D)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-574.php&redirect_stream=true&api_password=123
@@ -406,16 +406,16 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/86091226/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.atlantic.it" tvg-name="SKY ATLANTIC" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-atlantic-it.png" group-title="Film & Serie TV", SKY ATLANTIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1421393119/index.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="SKY ATLANTIC" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-atlantic-it.png" group-title="Film & Serie TV", SKY ATLANTIC (2)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1482866609/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="SKY ATLANTIC" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-atlantic-it.png" group-title="Film & Serie TV", SKY ATLANTIC (2)
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1421393119/index.m3u8
+
 #EXTINF:-1 tvg-id="sky.cinema.action.it" tvg-name="SKY CINEMA ACTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png" group-title="Film & Serie TV", SKY CINEMA ACTION
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2242741766/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1144128726/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY CINEMA ACTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png" group-title="Film & Serie TV", SKY CINEMA ACTION (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1144128726/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2242741766/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY CINEMA ACTION" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-action-it.png" group-title="Film & Serie TV", SKY CINEMA ACTION (3)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3812796171/index.m3u8
@@ -442,10 +442,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-867.php&redirect_stream=true&api_password=123
 
 #EXTINF:-1 tvg-id="sky.cinema.due.it" tvg-name="SKY CINEMA DUE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-it.png" group-title="Film & Serie TV", SKY CINEMA DUE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2330574729/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1228534500/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY CINEMA DUE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-it.png" group-title="Film & Serie TV", SKY CINEMA DUE (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1228534500/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2330574729/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.cinema.due.+24.it" tvg-name="SKY CINEMA DUE +24" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-cinema-due-plus24-it.png" group-title="Film & Serie TV", SKY CINEMA DUE +24
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1078650168/index.m3u8
@@ -628,10 +628,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3841982646/index.m3u8
 
 #EXTINF:-1 tvg-id="cartoon.network.it" tvg-name="CARTOON NETWORK" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoon-network-it.png" group-title="Bambini", CARTOON NETWORK
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1744435623/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1289777017/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CARTOON NETWORK" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoon-network-it.png" group-title="Bambini", CARTOON NETWORK (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1289777017/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1744435623/index.m3u8
 
 #EXTINF:-1 tvg-id="cartoonito.it" tvg-name="CARTOONITO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cartoonito-it.png" group-title="Bambini", CARTOONITO
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1987220436/index.m3u8
@@ -706,10 +706,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3229664409/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.arte.it" tvg-name="SKY ARTE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-arte-it.png" group-title="Documentari", SKY ARTE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1902695925/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1806815496/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY ARTE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-arte-it.png" group-title="Documentari", SKY ARTE (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1806815496/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1902695925/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.documentaries.it" tvg-name="SKY DOCUMENTARIES" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-documentaries-it.png" group-title="Documentari", SKY DOCUMENTARIES
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/464281981/index.m3u8
@@ -787,10 +787,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3656080408/index.m3u8
 
 #EXTINF:-1 tvg-id="rtl.102.5.hd.it" tvg-name="RTL 102.5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtl-1025-it.png" group-title="Musica", RTL 102.5
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3168132911/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1729811452/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RTL 102.5" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/rtl-1025-it.png" group-title="Musica", RTL 102.5 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1729811452/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3168132911/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="TELE RADIO SCIACCA" tvg-logo="https://pbs.twimg.com/profile_images/613988173203423232/rWCQ9j6h_400x400.png" group-title="Musica", TELE RADIO SCIACCA
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3990509931/index.m3u8
@@ -874,10 +874,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2381583828/index.m3u8
 
 #EXTINF:-1 tvg-id="cielo.it" tvg-name="CIELO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cielo-it.png" group-title="Altro", CIELO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3743894403/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2719953688/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="CIELO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cielo-it.png" group-title="Altro", CIELO (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2719953688/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3743894403/index.m3u8
 
 #EXTINF:-1 tvg-id="cine34.it" tvg-name="CINE 34" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cine34-it.png" group-title="Altro", CINE 34
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/62558606/index.m3u8
@@ -886,10 +886,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/64060922/index.m3u8
 
 #EXTINF:-1 tvg-id="comedy.central.it" tvg-name="COMEDY CENTRAL" tvg-logo="https://yt3.googleusercontent.com/FPzu1EWCI54fIh2j9JEp0NOzwoeugjL4sZTQCdoxoQY1U4QHyKx2L3wPSw27IueuZGchIxtKfv8=s900-c-k-c0x00ffffff-no-rj" group-title="Altro", COMEDY CENTRAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3658277450/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/433893159/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="COMEDY CENTRAL" tvg-logo="https://yt3.googleusercontent.com/FPzu1EWCI54fIh2j9JEp0NOzwoeugjL4sZTQCdoxoQY1U4QHyKx2L3wPSw27IueuZGchIxtKfv8=s900-c-k-c0x00ffffff-no-rj" group-title="Altro", COMEDY CENTRAL (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/433893159/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3658277450/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="COMPANY TV" tvg-logo="https://www.trendcomunicazione.com/wp-content/uploads/2018/11/20180416-logo-tv-bokka-300x155.png" group-title="Altro", COMPANY TV
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1322483308/index.m3u8
@@ -958,10 +958,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2179686828/index.m3u8
 
 #EXTINF:-1 tvg-id="giallo.it" tvg-name="GIALLO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/giallo-it.png" group-title="Altro", GIALLO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2373936189/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4060499455/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="GIALLO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/giallo-it.png" group-title="Altro", GIALLO (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4060499455/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2373936189/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="GLOBUS TELEVISION" tvg-logo="https://ennapress.it/wp-content/uploads/2020/10/globus.png" group-title="Altro", GLOBUS TELEVISION
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2116902817/index.m3u8
@@ -1132,10 +1132,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2290395046/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RSI LA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/RSI_La_2_2012.svg/1200px-RSI_La_2_2012.svg.png" group-title="Altro", RSI LA 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3590183307/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3475299702/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RSI LA 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/RSI_La_2_2012.svg/1200px-RSI_La_2_2012.svg.png" group-title="Altro", RSI LA 2 (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3475299702/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3590183307/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="RTC TELECALABRIA" tvg-logo="https://play-lh.googleusercontent.com/7PzluYVAEVOCNzGYGkewkKI3PA0PkCKAc9KUZGfYzAbZnQLnlPAE5iQBMZEUi7ZKwJc" group-title="Altro", RTC TELECALABRIA
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/639406775/index.m3u8
@@ -1162,10 +1162,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2895549551/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.uno.it" tvg-name="SKY UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-uno-it.png" group-title="Altro", SKY UNO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/322024849/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2130523218/index.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="SKY UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-uno-it.png" group-title="Altro", SKY UNO (2)
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2130523218/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/322024849/index.m3u8
 
 #EXTINF:-1 tvg-id="sky.uno.it" tvg-name="SKY UNO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-uno-it.png" group-title="Altro", SKY UNO (D)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-881.php&redirect_stream=true&api_password=123
@@ -1375,20 +1375,8 @@ https://example.m3u8
 #EXTINF:-1 tvg-id="uefawomensnationsleagueitalyvssweden" tvg-name="UEFA Women's Nations League : Italy vs Sweden (18:20)" tvg-logo="https://raw.githubusercontent.com/xlab992/enzotv/main/logos/Italy_vs_Sweden.png" group-title="Eventi Live",UEFA Women's Nations League : Italy vs Sweden (18:20)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-851.php&redirect_stream=true&api_password=123
 
-#EXTINF:-1 tvg-name="Tennis" group-title="Eventi Live",--- Tennis ---
-https://example.m3u8
-
-#EXTINF:-1 tvg-id="rolandgarrostennismensandwomenssinglesday6" tvg-name="Roland-Garros Tennis Men's and Women's Singles | Day 6 (11:00)" tvg-logo="https://logocharts.com/wp-content/uploads/2021/12/Roland-Garros-Logo-1600x1600.png" group-title="Eventi Live",Roland-Garros Tennis Men's and Women's Singles | Day 6 (11:00)
-https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-879.php&redirect_stream=true&api_password=123
-
 #EXTINF:-1 tvg-name="Motorsport" group-title="Eventi Live",--- Motorsport ---
 https://example.m3u8
-
-#EXTINF:-1 tvg-id="formula3aramcospanishgrandprixpractice" tvg-name="Formula 3 : Aramco Spanish Grand Prix Practice (10:00)" tvg-logo="https://images.seeklogo.com/logo-png/5/2/formula-3-euro-series-logo-png_seeklogo-56757.png" group-title="Eventi Live",Formula 3 : Aramco Spanish Grand Prix Practice (10:00)
-https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-577.php&redirect_stream=true&api_password=123
-
-#EXTINF:-1 tvg-id="formula2aramcospanishgrandprixfreepractice" tvg-name="Formula 2 : Aramco Spanish Grand Prix Free Practice (11:00)" tvg-logo="https://www.thesportsdb.com/images/media/league/badge/3iwfjg1536242234.png" group-title="Eventi Live",Formula 2 : Aramco Spanish Grand Prix Free Practice (11:00)
-https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-577.php&redirect_stream=true&api_password=123
 
 #EXTINF:-1 tvg-id="formula1aramcospanishgrandprixpractice1" tvg-name="Formula 1 : Aramco Spanish Grand Prix - Practice 1 (13:30)" tvg-logo="https://logospng.org/download/formula-1/formula-1-4096.png" group-title="Eventi Live",Formula 1 : Aramco Spanish Grand Prix - Practice 1 (13:30)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-577.php&redirect_stream=true&api_password=123
@@ -1408,13 +1396,13 @@ https://example.m3u8
 #EXTINF:-1 tvg-id="italyseriea2goldpallacanestro2015forlivsrinascitabasketrimini" tvg-name="Italy, Serie A2 Gold : Pallacanestro 2.015 Forli vs. Rinascita Basket Rimini (20:00)" tvg-logo="https://raw.githubusercontent.com/xlab992/enzotv/main/logos/Pallacanestro 2.015 Forli_vs_Rinascita Basket Rimini.png" group-title="Eventi Live",Italy, Serie A2 Gold : Pallacanestro 2.015 Forli vs. Rinascita Basket Rimini (20:00)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-882.php&redirect_stream=true&api_password=123
 
-#EXTINF:-1 tvg-id="italylegaabaskettrapanisharkvsgermanibrescia" tvg-name="Italy Lega A Basket : Trapani Shark vs Germani Brescia (20:45)" tvg-logo="https://trapanishark.it/wp-content/uploads/2024/09/Trapani-Shark_Logo-1.png" group-title="Eventi Live",Italy Lega A Basket : Trapani Shark vs Germani Brescia (20:45)
+#EXTINF:-1 tvg-id="italylegaabaskettrapanisharkvsgermanibrescia" tvg-name="Italy Lega A Basket : Trapani Shark vs Germani Brescia (20:45)" tvg-logo="https://trapanishark.it/wp-content/uploads/2023/07/Trapani-Logo-2023_SquareWEB.png" group-title="Eventi Live",Italy Lega A Basket : Trapani Shark vs Germani Brescia (20:45)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-879.php&redirect_stream=true&api_password=123
 
 #EXTINF:-1 tvg-name="Cycling" group-title="Eventi Live",--- Cycling ---
 https://example.m3u8
 
-#EXTINF:-1 tvg-id="girodeitaliaetapa19masculinobiellachampoluc166km" tvg-name="Giro de Italia | Etapa 19 Masculino | Biella > Champoluc (166 km) (15:00)" tvg-logo="https://iconape.com/wp-content/png_logo_vector/giro-de-italia-logo.png" group-title="Eventi Live",Giro de Italia | Etapa 19 Masculino | Biella > Champoluc (166 km) (15:00)
+#EXTINF:-1 tvg-id="girodeitaliaetapa19masculinobiellachampoluc166km" tvg-name="Giro de Italia | Etapa 19 Masculino | Biella > Champoluc (166 km) (15:00)" tvg-logo="https://seeklogo.com/images/G/giro-de-italia-logo-5D385FA68B-seeklogo.com.png" group-title="Eventi Live",Giro de Italia | Etapa 19 Masculino | Biella > Champoluc (166 km) (15:00)
 https://xlab992-enzumfp.hf.space/extractor/video?host=DLHD&d=https://daddylive.dad/embed/stream-851.php&redirect_stream=true&api_password=123
 
 #EXTINF:-1 tvg-id="girodeitaliaetapa19masculinobiellachampoluc166km" tvg-name="Giro de Italia | Etapa 19 Masculino | Biella > Champoluc (166 km) (15:00)" tvg-logo="https://seeklogo.com/images/G/giro-de-italia-logo-5D385FA68B-seeklogo.com.png" group-title="Eventi Live",Giro de Italia | Etapa 19 Masculino | Biella > Champoluc (166 km) (15:00)
@@ -1897,10 +1885,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4104386390/index.m3u8
 
 #EXTINF:-1 tvg-name="BESA TV" group-title="Albania", BESA TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2046985544/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2714601883/index.m3u8
 
 #EXTINF:-1 tvg-name="BESA TV" group-title="Albania", BESA TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2714601883/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2046985544/index.m3u8
 
 #EXTINF:-1 tvg-name="BIG BROTHER (1)" group-title="Albania", BIG BROTHER (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2550632094/index.m3u8
@@ -2272,10 +2260,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2996800511/index.m3u8
 
 #EXTINF:-1 tvg-name="FILM KOMEDI" group-title="Albania", FILM KOMEDI
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3116610835/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/186415161/index.m3u8
 
 #EXTINF:-1 tvg-name="FILM KOMEDI" group-title="Albania", FILM KOMEDI
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/186415161/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3116610835/index.m3u8
 
 #EXTINF:-1 tvg-name="FILM KOMEDI (1)" group-title="Albania", FILM KOMEDI (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1308852885/index.m3u8
@@ -2914,10 +2902,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/832443653/index.m3u8
 
 #EXTINF:-1 tvg-name="RTK 1" group-title="Albania", RTK 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2043559355/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/335723640/index.m3u8
 
 #EXTINF:-1 tvg-name="RTK 1" group-title="Albania", RTK 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/335723640/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2043559355/index.m3u8
 
 #EXTINF:-1 tvg-name="RTK 1 (1)" group-title="Albania", RTK 1 (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2430389054/index.m3u8
@@ -2986,10 +2974,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/34330458/index.m3u8
 
 #EXTINF:-1 tvg-name="RTSH FILM" group-title="Albania", RTSH FILM
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2790617572/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2756781816/index.m3u8
 
 #EXTINF:-1 tvg-name="RTSH FILM" group-title="Albania", RTSH FILM
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2756781816/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2790617572/index.m3u8
 
 #EXTINF:-1 tvg-name="RTSH GJIROKASTRA" group-title="Albania", RTSH GJIROKASTRA
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1779753158/index.m3u8
@@ -3220,10 +3208,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1710767079/index.m3u8
 
 #EXTINF:-1 tvg-name="SOFIA" group-title="Albania", SOFIA
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2505464539/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4170898200/index.m3u8
 
 #EXTINF:-1 tvg-name="SOFIA" group-title="Albania", SOFIA
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4170898200/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2505464539/index.m3u8
 
 #EXTINF:-1 tvg-name="SOLE TV (1)" group-title="Albania", SOLE TV (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2490410943/index.m3u8
@@ -8209,10 +8197,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1781921808/index.m3u8
 
 #EXTINF:-1 tvg-name="AXN SPIN" group-title="Balkans", AXN SPIN
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1099487210/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1179697406/index.m3u8
 
 #EXTINF:-1 tvg-name="AXN SPIN" group-title="Balkans", AXN SPIN
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1179697406/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1099487210/index.m3u8
 
 #EXTINF:-1 tvg-name="BABY TV" group-title="Balkans", BABY TV
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3166119033/index.m3u8
@@ -8224,25 +8212,25 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2398384130/index.m3u8
 
 #EXTINF:-1 tvg-name="BBC EARTH" group-title="Balkans", BBC EARTH
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1561391128/index.m3u8
-
-#EXTINF:-1 tvg-name="BBC EARTH" group-title="Balkans", BBC EARTH
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1595188996/index.m3u8
 
-#EXTINF:-1 tvg-name="BHT 1" group-title="Balkans", BHT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2942971146/index.m3u8
+#EXTINF:-1 tvg-name="BBC EARTH" group-title="Balkans", BBC EARTH
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1561391128/index.m3u8
 
 #EXTINF:-1 tvg-name="BHT 1" group-title="Balkans", BHT 1
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3265703113/index.m3u8
+
+#EXTINF:-1 tvg-name="BHT 1" group-title="Balkans", BHT 1
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2942971146/index.m3u8
 
 #EXTINF:-1 tvg-name="BN" group-title="Balkans", BN
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1545863727/index.m3u8
 
 #EXTINF:-1 tvg-name="BN MUSIC" group-title="Balkans", BN MUSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/490769929/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/446208285/index.m3u8
 
 #EXTINF:-1 tvg-name="BN MUSIC" group-title="Balkans", BN MUSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/446208285/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/490769929/index.m3u8
 
 #EXTINF:-1 tvg-name="BN2" group-title="Balkans", BN2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1061880403/index.m3u8
@@ -8443,10 +8431,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/280202434/index.m3u8
 
 #EXTINF:-1 tvg-name="DOCUBOX" group-title="Balkans", DOCUBOX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/467190435/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3222785648/index.m3u8
 
 #EXTINF:-1 tvg-name="DOCUBOX" group-title="Balkans", DOCUBOX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3222785648/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/467190435/index.m3u8
 
 #EXTINF:-1 tvg-name="DOKU TV" group-title="Balkans", DOKU TV
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1778938190/index.m3u8
@@ -8488,10 +8476,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1308205307/index.m3u8
 
 #EXTINF:-1 tvg-name="EUROSPORT 1" group-title="Balkans", EUROSPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/330188485/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2708573167/index.m3u8
 
 #EXTINF:-1 tvg-name="EUROSPORT 1" group-title="Balkans", EUROSPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2708573167/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/330188485/index.m3u8
 
 #EXTINF:-1 tvg-name="EUROSPORT 2" group-title="Balkans", EUROSPORT 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3872518463/index.m3u8
@@ -8602,10 +8590,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1368386480/index.m3u8
 
 #EXTINF:-1 tvg-name="HBO" group-title="Balkans", HBO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2424553859/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3988502808/index.m3u8
 
 #EXTINF:-1 tvg-name="HBO" group-title="Balkans", HBO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3988502808/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2424553859/index.m3u8
 
 #EXTINF:-1 tvg-name="HBO 2" group-title="Balkans", HBO 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2315061688/index.m3u8
@@ -8638,10 +8626,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1149646634/index.m3u8
 
 #EXTINF:-1 tvg-name="HISTORY 2" group-title="Balkans", HISTORY 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/54647568/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/21335052/index.m3u8
 
 #EXTINF:-1 tvg-name="HISTORY 2" group-title="Balkans", HISTORY 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/21335052/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/54647568/index.m3u8
 
 #EXTINF:-1 tvg-name="HISTORY CHANNEL" group-title="Balkans", HISTORY CHANNEL
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1761826370/index.m3u8
@@ -8788,10 +8776,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3939261835/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO WILD" group-title="Balkans", NAT GEO WILD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2112036279/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3191034074/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO WILD" group-title="Balkans", NAT GEO WILD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3191034074/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2112036279/index.m3u8
 
 #EXTINF:-1 tvg-name="NATIONAL GEO WILD HD (1)" group-title="Balkans", NATIONAL GEO WILD HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1589024375/index.m3u8
@@ -8803,10 +8791,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1086525812/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKELODEON" group-title="Balkans", NICKELODEON
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1762001907/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3688484569/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKELODEON" group-title="Balkans", NICKELODEON
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3688484569/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1762001907/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKELODEON HR" group-title="Balkans", NICKELODEON HR
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1246262761/index.m3u8
@@ -9247,10 +9235,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2936483261/index.m3u8
 
 #EXTINF:-1 tvg-name="SPORT KLUB 3" group-title="Balkans", SPORT KLUB 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3267023153/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/23764060/index.m3u8
 
 #EXTINF:-1 tvg-name="SPORT KLUB 3" group-title="Balkans", SPORT KLUB 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/23764060/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3267023153/index.m3u8
 
 #EXTINF:-1 tvg-name="SPORT KLUB 3 (1)" group-title="Balkans", SPORT KLUB 3 (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2358818641/index.m3u8
@@ -9271,10 +9259,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3043680288/index.m3u8
 
 #EXTINF:-1 tvg-name="SPORT KLUB GOLF" group-title="Balkans", SPORT KLUB GOLF
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3604260757/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1906574408/index.m3u8
 
 #EXTINF:-1 tvg-name="SPORT KLUB GOLF" group-title="Balkans", SPORT KLUB GOLF
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1906574408/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3604260757/index.m3u8
 
 #EXTINF:-1 tvg-name="SPORT TV 1" group-title="Balkans", SPORT TV 1
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1645162648/index.m3u8
@@ -9307,10 +9295,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2043372515/index.m3u8
 
 #EXTINF:-1 tvg-name="TLC" group-title="Balkans", TLC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3473390408/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2990523347/index.m3u8
 
 #EXTINF:-1 tvg-name="TLC" group-title="Balkans", TLC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2990523347/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3473390408/index.m3u8
 
 #EXTINF:-1 tvg-name="TLC (1)" group-title="Balkans", TLC (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2070451084/index.m3u8
@@ -9334,10 +9322,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4273556163/index.m3u8
 
 #EXTINF:-1 tvg-name="TV 1000" group-title="Balkans", TV 1000
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1998323184/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2899636515/index.m3u8
 
 #EXTINF:-1 tvg-name="TV 1000" group-title="Balkans", TV 1000
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2899636515/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1998323184/index.m3u8
 
 #EXTINF:-1 tvg-name="TV 5" group-title="Balkans", TV 5
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/188345347/index.m3u8
@@ -9652,10 +9640,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3984233559/index.m3u8
 
 #EXTINF:-1 tvg-name="DIEMA SPORT 2" group-title="Bulgaria", DIEMA SPORT 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2945858102/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3591341829/index.m3u8
 
 #EXTINF:-1 tvg-name="DIEMA SPORT 2" group-title="Bulgaria", DIEMA SPORT 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3591341829/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2945858102/index.m3u8
 
 #EXTINF:-1 tvg-name="DIEMA SPORT 3" group-title="Bulgaria", DIEMA SPORT 3
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3949964981/index.m3u8
@@ -9721,10 +9709,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1541535727/index.m3u8
 
 #EXTINF:-1 tvg-name="FEN TV" group-title="Bulgaria", FEN TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/566807500/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4194813727/index.m3u8
 
 #EXTINF:-1 tvg-name="FEN TV" group-title="Bulgaria", FEN TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4194813727/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/566807500/index.m3u8
 
 #EXTINF:-1 tvg-name="FIGHTBOX" group-title="Bulgaria", FIGHTBOX
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3066884648/index.m3u8
@@ -9757,10 +9745,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3236112686/index.m3u8
 
 #EXTINF:-1 tvg-name="FOX CRIME" group-title="Bulgaria", FOX CRIME
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1793487407/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1715237185/index.m3u8
 
 #EXTINF:-1 tvg-name="FOX CRIME" group-title="Bulgaria", FOX CRIME
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1715237185/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1793487407/index.m3u8
 
 #EXTINF:-1 tvg-name="FOX LIFE" group-title="Bulgaria", FOX LIFE
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2135288369/index.m3u8
@@ -9871,16 +9859,16 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3764864653/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO" group-title="Bulgaria", NAT GEO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1103383282/index.m3u8
-
-#EXTINF:-1 tvg-name="NAT GEO" group-title="Bulgaria", NAT GEO
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1176264166/index.m3u8
 
-#EXTINF:-1 tvg-name="NAT GEO WILD" group-title="Bulgaria", NAT GEO WILD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3093560896/index.m3u8
+#EXTINF:-1 tvg-name="NAT GEO" group-title="Bulgaria", NAT GEO
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1103383282/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO WILD" group-title="Bulgaria", NAT GEO WILD
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2474272926/index.m3u8
+
+#EXTINF:-1 tvg-name="NAT GEO WILD" group-title="Bulgaria", NAT GEO WILD
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3093560896/index.m3u8
 
 #EXTINF:-1 tvg-name="NICK JR" group-title="Bulgaria", NICK JR
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/937172426/index.m3u8
@@ -9904,10 +9892,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2771280932/index.m3u8
 
 #EXTINF:-1 tvg-name="NOVA TV" group-title="Bulgaria", NOVA TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2164896592/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2261886020/index.m3u8
 
 #EXTINF:-1 tvg-name="NOVA TV" group-title="Bulgaria", NOVA TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2261886020/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2164896592/index.m3u8
 
 #EXTINF:-1 tvg-name="PLANETA" group-title="Bulgaria", PLANETA
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2356277850/index.m3u8
@@ -10858,10 +10846,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2962552355/index.m3u8
 
 #EXTINF:-1 tvg-name="CANAL+ SPORT" group-title="France", CANAL+ SPORT
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2391290436/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1012399982/index.m3u8
 
 #EXTINF:-1 tvg-name="CANAL+ SPORT" group-title="France", CANAL+ SPORT
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1012399982/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2391290436/index.m3u8
 
 #EXTINF:-1 tvg-name="CANAL+ SPORT 2" group-title="France", CANAL+ SPORT 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/48980802/index.m3u8
@@ -10873,10 +10861,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1066093298/index.m3u8
 
 #EXTINF:-1 tvg-name="CANAL+ SPORT 360" group-title="France", CANAL+ SPORT 360
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1814819760/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3411759213/index.m3u8
 
 #EXTINF:-1 tvg-name="CANAL+ SPORT 360" group-title="France", CANAL+ SPORT 360
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3411759213/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1814819760/index.m3u8
 
 #EXTINF:-1 tvg-name="CANAL+ SPORT 4" group-title="France", CANAL+ SPORT 4
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2376832738/index.m3u8
@@ -10969,10 +10957,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1152274993/index.m3u8
 
 #EXTINF:-1 tvg-name="CINE+ CLASSIC" group-title="France", CINE+ CLASSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3342642717/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/82633584/index.m3u8
 
 #EXTINF:-1 tvg-name="CINE+ CLASSIC" group-title="France", CINE+ CLASSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/82633584/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3342642717/index.m3u8
 
 #EXTINF:-1 tvg-name="CINE+ CLASSIC FHD" group-title="France", CINE+ CLASSIC FHD
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/581219766/index.m3u8
@@ -11044,10 +11032,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1314605414/index.m3u8
 
 #EXTINF:-1 tvg-name="CINE+ PREMIER" group-title="France", CINE+ PREMIER
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/343831120/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3618520893/index.m3u8
 
 #EXTINF:-1 tvg-name="CINE+ PREMIER" group-title="France", CINE+ PREMIER
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3618520893/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/343831120/index.m3u8
 
 #EXTINF:-1 tvg-name="CINE+ PREMIER FHD" group-title="France", CINE+ PREMIER FHD
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/316430315/index.m3u8
@@ -11080,10 +11068,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3681222624/index.m3u8
 
 #EXTINF:-1 tvg-name="COMEDIE+" group-title="France", COMEDIE+
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2839396482/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1928514641/index.m3u8
 
 #EXTINF:-1 tvg-name="COMEDIE+" group-title="France", COMEDIE+
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1928514641/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2839396482/index.m3u8
 
 #EXTINF:-1 tvg-name="COMEDIE+ FHD" group-title="France", COMEDIE+ FHD
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1447555262/index.m3u8
@@ -11230,10 +11218,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4123762836/index.m3u8
 
 #EXTINF:-1 tvg-name="DISCOVERY SCIENCE" group-title="France", DISCOVERY SCIENCE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1092400111/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2701145683/index.m3u8
 
 #EXTINF:-1 tvg-name="DISCOVERY SCIENCE" group-title="France", DISCOVERY SCIENCE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2701145683/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1092400111/index.m3u8
 
 #EXTINF:-1 tvg-name="DISCOVERY SCIENCE (1)" group-title="France", DISCOVERY SCIENCE (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1391624118/index.m3u8
@@ -11431,16 +11419,16 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3118025835/index.m3u8
 
 #EXTINF:-1 tvg-name="FRANCE 24" group-title="France", FRANCE 24
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2897893590/index.m3u8
-
-#EXTINF:-1 tvg-name="FRANCE 24" group-title="France", FRANCE 24
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2875346882/index.m3u8
 
-#EXTINF:-1 tvg-name="FRANCE 3" group-title="France", FRANCE 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3533073689/index.m3u8
+#EXTINF:-1 tvg-name="FRANCE 24" group-title="France", FRANCE 24
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2897893590/index.m3u8
 
 #EXTINF:-1 tvg-name="FRANCE 3" group-title="France", FRANCE 3
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/156852682/index.m3u8
+
+#EXTINF:-1 tvg-name="FRANCE 3" group-title="France", FRANCE 3
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3533073689/index.m3u8
 
 #EXTINF:-1 tvg-name="FRANCE 3 HD" group-title="France", FRANCE 3 HD
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/183277419/index.m3u8
@@ -11617,10 +11605,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4244248547/index.m3u8
 
 #EXTINF:-1 tvg-name="LA CHAINE METEO" group-title="France", LA CHAINE METEO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/113813193/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2136022010/index.m3u8
 
 #EXTINF:-1 tvg-name="LA CHAINE METEO" group-title="France", LA CHAINE METEO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2136022010/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/113813193/index.m3u8
 
 #EXTINF:-1 tvg-name="LA TROIS" group-title="France", LA TROIS
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2866202423/index.m3u8
@@ -11680,10 +11668,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/688242401/index.m3u8
 
 #EXTINF:-1 tvg-name="M6 MUSIC" group-title="France", M6 MUSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/743591971/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4154285296/index.m3u8
 
 #EXTINF:-1 tvg-name="M6 MUSIC" group-title="France", M6 MUSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4154285296/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/743591971/index.m3u8
 
 #EXTINF:-1 tvg-name="M6 MUSIC HD (1)" group-title="France", M6 MUSIC HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2859360858/index.m3u8
@@ -11695,10 +11683,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/235149497/index.m3u8
 
 #EXTINF:-1 tvg-name="MANGAS" group-title="France", MANGAS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1703130591/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/139408412/index.m3u8
 
 #EXTINF:-1 tvg-name="MANGAS" group-title="France", MANGAS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/139408412/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1703130591/index.m3u8
 
 #EXTINF:-1 tvg-name="MANGAS (1)" group-title="France", MANGAS (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3781018265/index.m3u8
@@ -11731,10 +11719,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2481682325/index.m3u8
 
 #EXTINF:-1 tvg-name="MCM TOP" group-title="France", MCM TOP
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3348711174/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3711976443/index.m3u8
 
 #EXTINF:-1 tvg-name="MCM TOP" group-title="France", MCM TOP
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3711976443/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3348711174/index.m3u8
 
 #EXTINF:-1 tvg-name="MCM TOP HD (1)" group-title="France", MCM TOP HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2396179096/index.m3u8
@@ -11947,10 +11935,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/824018318/index.m3u8
 
 #EXTINF:-1 tvg-name="NRJ HITS" group-title="France", NRJ HITS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/730920094/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4032821325/index.m3u8
 
 #EXTINF:-1 tvg-name="NRJ HITS" group-title="France", NRJ HITS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4032821325/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/730920094/index.m3u8
 
 #EXTINF:-1 tvg-name="NRJ HITS HD (1)" group-title="France", NRJ HITS HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3639203183/index.m3u8
@@ -11959,10 +11947,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2985830199/index.m3u8
 
 #EXTINF:-1 tvg-name="OCS CHOC" group-title="France", OCS CHOC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/768964403/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4128930784/index.m3u8
 
 #EXTINF:-1 tvg-name="OCS CHOC" group-title="France", OCS CHOC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4128930784/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/768964403/index.m3u8
 
 #EXTINF:-1 tvg-name="OCS CHOC FHD" group-title="France", OCS CHOC FHD
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1340739337/index.m3u8
@@ -12082,10 +12070,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3024438413/index.m3u8
 
 #EXTINF:-1 tvg-name="PIWI+" group-title="France", PIWI+
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4161488231/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2272423077/index.m3u8
 
 #EXTINF:-1 tvg-name="PIWI+" group-title="France", PIWI+
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2272423077/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4161488231/index.m3u8
 
 #EXTINF:-1 tvg-name="PIWI+ (1)" group-title="France", PIWI+ (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/912390098/index.m3u8
@@ -12226,16 +12214,16 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2642050442/index.m3u8
 
 #EXTINF:-1 tvg-name="RMC DECOUVERTE" group-title="France", RMC DECOUVERTE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2606615076/index.m3u8
-
-#EXTINF:-1 tvg-name="RMC DECOUVERTE" group-title="France", RMC DECOUVERTE
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2957270266/index.m3u8
 
-#EXTINF:-1 tvg-name="RMC SPORT 1" group-title="France", RMC SPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1756600583/index.m3u8
+#EXTINF:-1 tvg-name="RMC DECOUVERTE" group-title="France", RMC DECOUVERTE
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2606615076/index.m3u8
 
 #EXTINF:-1 tvg-name="RMC SPORT 1" group-title="France", RMC SPORT 1
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1684642409/index.m3u8
+
+#EXTINF:-1 tvg-name="RMC SPORT 1" group-title="France", RMC SPORT 1
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1756600583/index.m3u8
 
 #EXTINF:-1 tvg-name="RMC SPORT 1 (1)" group-title="France", RMC SPORT 1 (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/388776601/index.m3u8
@@ -12313,10 +12301,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2246359828/index.m3u8
 
 #EXTINF:-1 tvg-name="RMC SPORT 3" group-title="France", RMC SPORT 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/309578343/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/514443529/index.m3u8
 
 #EXTINF:-1 tvg-name="RMC SPORT 3" group-title="France", RMC SPORT 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/514443529/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/309578343/index.m3u8
 
 #EXTINF:-1 tvg-name="RMC SPORT 3 (1)" group-title="France", RMC SPORT 3 (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1844187641/index.m3u8
@@ -12496,10 +12484,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/466214058/index.m3u8
 
 #EXTINF:-1 tvg-name="SERIE CLUB" group-title="France", SERIE CLUB
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1501090169/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1534887525/index.m3u8
 
 #EXTINF:-1 tvg-name="SERIE CLUB" group-title="France", SERIE CLUB
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1534887525/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1501090169/index.m3u8
 
 #EXTINF:-1 tvg-name="SERIE CLUB (1)" group-title="France", SERIE CLUB (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/328726150/index.m3u8
@@ -12526,10 +12514,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/350896249/index.m3u8
 
 #EXTINF:-1 tvg-name="SYFY" group-title="France", SYFY
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3032825500/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3388818951/index.m3u8
 
 #EXTINF:-1 tvg-name="SYFY" group-title="France", SYFY
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3388818951/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3032825500/index.m3u8
 
 #EXTINF:-1 tvg-name="SYFY (1)" group-title="France", SYFY (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2106748611/index.m3u8
@@ -12892,10 +12880,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/777757543/index.m3u8
 
 #EXTINF:-1 tvg-name="AUTO MOTOR SPORT" group-title="Germany", AUTO MOTOR SPORT
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1834925213/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2369927457/index.m3u8
 
 #EXTINF:-1 tvg-name="AUTO MOTOR SPORT" group-title="Germany", AUTO MOTOR SPORT
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2369927457/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1834925213/index.m3u8
 
 #EXTINF:-1 tvg-name="AUTO MOTOR SPORT HD (1)" group-title="Germany", AUTO MOTOR SPORT HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2076609123/index.m3u8
@@ -13081,10 +13069,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1385797497/index.m3u8
 
 #EXTINF:-1 tvg-name="CARTOON NETWORK" group-title="Germany", CARTOON NETWORK
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2984717924/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/379030969/index.m3u8
 
 #EXTINF:-1 tvg-name="CARTOON NETWORK" group-title="Germany", CARTOON NETWORK
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/379030969/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2984717924/index.m3u8
 
 #EXTINF:-1 tvg-name="CARTOON NETWORK (1)" group-title="Germany", CARTOON NETWORK (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1172734405/index.m3u8
@@ -13297,10 +13285,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4087199410/index.m3u8
 
 #EXTINF:-1 tvg-name="DELUXE MUSIC" group-title="Germany", DELUXE MUSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/263471499/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3429108966/index.m3u8
 
 #EXTINF:-1 tvg-name="DELUXE MUSIC" group-title="Germany", DELUXE MUSIC
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3429108966/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/263471499/index.m3u8
 
 #EXTINF:-1 tvg-name="DELUXE MUSIC (1)" group-title="Germany", DELUXE MUSIC (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2185652870/index.m3u8
@@ -13627,10 +13615,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/381261505/index.m3u8
 
 #EXTINF:-1 tvg-name="HEIMAT KANAL" group-title="Germany", HEIMAT KANAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/482977403/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3743017750/index.m3u8
 
 #EXTINF:-1 tvg-name="HEIMAT KANAL" group-title="Germany", HEIMAT KANAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3743017750/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/482977403/index.m3u8
 
 #EXTINF:-1 tvg-name="HGTV" group-title="Germany", HGTV
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/974629400/index.m3u8
@@ -13690,10 +13678,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4162626550/index.m3u8
 
 #EXTINF:-1 tvg-name="JUKEBOX" group-title="Germany", JUKEBOX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1863799793/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3034079010/index.m3u8
 
 #EXTINF:-1 tvg-name="JUKEBOX" group-title="Germany", JUKEBOX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3034079010/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1863799793/index.m3u8
 
 #EXTINF:-1 tvg-name="JUKEBOX (1)" group-title="Germany", JUKEBOX (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3586356557/index.m3u8
@@ -13864,10 +13852,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1762209183/index.m3u8
 
 #EXTINF:-1 tvg-name="MAGENTA SPORT 1" group-title="Germany", MAGENTA SPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1810523752/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3432695221/index.m3u8
 
 #EXTINF:-1 tvg-name="MAGENTA SPORT 1" group-title="Germany", MAGENTA SPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3432695221/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1810523752/index.m3u8
 
 #EXTINF:-1 tvg-name="MAGENTA SPORT 10" group-title="Germany", MAGENTA SPORT 10
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1438750126/index.m3u8
@@ -13903,10 +13891,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1706155631/index.m3u8
 
 #EXTINF:-1 tvg-name="MAGENTA SPORT 2" group-title="Germany", MAGENTA SPORT 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2335883109/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/743054520/index.m3u8
 
 #EXTINF:-1 tvg-name="MAGENTA SPORT 2" group-title="Germany", MAGENTA SPORT 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/743054520/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2335883109/index.m3u8
 
 #EXTINF:-1 tvg-name="MAGENTA SPORT 20" group-title="Germany", MAGENTA SPORT 20
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3545622272/index.m3u8
@@ -14056,10 +14044,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/825882949/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO" group-title="Germany", NAT GEO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3763693854/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/999974349/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO" group-title="Germany", NAT GEO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/999974349/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3763693854/index.m3u8
 
 #EXTINF:-1 tvg-name="NAT GEO (1)" group-title="Germany", NAT GEO (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2169389937/index.m3u8
@@ -14110,19 +14098,19 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/849239493/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKELODEON" group-title="Germany", NICKELODEON
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/846416462/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2158790500/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKELODEON" group-title="Germany", NICKELODEON
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2158790500/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/846416462/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKELODEON (1)" group-title="Germany", NICKELODEON (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3316874696/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKTOONS" group-title="Germany", NICKTOONS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2919037797/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2952309881/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKTOONS" group-title="Germany", NICKTOONS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2952309881/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2919037797/index.m3u8
 
 #EXTINF:-1 tvg-name="NICKTOONS (1)" group-title="Germany", NICKTOONS (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3843525510/index.m3u8
@@ -14137,10 +14125,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/855045177/index.m3u8
 
 #EXTINF:-1 tvg-name="NITRO" group-title="Germany", NITRO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2077464868/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/371136743/index.m3u8
 
 #EXTINF:-1 tvg-name="NITRO" group-title="Germany", NITRO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/371136743/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2077464868/index.m3u8
 
 #EXTINF:-1 tvg-name="NITRO HEVC (1)" group-title="Germany", NITRO HEVC (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3085198764/index.m3u8
@@ -14224,10 +14212,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3479962875/index.m3u8
 
 #EXTINF:-1 tvg-name="ORF 1" group-title="Germany", ORF 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3174096793/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3506200154/index.m3u8
 
 #EXTINF:-1 tvg-name="ORF 1" group-title="Germany", ORF 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3506200154/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3174096793/index.m3u8
 
 #EXTINF:-1 tvg-name="ORF 2" group-title="Germany", ORF 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4203783497/index.m3u8
@@ -14737,10 +14725,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2454124205/index.m3u8
 
 #EXTINF:-1 tvg-name="SAT 1 GOLD" group-title="Germany", SAT 1 GOLD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1623445374/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1813629968/index.m3u8
 
 #EXTINF:-1 tvg-name="SAT 1 GOLD" group-title="Germany", SAT 1 GOLD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1813629968/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1623445374/index.m3u8
 
 #EXTINF:-1 tvg-name="SAT 1 HD (1)" group-title="Germany", SAT 1 HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3017451059/index.m3u8
@@ -14794,10 +14782,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1018615269/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY 1" group-title="Germany", SKY 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/94808283/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1751787800/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY 1" group-title="Germany", SKY 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1751787800/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/94808283/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY 1 HD (1)" group-title="Germany", SKY 1 HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2760602887/index.m3u8
@@ -15094,10 +15082,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1779919359/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA CLASSICS" group-title="Germany", SKY CINEMA CLASSICS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/62442537/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3111314189/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA CLASSICS" group-title="Germany", SKY CINEMA CLASSICS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3111314189/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/62442537/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA CLASSICS HD (1)" group-title="Germany", SKY CINEMA CLASSICS HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/185991845/index.m3u8
@@ -15145,10 +15133,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1723046465/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA HITS" group-title="Germany", SKY CINEMA HITS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2130689902/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3650034867/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA HITS" group-title="Germany", SKY CINEMA HITS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3650034867/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2130689902/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA HITS (1)" group-title="Germany", SKY CINEMA HITS (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2331906255/index.m3u8
@@ -15184,10 +15172,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4265879600/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA SPECIAL" group-title="Germany", SKY CINEMA SPECIAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/805972699/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1141836536/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA SPECIAL" group-title="Germany", SKY CINEMA SPECIAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1141836536/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/805972699/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY CINEMA SPECIAL HD (1)" group-title="Germany", SKY CINEMA SPECIAL HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3150979982/index.m3u8
@@ -15367,10 +15355,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2460927824/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY SELECT 3" group-title="Germany", SKY SELECT 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3620214137/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/337139732/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY SELECT 3" group-title="Germany", SKY SELECT 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/337139732/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3620214137/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY SELECT 3 (1)" group-title="Germany", SKY SELECT 3 (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2582278937/index.m3u8
@@ -15619,10 +15607,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3799248107/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY SPORT MIX" group-title="Germany", SKY SPORT MIX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/100835397/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/756758171/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY SPORT MIX" group-title="Germany", SKY SPORT MIX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/756758171/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/100835397/index.m3u8
 
 #EXTINF:-1 tvg-name="SKY SPORT NEWS" group-title="Germany", SKY SPORT NEWS
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4156854331/index.m3u8
@@ -15697,10 +15685,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/725548284/index.m3u8
 
 #EXTINF:-1 tvg-name="SPIEGEL GESCHICHTE" group-title="Germany", SPIEGEL GESCHICHTE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1240703321/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1039565178/index.m3u8
 
 #EXTINF:-1 tvg-name="SPIEGEL GESCHICHTE" group-title="Germany", SPIEGEL GESCHICHTE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1039565178/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1240703321/index.m3u8
 
 #EXTINF:-1 tvg-name="SPIEGEL GESCHICHTE (1)" group-title="Germany", SPIEGEL GESCHICHTE (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/382424172/index.m3u8
@@ -15829,10 +15817,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/500623417/index.m3u8
 
 #EXTINF:-1 tvg-name="SYFY" group-title="Germany", SYFY
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3764999351/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2668658037/index.m3u8
 
 #EXTINF:-1 tvg-name="SYFY" group-title="Germany", SYFY
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2668658037/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3764999351/index.m3u8
 
 #EXTINF:-1 tvg-name="SYFY HD (1)" group-title="Germany", SYFY HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1680063305/index.m3u8
@@ -15859,10 +15847,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/512135720/index.m3u8
 
 #EXTINF:-1 tvg-name="TELE 5" group-title="Germany", TELE 5
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/578429897/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/950216500/index.m3u8
 
 #EXTINF:-1 tvg-name="TELE 5" group-title="Germany", TELE 5
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/950216500/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/578429897/index.m3u8
 
 #EXTINF:-1 tvg-name="TELE 5 TV (1)" group-title="Germany", TELE 5 TV (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1693994894/index.m3u8
@@ -16075,10 +16063,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1367605401/index.m3u8
 
 #EXTINF:-1 tvg-name="VOX" group-title="Germany", VOX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2866655811/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3622161112/index.m3u8
 
 #EXTINF:-1 tvg-name="VOX" group-title="Germany", VOX
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3622161112/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2866655811/index.m3u8
 
 #EXTINF:-1 tvg-name="VOX HD (1)" group-title="Germany", VOX HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2099765212/index.m3u8
@@ -16126,10 +16114,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3522719651/index.m3u8
 
 #EXTINF:-1 tvg-name="WARNER TV SERIE" group-title="Germany", WARNER TV SERIE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/840655541/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2506867048/index.m3u8
 
 #EXTINF:-1 tvg-name="WARNER TV SERIE" group-title="Germany", WARNER TV SERIE
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2506867048/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/840655541/index.m3u8
 
 #EXTINF:-1 tvg-name="WDR" group-title="Germany", WDR
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/752701845/index.m3u8
@@ -16204,10 +16192,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2866292554/index.m3u8
 
 #EXTINF:-1 tvg-name="ZDF INFO" group-title="Germany", ZDF INFO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/502933258/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/438448158/index.m3u8
 
 #EXTINF:-1 tvg-name="ZDF INFO" group-title="Germany", ZDF INFO
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/438448158/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/502933258/index.m3u8
 
 #EXTINF:-1 tvg-name="ZDF INFO HD (1)" group-title="Germany", ZDF INFO HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2309304070/index.m3u8
@@ -16303,9 +16291,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1527236924/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1744435623/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1289777017/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1744435623/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1987220436/index.m3u8
 
@@ -16315,9 +16303,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2381583828/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3743894403/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2719953688/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3743894403/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/62558606/index.m3u8
 
@@ -16325,9 +16313,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/64060922/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3658277450/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/433893159/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3658277450/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1322483308/index.m3u8
 
@@ -16389,9 +16377,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/490955579/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3481346857/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3448075317/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3481346857/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2317684453/index.m3u8
 
@@ -16421,9 +16409,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1995860185/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2373936189/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4060499455/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2373936189/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2116902817/index.m3u8
 
@@ -16581,27 +16569,27 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2627662768/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/875922788/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1225653759/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/875922788/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1939210164/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/246253359/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/869117599/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1324733956/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2179822223/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/869117599/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4241820180/index.m3u8
 
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2179822223/index.m3u8
+
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2049087681/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3249873828/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3163380543/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3249873828/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1803677691/index.m3u8
 
@@ -16619,9 +16607,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2239645272/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2828455552/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2861734300/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2828455552/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1886684667/index.m3u8
 
@@ -16683,15 +16671,15 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2290395046/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3590183307/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3475299702/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3590183307/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/639406775/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3168132911/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1729811452/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3168132911/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4136045815/index.m3u8
 
@@ -16711,13 +16699,13 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2895549551/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1902695925/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1806815496/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1421393119/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1902695925/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1482866609/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1421393119/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1144128726/index.m3u8
 
@@ -16733,9 +16721,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1235530177/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2330574729/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1228534500/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2330574729/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1078650168/index.m3u8
 
@@ -16835,9 +16823,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1989309231/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/729945219/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3897711086/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/729945219/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2066326916/index.m3u8
 
@@ -16867,9 +16855,9 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/318057128/index.m3u8
 
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/322024849/index.m3u8
-
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2130523218/index.m3u8
+
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/322024849/index.m3u8
 
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2881739927/index.m3u8
 
@@ -17054,10 +17042,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/60276472/index.m3u8
 
 #EXTINF:-1 tvg-name="192 TV" group-title="Netherlands", 192 TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2539137621/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2608998715/index.m3u8
 
 #EXTINF:-1 tvg-name="192 TV" group-title="Netherlands", 192 TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2608998715/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2539137621/index.m3u8
 
 #EXTINF:-1 tvg-name="24 KITCHEN" group-title="Netherlands", 24 KITCHEN
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/622061122/index.m3u8
@@ -17147,10 +17135,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1106774151/index.m3u8
 
 #EXTINF:-1 tvg-name="DISCOVERY WORLD" group-title="Netherlands", DISCOVERY WORLD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/226214567/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3081891203/index.m3u8
 
 #EXTINF:-1 tvg-name="DISCOVERY WORLD" group-title="Netherlands", DISCOVERY WORLD
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3081891203/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/226214567/index.m3u8
 
 #EXTINF:-1 tvg-name="DISNEY CHANNEL" group-title="Netherlands", DISNEY CHANNEL
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4053879/index.m3u8
@@ -17180,10 +17168,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1397846137/index.m3u8
 
 #EXTINF:-1 tvg-name="ESPN 2" group-title="Netherlands", ESPN 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/405473735/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/351341225/index.m3u8
 
 #EXTINF:-1 tvg-name="ESPN 2" group-title="Netherlands", ESPN 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/351341225/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/405473735/index.m3u8
 
 #EXTINF:-1 tvg-name="ESPN 3" group-title="Netherlands", ESPN 3
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/697377561/index.m3u8
@@ -17198,10 +17186,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2540436583/index.m3u8
 
 #EXTINF:-1 tvg-name="EUROSPORT 1" group-title="Netherlands", EUROSPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2736390217/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/74097556/index.m3u8
 
 #EXTINF:-1 tvg-name="EUROSPORT 1" group-title="Netherlands", EUROSPORT 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/74097556/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2736390217/index.m3u8
 
 #EXTINF:-1 tvg-name="EUROSPORT 2" group-title="Netherlands", EUROSPORT 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1137367364/index.m3u8
@@ -17243,10 +17231,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/579287411/index.m3u8
 
 #EXTINF:-1 tvg-name="FOX SPORTS 1" group-title="Netherlands", FOX SPORTS 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3636633475/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/954079807/index.m3u8
 
 #EXTINF:-1 tvg-name="FOX SPORTS 1" group-title="Netherlands", FOX SPORTS 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/954079807/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3636633475/index.m3u8
 
 #EXTINF:-1 tvg-name="FOX SPORTS 2" group-title="Netherlands", FOX SPORTS 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2674058579/index.m3u8
@@ -17417,10 +17405,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1508353646/index.m3u8
 
 #EXTINF:-1 tvg-name="NPO NIEUWS" group-title="Netherlands", NPO NIEUWS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2880122002/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3526529441/index.m3u8
 
 #EXTINF:-1 tvg-name="NPO NIEUWS" group-title="Netherlands", NPO NIEUWS
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3526529441/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2880122002/index.m3u8
 
 #EXTINF:-1 tvg-name="NPO POLITIEK" group-title="Netherlands", NPO POLITIEK
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4288638811/index.m3u8
@@ -17810,10 +17798,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1167725757/index.m3u8
 
 #EXTINF:-1 tvg-name="ZIGGO SPORT RACING" group-title="Netherlands", ZIGGO SPORT RACING
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1777530589/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/459281257/index.m3u8
 
 #EXTINF:-1 tvg-name="ZIGGO SPORT RACING" group-title="Netherlands", ZIGGO SPORT RACING
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/459281257/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1777530589/index.m3u8
 
 #EXTINF:-1 tvg-name="ZIGGO SPORT SELECT" group-title="Netherlands", ZIGGO SPORT SELECT
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/739290895/index.m3u8
@@ -17825,10 +17813,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4022861107/index.m3u8
 
 #EXTINF:-1 tvg-name="ZIGGO SPORT VOETBAL" group-title="Netherlands", ZIGGO SPORT VOETBAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3586469911/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/23236113/index.m3u8
 
 #EXTINF:-1 tvg-name="ZIGGO SPORT VOETBAL" group-title="Netherlands", ZIGGO SPORT VOETBAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/23236113/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3586469911/index.m3u8
 
 #EXTINF:-1 tvg-name="ZUIDWEST TV" group-title="Netherlands", ZUIDWEST TV
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3488575634/index.m3u8
@@ -23495,10 +23483,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/58015509/index.m3u8
 
 #EXTINF:-1 tvg-name="BBC EARTH" group-title="Turkey", BBC EARTH
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2618455562/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2613731614/index.m3u8
 
 #EXTINF:-1 tvg-name="BBC EARTH" group-title="Turkey", BBC EARTH
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2613731614/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2618455562/index.m3u8
 
 #EXTINF:-1 tvg-name="BBC EARTH HD (1)" group-title="Turkey", BBC EARTH HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2228496856/index.m3u8
@@ -23561,10 +23549,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2617318386/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN MOVIES FAMILY" group-title="Turkey", BEIN MOVIES FAMILY
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1322228068/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2485199152/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN MOVIES FAMILY" group-title="Turkey", BEIN MOVIES FAMILY
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2485199152/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1322228068/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN MOVIES PREMIERE" group-title="Turkey", BEIN MOVIES PREMIERE
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/942987224/index.m3u8
@@ -23585,10 +23573,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1963748784/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN MOVIES TURK" group-title="Turkey", BEIN MOVIES TURK
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3390575948/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1835579025/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN MOVIES TURK" group-title="Turkey", BEIN MOVIES TURK
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1835579025/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3390575948/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SERIES 1" group-title="Turkey", BEIN SERIES 1
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2190922298/index.m3u8
@@ -23648,10 +23636,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/593493860/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SPORTS 2" group-title="Turkey", BEIN SPORTS 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2509466191/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1447241506/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SPORTS 2" group-title="Turkey", BEIN SPORTS 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1447241506/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2509466191/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SPORTS 2 HD (1)" group-title="Turkey", BEIN SPORTS 2 HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2851539143/index.m3u8
@@ -23717,10 +23705,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1453692314/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SPORTS HABER" group-title="Turkey", BEIN SPORTS HABER
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1197336000/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2806079612/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SPORTS HABER" group-title="Turkey", BEIN SPORTS HABER
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2806079612/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1197336000/index.m3u8
 
 #EXTINF:-1 tvg-name="BEIN SPORTS HABER HD (1)" group-title="Turkey", BEIN SPORTS HABER HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3989995533/index.m3u8
@@ -23831,10 +23819,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1020985035/index.m3u8
 
 #EXTINF:-1 tvg-name="BEYAZ TV" group-title="Turkey", BEYAZ TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/275850888/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3418237531/index.m3u8
 
 #EXTINF:-1 tvg-name="BEYAZ TV" group-title="Turkey", BEYAZ TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3418237531/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/275850888/index.m3u8
 
 #EXTINF:-1 tvg-name="BEYAZ TV FHD (1)" group-title="Turkey", BEYAZ TV FHD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1600348811/index.m3u8
@@ -24782,10 +24770,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2923004946/index.m3u8
 
 #EXTINF:-1 tvg-name="HABER GLOBAL" group-title="Turkey", HABER GLOBAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2483036808/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/652210082/index.m3u8
 
 #EXTINF:-1 tvg-name="HABER GLOBAL" group-title="Turkey", HABER GLOBAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/652210082/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2483036808/index.m3u8
 
 #EXTINF:-1 tvg-name="HABER GLOBAL HD (1)" group-title="Turkey", HABER GLOBAL HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4069774068/index.m3u8
@@ -25712,10 +25700,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/460410710/index.m3u8
 
 #EXTINF:-1 tvg-name="S SPORT" group-title="Turkey", S SPORT
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3718336295/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3346549722/index.m3u8
 
 #EXTINF:-1 tvg-name="S SPORT" group-title="Turkey", S SPORT
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3346549722/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3718336295/index.m3u8
 
 #EXTINF:-1 tvg-name="S SPORT 2" group-title="Turkey", S SPORT 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1234604880/index.m3u8
@@ -25841,16 +25829,16 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/605929821/index.m3u8
 
 #EXTINF:-1 tvg-name="SHOW TURK" group-title="Turkey", SHOW TURK
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2009772533/index.m3u8
-
-#EXTINF:-1 tvg-name="SHOW TURK" group-title="Turkey", SHOW TURK
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1880270561/index.m3u8
 
-#EXTINF:-1 tvg-name="SHOW TV" group-title="Turkey", SHOW TV
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2395422638/index.m3u8
+#EXTINF:-1 tvg-name="SHOW TURK" group-title="Turkey", SHOW TURK
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2009772533/index.m3u8
 
 #EXTINF:-1 tvg-name="SHOW TV" group-title="Turkey", SHOW TV
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2485009235/index.m3u8
+
+#EXTINF:-1 tvg-name="SHOW TV" group-title="Turkey", SHOW TV
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2395422638/index.m3u8
 
 #EXTINF:-1 tvg-name="SHOW TV FHD (1)" group-title="Turkey", SHOW TV FHD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1449499865/index.m3u8
@@ -26216,22 +26204,22 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1159899920/index.m3u8
 
 #EXTINF:-1 tvg-name="TIVIBU SPOR 1" group-title="Turkey", TIVIBU SPOR 1
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1528949791/index.m3u8
-
-#EXTINF:-1 tvg-name="TIVIBU SPOR 1" group-title="Turkey", TIVIBU SPOR 1
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2565972338/index.m3u8
 
-#EXTINF:-1 tvg-name="TIVIBU SPOR 2" group-title="Turkey", TIVIBU SPOR 2
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/478254799/index.m3u8
+#EXTINF:-1 tvg-name="TIVIBU SPOR 1" group-title="Turkey", TIVIBU SPOR 1
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1528949791/index.m3u8
 
 #EXTINF:-1 tvg-name="TIVIBU SPOR 2" group-title="Turkey", TIVIBU SPOR 2
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3746683810/index.m3u8
 
-#EXTINF:-1 tvg-name="TIVIBU SPOR 3" group-title="Turkey", TIVIBU SPOR 3
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3794924050/index.m3u8
+#EXTINF:-1 tvg-name="TIVIBU SPOR 2" group-title="Turkey", TIVIBU SPOR 2
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/478254799/index.m3u8
 
 #EXTINF:-1 tvg-name="TIVIBU SPOR 3" group-title="Turkey", TIVIBU SPOR 3
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/568442751/index.m3u8
+
+#EXTINF:-1 tvg-name="TIVIBU SPOR 3" group-title="Turkey", TIVIBU SPOR 3
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3794924050/index.m3u8
 
 #EXTINF:-1 tvg-name="TIVIBU SPOR 4" group-title="Turkey", TIVIBU SPOR 4
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1343303170/index.m3u8
@@ -26348,10 +26336,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/3317656516/index.m3u8
 
 #EXTINF:-1 tvg-name="TRT AVAZ" group-title="Turkey", TRT AVAZ
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/691149597/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4076672974/index.m3u8
 
 #EXTINF:-1 tvg-name="TRT AVAZ" group-title="Turkey", TRT AVAZ
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/4076672974/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/691149597/index.m3u8
 
 #EXTINF:-1 tvg-name="TRT AVAZ (1)" group-title="Turkey", TRT AVAZ (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2481339809/index.m3u8
@@ -26396,10 +26384,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/17020398/index.m3u8
 
 #EXTINF:-1 tvg-name="TRT HABER" group-title="Turkey", TRT HABER
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2003703357/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1890976041/index.m3u8
 
 #EXTINF:-1 tvg-name="TRT HABER" group-title="Turkey", TRT HABER
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1890976041/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2003703357/index.m3u8
 
 #EXTINF:-1 tvg-name="TRT HABER HD (1)" group-title="Turkey", TRT HABER HD (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2579401878/index.m3u8
@@ -26654,10 +26642,10 @@ https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=http
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1868001587/index.m3u8
 
 #EXTINF:-1 tvg-name="ULUSAL KANAL" group-title="Turkey", ULUSAL KANAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/885453469/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2249801655/index.m3u8
 
 #EXTINF:-1 tvg-name="ULUSAL KANAL" group-title="Turkey", ULUSAL KANAL
-https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/2249801655/index.m3u8
+https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/885453469/index.m3u8
 
 #EXTINF:-1 tvg-name="ULUSAL KANAL (1)" group-title="Turkey", ULUSAL KANAL (1)
 https://xlab992-enzumfp.hf.space/proxy/hls/manifest.m3u8?api_password=123&d=https://vavoo.to/play/1910048817/index.m3u8
